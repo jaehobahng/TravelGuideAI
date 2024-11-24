@@ -185,13 +185,6 @@ def NomadAI(prompt, context):
 
 
     
-    # # API CALL TO AMADEUS
-    # amadeus = Client(
-    #     client_id='aQAGtf2RwvH4MRoacY1zeaDqTNKjZaef',
-    #     client_secret='W0peyMi27F82EjG7'
-    # )
-
-    
     # API CALL TO AMADEUS
     amadeus = Client(
         client_id=os.getenv('AMADEUS_CLIENT_ID'),
