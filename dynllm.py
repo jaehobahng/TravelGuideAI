@@ -118,9 +118,9 @@ def NomadAI(prompt, context):
     system_prompt = {
         'role': 'system',
         'content': (
-            """You are a travel assistant. Your task is to determine if the user's prompt specifies:
-            1. A starting city (sometimes denoted by "from").
-            2. A destination city (sometimes denoted by "to").
+            """You are a travel assistant. Greet them accordingly, but your task is to determine if the user's prompt specifies:
+            1. Two Cities
+            2. A Date
 
             If either one is missing, explain nicely what information the user needs to input, 
 
@@ -156,7 +156,7 @@ def NomadAI(prompt, context):
 
 
 
-    # FINE TUNE MOEL GOES HERE
+    # FINE TUNE MODEL GOES HERE
     # Define the system prompt to guide the model's behavior
     system_prompt = {
         'role': 'system',
@@ -183,24 +183,23 @@ def NomadAI(prompt, context):
     response_json = json.loads(json_response)
 
 
-
-    
     # API CALL TO AMADEUS
     amadeus = Client(
         client_id=os.getenv('AMADEUS_CLIENT_ID'),
         client_secret=os.getenv('AMADEUS_CLIENT_SECRET')
     )
 
-    try:
-        response = amadeus.shopping.flight_offers_search.get(
-            originLocationCode=response_json['params']['originLocationCode'],
-            destinationLocationCode=response_json['params']['destinationLocationCode'],
-            departureDate=response_json['params']['departureDate'],
-            adults=response_json['params']['adults'])
-        
-        rd = response.data
-    except ResponseError as error:
-        print(error)
+
+    response = amadeus.shopping.flight_offers_search.get(
+        originLocationCode=response_json['params']['originLocationCode'],
+        destinationLocationCode=response_json['params']['destinationLocationCode'],
+        departureDate=response_json['params']['departureDate'],
+        adults=response_json['params']['adults'])
+    
+    rd = response.data
+
+    if not rd:
+        return "I don't think we have information on the details you specified. Could you try to input another journey please?"
 
     n = 2  # Number of top choices to return
 
