@@ -20,31 +20,53 @@ for message in st.session_state.messages:
 prompt = st.chat_input('Pass Your Prompt here')
 
 if prompt:
-    # Keeps the prompt in chat
-    st.chat_message('user').markdown(prompt)
-    st.session_state.messages.append({'role': 'user', 'content': prompt})
+    # Check if the prompt contains "reset"
+    if "reset" in prompt.lower():
+        # Clear the conversation log and chat history
+        st.session_state.conversation_log.clear()
+        st.session_state.messages.append({'role': 'user', 'content': prompt})
+        st.chat_message('user').markdown(prompt)
 
-    if len(st.session_state.conversation_log) == 0:
-        st.session_state.conversation_log.append(f"User: {prompt}")
-        aggregated_conversation = "\n".join(st.session_state.conversation_log)
-        response = NomadAI(prompt, aggregated_conversation)
+        response = "Conversation has been reset. How may I help you?"
+        st.chat_message('assistant').markdown(response)
+        st.session_state.messages.append({'role': 'assistant', 'content': response})
     else:
-        # if len(st.session_state.conversation_log) > 6:
-        #     st.session_state.conversation_log.pop(0)
-        aggregated_conversation = "\n".join(st.session_state.conversation_log)
-        # Refine the user query
-        refined_query = query_refiner(aggregated_conversation, prompt)
-        st.session_state.conversation_log.append(f"User: {refined_query}")
-        # Use the refined query as input to NomadAI
-        response = NomadAI(refined_query, aggregated_conversation)
+        # Keeps the prompt in chat
+        st.chat_message('user').markdown(prompt)
+        st.session_state.messages.append({'role': 'user', 'content': prompt})
 
+        # Add a temporary loading message
+        # loading_message = st.chat_message('assistant').markdown("Loading travel plans...!")
 
-    # Add the response to the conversation log
-    st.session_state.conversation_log.append(f"Assistant: {response}")
+        if len(st.session_state.conversation_log) == 0:
+            st.session_state.conversation_log.append(f"User: {prompt}")
+            aggregated_conversation = "\n".join(st.session_state.conversation_log)
+            response = NomadAI(prompt, aggregated_conversation)
+        else:
+            aggregated_conversation = "\n".join(st.session_state.conversation_log)
+            # Refine the user query
+            refined_query = query_refiner(aggregated_conversation, prompt)
+            st.session_state.conversation_log.append(f"User: {refined_query}")
+            # Use the refined query as input to NomadAI
+            response = NomadAI(refined_query, aggregated_conversation)
 
-    if len(st.session_state.conversation_log) > 6:
-        st.session_state.conversation_log = st.session_state.conversation_log[2:]
+        # loading_message.markdown(response)
 
-    # Keeps the response in chat
-    st.chat_message('assistant').markdown(response)
-    st.session_state.messages.append({'role': 'assistant', 'content': response})
+        assistant_message = st.chat_message('assistant')
+        message_placeholder = assistant_message.markdown("Loading your travel plans...!")
+
+        current_response = ""
+
+        for chunk in response:
+            current_response += chunk
+            message_placeholder.markdown(current_response)
+
+        # Add the response to the conversation log
+        st.session_state.conversation_log.append(f"Assistant: {current_response}")
+
+        if len(st.session_state.conversation_log) > 6:
+            st.session_state.conversation_log = st.session_state.conversation_log[2:]
+
+        # Keeps the response in chat
+        # st.chat_message('assistant').markdown(response)
+        st.session_state.messages.append({'role': 'assistant', 'content': current_response})

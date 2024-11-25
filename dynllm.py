@@ -119,7 +119,7 @@ def NomadAI(prompt, context):
         'role': 'system',
         'content': (
             """You are a travel assistant. Greet them accordingly, but your task is to determine if the user's prompt specifies:
-            1. Two Cities
+            1. Two cities
             2. A Date
 
             If either one is missing, explain nicely what information the user needs to input, 
@@ -136,23 +136,33 @@ def NomadAI(prompt, context):
     validation_response : ChatResponse = chat(model='llama3.2', messages=[
         system_prompt,
         {'role': 'user', 'content': prompt}],
-        stream=False,
+        stream=True,
         options={"temperature":0.1}
     )
 
-    validation_output = validation_response['message']['content']
+    # validation_output = validation_response['message']['content']
 
-    # for chunk in validation_output:
-    #   print(chunk['message']['content'], end='', flush=True)
+    # # for chunk in validation_output:
+    # #   print(chunk['message']['content'], end='', flush=True)
 
-    if 'VALID QUERY' in validation_output:
-        # If input is valid, query the second LLM
-        pass
-        # second_llm_output = query_second_llm(user_prompt)
-        # print(second_llm_output)
-    else:
-        # If input is invalid, respond with the validation output
-        return validation_output
+    # if 'VALID QUERY' not in validation_output:
+    #     # If input is valid, query the second LLM
+    #     yield validation_output
+    #     return
+    
+
+    validation_output = ""
+
+    # Stream the output word by word
+    for chunk in validation_response:
+        # Append the current chunk to the output
+        validation_output += chunk['message']['content']
+
+    if 'VALID QUERY' not in validation_output:
+        for chunk in validation_output:
+            yield chunk
+        return
+
 
 
 
@@ -230,8 +240,9 @@ def NomadAI(prompt, context):
             You are a travel assistant.
             The input will be a json format input with flight information
             Given the context which is conversation that has happened before, summarize the data choices the user has regarding the information.
-            Speak as if you are explaining the details for a customer.
-            
+            Speak as if you are explaining the details.
+            Only summarize thoroughly.
+            Don't ask to assist further than summarization.
             """
         )
     }
@@ -244,11 +255,11 @@ def NomadAI(prompt, context):
     response : ChatResponse = chat(model='llama3.2', messages=[
         system_prompt,
         {'role': 'user', 'content': f"Context':{context} / 'data':{json_data}"}],
-        stream=False,
+        stream=True,
         options={"temperature":0.1}
     )
 
-    return response['message']['content']
+    # return response['message']['content']
 
-    # for chunk in response:
-    #     print(chunk['message']['content'], end='', flush=True)
+    for chunk in response:
+        yield chunk['message']['content']
