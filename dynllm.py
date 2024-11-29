@@ -96,8 +96,9 @@ def query_refiner(log, prompt):
         'role': 'system',
         'content': (
             """
-            Given the following user query and conversation log, formulate a question that would be the most relevant to provide the user with an answer from a knowledge base.
-            Just output the new question
+            Given the following user query and conversation log, extract the last destination location, the last departure location, 
+            and the last time mentioned. Use these details to formulate a question that is focused and contextually relevant, 
+            while incorporating the rest of the conversation for clarity. Just output the new question.
             """
         )
     }
