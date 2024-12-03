@@ -141,17 +141,7 @@ def NomadAI(prompt, context):
         options={"temperature":0.1}
     )
 
-    # validation_output = validation_response['message']['content']
-
-    # # for chunk in validation_output:
-    # #   print(chunk['message']['content'], end='', flush=True)
-
-    # if 'VALID QUERY' not in validation_output:
-    #     # If input is valid, query the second LLM
-    #     yield validation_output
-    #     return
     
-
     validation_output = ""
 
     # Stream the output word by word
@@ -177,7 +167,7 @@ def NomadAI(prompt, context):
             Your task is to read user input, and parse it into json format like below based on starting location, destination, and date.
             Only give the output as json format
 
-            {"endpoint": "/shopping/flight-offers", "params": {"originLocationCode": "3 letter code", "destinationLocationCode": "3 letter code", "departureDate": "date format", "adults": 1}}
+            {"endpoint": "/search_flights", "params": {"originLocationCode": "3 letter code", "destinationLocationCode": "3 letter code", "departureDate": "date format", "adults": 1}}
             """
         )
     }
@@ -201,33 +191,39 @@ def NomadAI(prompt, context):
     )
 
 
-    response = amadeus.shopping.flight_offers_search.get(
-        originLocationCode=response_json['params']['originLocationCode'],
-        destinationLocationCode=response_json['params']['destinationLocationCode'],
-        departureDate=response_json['params']['departureDate'],
-        adults=response_json['params']['adults'])
-    
-    rd = response.data
+    empty = {}
+    for request in [response_json]:
+        endpoint = request.get("endpoint")
+        params = request.get("params", {})
+        
+        if endpoint == "/search_flights":
+            try:
+                response = amadeus.shopping.flight_offers_search.get(
+                    originLocationCode=params['originLocationCode'],
+                    destinationLocationCode=params['destinationLocationCode'],
+                    departureDate=params['departureDate'],
+                    adults=params['adults'],
+                    max=5)
 
-    if not rd:
-        return "I don't think we have information on the details you specified. Could you try to input another journey please?"
+                flights = response.data
 
-    n = 2  # Number of top choices to return
+                keys_to_filter = ['numberOfBookableSeats','itineraries','price']
 
-    # Get results for 0-stop flights in economy and business
-    zero_stops_economy = filter_by_stops_and_cabin(rd, stops=0, cabin_class="ECONOMY", top_n=n)
-    zero_stops_business = filter_by_stops_and_cabin(rd, stops=0, cabin_class="PREMIUM_ECONOMY", top_n=n)
+                result = [
+                    {key: value for key, value in dictionary.items() if key in keys_to_filter}
+                    for dictionary in flights
+                ]
 
-    # Get results for 1-stop flights in economy and business
-    one_stop_economy = filter_by_stops_and_cabin(rd, stops=1, cabin_class="ECONOMY", top_n=n)
-    one_stop_business = filter_by_stops_and_cabin(rd, stops=1, cabin_class="PREMIUM_ECONOMY", top_n=n)
-
-    keys_to_extract = ['numberOfBookableSeats','flightinfo','layover_minutes','price']
-
-    ze = feature_engineering(zero_stops_economy, keys_to_extract)
-    zb = feature_engineering(zero_stops_business, keys_to_extract)
-    oe = feature_engineering(one_stop_economy, keys_to_extract)
-    ob = feature_engineering(one_stop_business, keys_to_extract)
+            #     rd = response.data
+            except ResponseError as error:
+                print(error)
+        elif endpoint == "/search_hotels":
+            # Call the hotels API with the provided params
+            print(params)
+        else:
+            print(f"Unknown endpoint: {endpoint}")
+        
+        empty[endpoint] = result
 
 
 
@@ -250,7 +246,7 @@ def NomadAI(prompt, context):
 
     # Example user prompt (replace with actual user input)
     # user_prompt = "Why is the sky blue?"
-    json_data = str(ze)
+    json_data = str(empty)
 
     # Call the chat model with both the system prompt and the user prompt
     response : ChatResponse = chat(model='llama3.2', messages=[
