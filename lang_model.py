@@ -7,9 +7,76 @@ from tenacity import retry, stop_after_attempt, wait_exponential
 # Load variables from the .env file
 load_dotenv()
 
+def extract_info(data_list):
+    results = []
+    for data in data_list:
+        itinerary = data["itineraries"][0]  # Assume only one itinerary for simplicity
+        segments = itinerary["segments"]
+        fare_details = data["travelerPricings"][0]["fareDetailsBySegment"]
+
+        # Map segment IDs to fare details
+        fare_map = {fare["segmentId"]: fare["cabin"] for fare in fare_details}
+
+        # Initialize flat dictionary
+        flat_data = {
+            "numberOfBookableSeats": data.get("numberOfBookableSeats"),
+            "total_duration": itinerary["duration"].lstrip("PT"),
+            "number_of_stops": len(segments)-1,
+            "price_currency": data["price"]["currency"],
+            "price_total": data["price"]["total"],
+        }
+
+        # Flatten segments with departure/arrival IATA codes, carrier code, and cabin class
+        for idx, segment in enumerate(segments, start=1):
+            flat_data[f"segments_{idx}_departure"] = segment["departure"]["at"]
+            flat_data[f"segments_{idx}_departure_iata"] = segment["departure"]["iataCode"]
+            flat_data[f"segments_{idx}_arrival"] = segment["arrival"]["at"]
+            flat_data[f"segments_{idx}_arrival_iata"] = segment["arrival"]["iataCode"]
+            flat_data[f"segments_{idx}_duration"] = segment["duration"].lstrip("PT")
+            flat_data[f"segments_{idx}_carrier_code"] = segment["carrierCode"]
+            flat_data[f"segments_{idx}_cabin_class"] = fare_map.get(segment.get("id"), "Unknown")
+
+        # Add additional services
+        additional_services = data.get("price", {}).get("additionalServices", [])
+        for idx, service in enumerate(additional_services, start=1):
+            flat_data[f"additional_service_{idx}_type"] = service.get("type", "Unknown")
+            flat_data[f"additional_service_{idx}_amount"] = service.get("amount", "0.00")
+
+        results.append(flat_data)
+    return results
+
+def filter_flights(
+    flights, max_price=None, cabin_class=None
+):
+    """
+    Filters the extracted flight data based on maximum price and cabin class.
+    - `max_price`: Maximum allowable price (float).
+    - `cabin_class`: Desired cabin class ("ECONOMY", "PREMIUM_ECONOMY", "BUSINESS", "FIRST").
+    """
+    filtered = []
+
+    for flight in flights:
+        # Check price filter
+        if max_price is not None and float(flight["price_total"]) > max_price:
+            continue
+
+        # Check cabin class filter (apply to all segments)
+        if cabin_class is not None:
+            matching_classes = [
+                flight.get(f"segments_{idx}_cabin_class")
+                for idx in range(1, flight["number_of_stops"] + 2)
+            ]
+            if cabin_class not in matching_classes:
+                continue
+
+        # Add to results if all conditions are satisfied
+        filtered.append(flight)
+
+    # Sort by price_total in ascending order
+    return sorted(filtered, key=lambda x: x["price_total"])
 
 @tool
-def flight(departure: str, arrival: str, date: str, people: int = 1, nonstop: str = 'false'):
+def flight(departure: str, arrival: str, date: str, people: int = 1, nonstop: str = 'false', price: float = None, cabin: str = None):
     """
     You are finding details on flight requests. The definitions of the variables are as follows.
 
@@ -18,6 +85,8 @@ def flight(departure: str, arrival: str, date: str, people: int = 1, nonstop: st
     'date' : date the trip is starting
     'people' : number of people on the flight
     'nonstop' : 'true'' if only nonstop flights are requested. 'false' if not specified.
+    'price' : Detect maximum price range of user. 0 if not specified 
+    'cabin' : Desired cabin one of ["ECONOMY", "PREMIUM_ECONOMY", "BUSINESS", "FIRST"]. None if not specified
     """
     
     amadeus = Client(
@@ -36,15 +105,14 @@ def flight(departure: str, arrival: str, date: str, people: int = 1, nonstop: st
 
     flights = response.data
 
-    keys_to_filter = ['numberOfBookableSeats','itineraries','price']
+    clean_flights = extract_info(flights)
 
-    filtered_list = [
-        {key: value for key, value in dictionary.items() if key in keys_to_filter}
-        for dictionary in flights
-    ]
+    if price == 0:
+        price = None
 
+    filtered_flights = filter_flights(clean_flights, max_price=price, cabin_class=cabin)
 
-    return filtered_list[:3]
+    return filtered_flights[:10]
 
 @tool
 def hotels(city: str) -> str:
