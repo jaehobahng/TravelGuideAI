@@ -368,9 +368,9 @@ def NomadAI():
 
 
 
-def invoke_graph(st_messages, callables):
-    # Ensure the callables parameter is a list as you can have multiple callbacks
-    if not isinstance(callables, list):
-        raise TypeError("callables must be a list")
-    # Invoke the graph with the current messages and callback configuration
-    return runnable.invoke({"input": st_messages, "chat_history": []}, config={"callbacks": callables})
+# def invoke_graph(st_messages, callables):
+#     # Ensure the callables parameter is a list as you can have multiple callbacks
+#     if not isinstance(callables, list):
+#         raise TypeError("callables must be a list")
+#     # Invoke the graph with the current messages and callback configuration
+#     return runnable.invoke({"input": st_messages, "chat_history": []}, config={"callbacks": callables})

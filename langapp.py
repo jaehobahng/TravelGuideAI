@@ -1,6 +1,6 @@
 import streamlit as st
 from streamlit_chat import message
-from lang_model import invoke_graph, NomadAI
+from lang_model import NomadAI
 from st_callable_util import get_streamlit_cb
 from langchain_core.messages import AIMessage, HumanMessage
 import time
@@ -82,32 +82,39 @@ if prompt := st.chat_input():
         # assistant_message = st.chat_message('assistant')
         message_placeholder = st.markdown("Loading your travel plans...!")
         current_response = ""
+        try:
+            response = nomad.invoke({"input": st.session_state.messages, "chat_history": []}, config=config)
 
-        response = nomad.invoke({"input": st.session_state.messages, "chat_history": []}, config=config)
+            # Ensure intermediate steps are processed correctly
+            intermediate_steps = response['intermediate_steps'][-1].tool_input['summary']
 
-        # Ensure intermediate steps are processed correctly
-        intermediate_steps = response['intermediate_steps'][-1].tool_input['summary']
+            # Tokenize the summary content
+            summary = response['intermediate_steps'][-1].tool_input['summary'] if intermediate_steps else "No summary provided."
+            tokens = re.findall(r'\S+|\n', summary)  # Tokenize by non-whitespace or newline
 
-        # Tokenize the summary content
-        summary = response['intermediate_steps'][-1].tool_input['summary'] if intermediate_steps else "No summary provided."
-        tokens = re.findall(r'\S+|\n', summary)  # Tokenize by non-whitespace or newline
+            # Initialize a variable to hold the current response for display
+            current_response = ""
 
-        # Initialize a variable to hold the current response for display
-        current_response = ""
-
-        # Loop through the tokens and simulate streaming
-        for token in tokens:
-            if token == "\n":
-                # Append a newline if the token is a newline character
-                current_response += "\n"
-            else:
-                # Append the token followed by a space
+            # Loop through the tokens and simulate streaming
+            for token in tokens:
+                if token == "\n":
+                    # Append a newline if the token is a newline character
+                    current_response += "\n"
+                else:
+                    # Append the token followed by a space
+                    current_response += token + " "
+                
+                # Update the placeholder with the current response
+                message_placeholder.markdown(current_response.strip(' '))  # Strip trailing spaces
+                time.sleep(0.01)  # Add a slight delay for the streaming effect
+        except:
+            current_response = ""
+            response = "I'm sorry I don't think I have the information that you requested. Could you try again please?"
+            tokens = response.split()
+            for token in tokens:
                 current_response += token + " "
-            
-            # Update the placeholder with the current response
-            message_placeholder.markdown(current_response.strip(' '))  # Strip trailing spaces
-            time.sleep(0.01)  # Add a slight delay for the streaming effect
-
+                message_placeholder.markdown(current_response.strip(' '))  # Strip trailing spaces
+                time.sleep(0.01)  # Add a slight delay for the streaming effect
 
 
 

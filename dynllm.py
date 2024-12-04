@@ -17,78 +17,73 @@ def stream_output(output, delay=0.05):
         time.sleep(delay)
 
 
-# Function to calculate the number of stops
-def get_num_stops(offer):
-    return len(offer['itineraries'][0]['segments']) - 1
+def extract_info(data_list):
+    results = []
+    for data in data_list:
+        itinerary = data["itineraries"][0]  # Assume only one itinerary for simplicity
+        segments = itinerary["segments"]
+        fare_details = data["travelerPricings"][0]["fareDetailsBySegment"]
 
+        # Map segment IDs to fare details
+        fare_map = {fare["segmentId"]: fare["cabin"] for fare in fare_details}
 
+        # Initialize flat dictionary
+        flat_data = {
+            "numberOfBookableSeats": data.get("numberOfBookableSeats"),
+            "total_duration": itinerary["duration"].lstrip("PT"),
+            "number_of_stops": len(segments)-1,
+            "price_currency": data["price"]["currency"],
+            "price_total": data["price"]["total"],
+        }
 
-# Function to filter by stops and cabin class
-def filter_by_stops_and_cabin(data, stops, cabin_class, top_n):
-    # Filter by number of stops
-    filtered_by_stops = [offer for offer in data if get_num_stops(offer) == stops]
-    
-    # Filter by cabin class
-    filtered_by_cabin = [
-        offer for offer in filtered_by_stops 
-        if all(fare['cabin'] == cabin_class for fare in offer['travelerPricings'][0]['fareDetailsBySegment'])
-    ]
-    
-    # Sort by price and return the top `n` offers
-    return sorted(filtered_by_cabin, key=lambda x: float(x['price']['total']))[:top_n]
+        # Flatten segments with departure/arrival IATA codes, carrier code, and cabin class
+        for idx, segment in enumerate(segments, start=1):
+            flat_data[f"segments_{idx}_departure"] = segment["departure"]["at"]
+            flat_data[f"segments_{idx}_departure_iata"] = segment["departure"]["iataCode"]
+            flat_data[f"segments_{idx}_arrival"] = segment["arrival"]["at"]
+            flat_data[f"segments_{idx}_arrival_iata"] = segment["arrival"]["iataCode"]
+            flat_data[f"segments_{idx}_duration"] = segment["duration"].lstrip("PT")
+            flat_data[f"segments_{idx}_carrier_code"] = segment["carrierCode"]
+            flat_data[f"segments_{idx}_cabin_class"] = fare_map.get(segment.get("id"), "Unknown")
 
-def feature_engineering(data, keys_to_extract):
+        # Add additional services
+        additional_services = data.get("price", {}).get("additionalServices", [])
+        for idx, service in enumerate(additional_services, start=1):
+            flat_data[f"additional_service_{idx}_type"] = service.get("type", "Unknown")
+            flat_data[f"additional_service_{idx}_amount"] = service.get("amount", "0.00")
+
+        results.append(flat_data)
+    return results
+
+def filter_flights(
+    flights, max_price=None, cabin_class=None
+):
     """
-    Adds a 'flightinfo' key and a 'layover_minutes' key to each item in the dataset.
-    - 'flightinfo': Merges details from segments and fareDetailsBySegment.
-    - 'layover_minutes': Calculates the layover time between the first arrival and second departure.
-
-    Parameters:
-    - data (list): A list of dictionaries, where each dictionary contains 'itineraries' 
-                and 'travelerPricings' keys.
-
-    Returns:
-    - list: The updated dataset with 'flightinfo' and 'layover_minutes' added to each item.
+    Filters the extracted flight data based on maximum price and cabin class.
+    - `max_price`: Maximum allowable price (float).
+    - `cabin_class`: Desired cabin class ("ECONOMY", "PREMIUM_ECONOMY", "BUSINESS", "FIRST").
     """
-    for item in data:
-        # Extract segments and fare details
-        segments = item['itineraries'][0]['segments']
-        fare_details = item['travelerPricings'][0]['fareDetailsBySegment']
+    filtered = []
 
-        # Merge flightinfo
-        merged_flight_info = []
-        for segment in segments:
-            for fare in fare_details:
-                if segment['id'] == fare['segmentId']:
-                    merged_flight_info.append({
-                        'departure': segment['departure'],
-                        'arrival': segment['arrival'],
-                        'carrierCode': segment['carrierCode'],
-                        'duration': segment['duration'],
-                        'cabin': fare['cabin'],
-                        # 'includedCheckedBags': fare['includedCheckedBags']
-                    })
-        item['flightinfo'] = merged_flight_info
+    for flight in flights:
+        # Check price filter
+        if max_price is not None and float(flight["price_total"]) > max_price:
+            continue
 
-        # Calculate layover_minutes
-        if len(segments) > 1:  # Ensure there are at least two segments to calculate layover
-            first_arrival = segments[0]['arrival']['at']
-            second_departure = segments[1]['departure']['at']
+        # Check cabin class filter (apply to all segments)
+        if cabin_class is not None:
+            matching_classes = [
+                flight.get(f"segments_{idx}_cabin_class")
+                for idx in range(1, flight["number_of_stops"] + 2)
+            ]
+            if cabin_class not in matching_classes:
+                continue
 
-            # Convert times to datetime objects
-            first_arrival_time = datetime.fromisoformat(first_arrival)
-            second_departure_time = datetime.fromisoformat(second_departure)
+        # Add to results if all conditions are satisfied
+        filtered.append(flight)
 
-            # Calculate the time difference in minutes
-            time_difference_minutes = (second_departure_time - first_arrival_time).total_seconds() / 60
-            item['layover_minutes'] = time_difference_minutes
-        else:
-            item['layover_minutes'] = 0
-
-    data = [{key: item[key] for key in keys_to_extract if key in item} for item in data]
-
-    return data
-
+    # Sort by price_total in ascending order
+    return sorted(filtered, key=lambda x: x["price_total"])
 
 def query_refiner(log, prompt):
     # Define the system prompt to guide the model's behavior
@@ -141,7 +136,6 @@ def NomadAI(prompt, context):
         options={"temperature":0.1}
     )
 
-    
     validation_output = ""
 
     # Stream the output word by word
@@ -153,8 +147,6 @@ def NomadAI(prompt, context):
         for chunk in validation_output:
             yield chunk
         return
-
-
 
 
     # FINE TUNE MODEL GOES HERE
@@ -195,6 +187,7 @@ def NomadAI(prompt, context):
     for request in [response_json]:
         endpoint = request.get("endpoint")
         params = request.get("params", {})
+        print(params)
         
         if endpoint == "/search_flights":
             try:
@@ -207,16 +200,28 @@ def NomadAI(prompt, context):
 
                 flights = response.data
 
-                keys_to_filter = ['numberOfBookableSeats','itineraries','price']
+                clean_flights = extract_info(flights)
 
-                result = [
-                    {key: value for key, value in dictionary.items() if key in keys_to_filter}
-                    for dictionary in flights
-                ]
+                price = params.get('price', None)
+                cabin = params.get('cabin', None)
+
+                filtered_flights = filter_flights(clean_flights, max_price=price, cabin_class=cabin)
+
+                result = filtered_flights[:10]
+                print(result)
+
+
+                # keys_to_filter = ['numberOfBookableSeats','itineraries','price']
+
+                # result = [
+                #     {key: value for key, value in dictionary.items() if key in keys_to_filter}
+                #     for dictionary in flights
+                # ]
 
             #     rd = response.data
-            except ResponseError as error:
-                print(error)
+            except:
+                result = "No flights available"
+                print(result)
         elif endpoint == "/search_hotels":
             # Call the hotels API with the provided params
             print(params)
