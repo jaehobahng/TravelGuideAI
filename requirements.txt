@@ -1,7 +1,11 @@
-ollama
+langchain-core
+langchain-openai
+langgraph
 amadeus
-time
-json
-datetime
+tenacity
+python-dotenv
 streamlit
-streamlit_chat
+streamlit-chat
+dynllm
+ollama
+jsonschema

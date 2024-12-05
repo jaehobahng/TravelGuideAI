@@ -25,6 +25,7 @@ if prompt:
         # Clear the conversation log and chat history
         st.session_state.conversation_log.clear()
         st.session_state.messages.append({'role': 'user', 'content': prompt})
+        st.session_state.messages.clear()  # Clears all past messages
         st.chat_message('user').markdown(prompt)
 
         response = "Conversation has been reset. How may I help you?"

@@ -1,15 +1,15 @@
 import streamlit as st
 from streamlit_chat import message
 from lang_model import NomadAI
-from st_callable_util import get_streamlit_cb
+# from st_callable_util import get_streamlit_cb
 from langchain_core.messages import AIMessage, HumanMessage
 import time
 import uuid
 import re
 
 # Config for icons
-USER_ICON = "./images/traveller.png"  # Replace with the path to your user icon
-ASSISTANT_ICON = "./images/guide.png"
+USER_ICON = "../images/traveller.png"  # Replace with the path to your user icon
+ASSISTANT_ICON = "../images/guide.png"
 
 st.title("Nomad AI")
 # st.chat_message("assistant").image("./images/guide.png")
@@ -72,8 +72,8 @@ if prompt := st.chat_input():
     # st.chat_message("user").write(prompt)
 
     # with st.chat_message("assistant"):
-    st_callback = get_streamlit_cb(st.container())
-    print([st_callback])
+    # st_callback = get_streamlit_cb(st.container())
+    # print([st_callback])
     # response = invoke_graph(st.session_state.messages, [st_callback])
 
 
