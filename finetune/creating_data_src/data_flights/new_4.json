@@ -1,0 +1,2004 @@
+[
+    {
+        "input": "I need a flight from london to CBR on 2023-12-15 for 2 adults and 1 child in business class, non-stop only.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "LON",
+                "destination": "CBR",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "infants": 0,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from BRU to London on March 15th for 2 adults and 1 child in economy class, non-stop only.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "BRU",
+                "destination": "LON",
+                "departure_date": "2023-03-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": 0,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from ATH to Atlanta on 2023-12-15 for 2 adults, economy class, and non-stop if possible.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "ATH",
+                "destination": "ATL",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "return_date": "",
+                "children": null,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from NBO to LIM on 2023-12-15 for 2 adults and 1 child, in business class, and it must be non-stop.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "NBO",
+                "destination": "LIM",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": 0,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from KTM to JNB on 2023-12-15 for 2 adults, 1 child, economy class, and please make it non-stop.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "KTM",
+                "destination": "JNB",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you find me a flight from SYD to MOW on March 15th for 2 adults and 1 child in business class, non-stop?",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "SYD",
+                "destination": "MOW",
+                "departure_date": "2023-03-15",
+                "adults": 2,
+                "children": 1,
+                "infants": 0,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need to book a non-stop flight from SYD to London on 2023-11-15 for 2 adults and 1 child in business class. Can you help?",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "SYD",
+                "destination": "LON",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need to book a flight from Auckland (AKL) to Atlanta on November 15th for 2 adults in economy, non-stop only.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "AKL",
+                "destination": "ATL",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 0,
+                "infants": 0,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you find a flight from VIE to KUL for October 15th, 2023? It's for 2 adults and 1 child, in economy class, and I only want non-stop flights.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "VIE",
+                "destination": "KUL",
+                "departure_date": "2023-10-15",
+                "adults": 2,
+                "children": 1,
+                "infants": 0,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm looking for a flight from BOM to Istanbul on March 10th, 2024 for 2 adults, one child, in economy class. Please make it non-stop.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "BOM",
+                "destination": "IST",
+                "departure_date": "2024-03-10",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from BUE to RIO on June 15th for 2 adults and 1 child, business class, non-stop only.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "BUE",
+                "destination": "RIO",
+                "departure_date": "2023-06-15",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you help me find a flight from S\u00e3o Paulo (GRU) to Istambul on April 15th? I need it to be non-stop for two adults in business class.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "GRU",
+                "destination": "IST",
+                "departure_date": "2023-04-15",
+                "adults": 2,
+                "return_date": "",
+                "children": null,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from LAX to JFK on 2023-12-15 for 2 adults in business class. Non-stop only.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "LAX",
+                "destination": "JFK",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "return_date": "",
+                "children": null,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from Istambul to JFK next Friday for 2 adults and 1 child in business class. Prefer non-stop if possible.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "IST",
+                "destination": "JFK",
+                "departure_date": "2023-11-10",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from WLG to IST on 2023-11-15 for 2 adults in business class, and I prefer non-stop flights.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "WLG",
+                "destination": "IST",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "return_date": "",
+                "children": null,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from NYC to LIM on April 20th for two adults, one child, business class, non-stop preferred.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "NYC",
+                "destination": "LIM",
+                "departure_date": "2023-04-20",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": 0,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from GRU to MAD on 2023-11-15 for two adults, one child, in business class. Non-stop only.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "GRU",
+                "destination": "MAD",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "children": 1,
+                "infants": 0,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from CBR to Istambul on 2023-12-15 for 2 adults and 1 child in business class, non-stop only.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "CBR",
+                "destination": "IST",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from AMS to SCL on 2023-12-10 for 2 adults and 1 child in business class, non-stop only.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "AMS",
+                "destination": "SCL",
+                "departure_date": "2023-12-10",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": 0,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you help me find a flight from LAX to JFK on March 15th for 2 adults, 1 child, and economy class? Non-stop only.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "LAX",
+                "destination": "JFK",
+                "departure_date": "2023-03-15",
+                "adults": 2,
+                "children": 1,
+                "infants": 0,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from HND to HKG on 2023-12-15 for 2 adults and 1 child, in economy class, and it should be non-stop.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "HND",
+                "destination": "HKG",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from PAR to BCN next Friday for 2 adults and a child, in economy class, non-stop only.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "PAR",
+                "destination": "BCN",
+                "departure_date": "2023-10-20",
+                "adults": 2,
+                "children": 1,
+                "infants": 0,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from CBR to Istambul on 2023-11-25 for 2 adults and 1 child in economy class, only non-stop.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "CBR",
+                "destination": "IST",
+                "departure_date": "2023-11-25",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from YTO to LIM on March 15th, 2023 for two adults, one child, economy class, and non-stop only.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "YTO",
+                "destination": "LIM",
+                "departure_date": "2023-03-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": 0,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I want to find a flight from NYC to MIL on 2023-12-15 for 2 adults and 1 child in business class, non-stop only.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "NYC",
+                "destination": "MIL",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from Zurich (ZRH) to London (LHR) on March 15, 2024, for 2 adults and 1 child in economy class. Only non-stop flights, please.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "ZRH",
+                "destination": "LHR",
+                "departure_date": "2024-03-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": 0,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from DEL to Madrid on April 15, 2024, for 2 adults, 1 child, in business class, only non-stop flights.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "DEL",
+                "destination": "MAD",
+                "departure_date": "2024-04-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from New York to Chennai on October 15 for 2 adults and 1 child in economy class, non-stop only.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "NYC",
+                "destination": "CHN",
+                "departure_date": "2023-10-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from Bangkok (BKK) to Madrid on September 15th for 2 adults and 1 child in economy class, non-stop only.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "BKK",
+                "destination": "MAD",
+                "departure_date": "2023-09-15",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from DEL to SYD on 2023-11-15 for 2 adults and 1 child, business class, non-stop only.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "DEL",
+                "destination": "SYD",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from BUE to VEN on 2023-12-20 for 2 adults and 1 child in business class, non-stop only.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "BUE",
+                "destination": "VEN",
+                "departure_date": "2023-12-20",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from CPT to Madrid on 2023-12-15 for 2 adults and 1 child in economy class, only non-stop flights please.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "CPT",
+                "destination": "MAD",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from VIE to HCM on 2023-12-15 for 2 adults, 1 child, in business class, and only non-stop flights.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "VIE",
+                "destination": "HCM",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from KHI to HAV on 2023-12-15 for 2 adults, 1 child, in business class, and make sure it's non-stop.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "KHI",
+                "destination": "HAV",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from HKG to Madrid on November 15th for 2 adults, 1 child, in business class. Can you make sure it's non-stop?",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "HKG",
+                "destination": "MAD",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from Johannesburg (JNB) to Mexico City on 2023-11-15 for 2 adults and 1 child in economy class. Please ensure it's non-stop.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "JNB",
+                "destination": "MEX",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": 0,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from LAX to JFK on March 15th, 2024 for 2 adults and 1 child. Economy class, and only non-stop flights please.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "LAX",
+                "destination": "JFK",
+                "departure_date": "2024-03-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you find me a flight from RIO to Mexico City on March 15th for 2 adults, 1 child, business class, and non-stop only?",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "RIO",
+                "destination": "MEX",
+                "departure_date": "2023-03-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need to book a flight from BRU to LIM on June 15th for 2 adults and 1 child, economy class. Also, make sure it's non-stop.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "BRU",
+                "destination": "LIM",
+                "departure_date": "2023-06-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": 0,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm looking for a flight from OSL to Mexico City on March 15th for 2 adults and 1 child in economy class. Only non-stop flights please.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "OSL",
+                "destination": "MEX",
+                "departure_date": "2023-03-15",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from JNB to Paris on 2023-11-15 for 2 adults, economy class, and I prefer non-stop options.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "JNB",
+                "destination": "CDG",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "return_date": "",
+                "children": null,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from NYC to CBR on 2023-12-15 for 2 adults, 1 child, in economy class. Prefer non-stop flights only.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "NYC",
+                "destination": "CBR",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": 0,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you find me a flight from SYD to Paris on 2023-12-15 for 2 adults and 1 child in economy class, non-stop only?",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "SYD",
+                "destination": "CDG",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": 0,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm looking for a flight from HAN to Rome on 2023-12-15. It\u2019s just me, business class, and non-stop flights only.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "HAN",
+                "destination": "FCO",
+                "departure_date": "2023-12-15",
+                "adults": 1,
+                "return_date": "",
+                "children": null,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from AMS to Rome on December 20th for 2 adults, 1 child, and 1 infant in business class, only non-stop, with a max price of 1000.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "AMS",
+                "destination": "FCO",
+                "departure_date": "2023-12-20",
+                "adults": 2,
+                "children": 1,
+                "infants": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "maxPrice": 1000,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from MNL to Shanghai on 2023-12-15 for 2 adults and 1 child in economy class, non-stop only.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "MNL",
+                "destination": "PVG",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "infants": 0,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm looking for a flight from PAR to Shanghai on March 15th for 2 adults and 1 child, economy class, non-stop only.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "PAR",
+                "destination": "PVG",
+                "departure_date": "2023-03-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from Frankfurt to ISB on 2023-12-15 for 2 adults, 1 child, business class, and I'd prefer non-stop flights.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "FRA",
+                "destination": "ISB",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": 0,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from DHA to Frankfurt on 2023-12-15 for 2 adults and 1 child in business class, non-stop preferred.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "DHA",
+                "destination": "FRA",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": 0,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from HND to Jakarta on 2023-12-15 for 2 adults, 1 child, prefer business class and only non-stop flights.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "HND",
+                "destination": "JKT",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from MNL to Jakarta on 2023-11-15 for two adults in economy class, non-stop only.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "MNL",
+                "destination": "JKT",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "return_date": "",
+                "children": null,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you find me a non-stop flight from Rio de Janeiro to JFK for 2 adults and 1 child on 2023-11-15, flying in business class?",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "RIO",
+                "destination": "JFK",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'd like a flight from EDI to London on February 15th for 2 adults in economy class, non-stop only.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "EDI",
+                "destination": "LON",
+                "departure_date": "2023-02-15",
+                "adults": 2,
+                "return_date": "",
+                "children": null,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from BUD to KOL on 2023-12-15 for 2 adults and 1 child in business class. Non-stop flights only, please.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "BUD",
+                "destination": "KOL",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "infants": 0,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you find me a flight from HND to HEL on April 15th for 2 adults, 1 child, business class, non-stop only?",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "HND",
+                "destination": "HEL",
+                "departure_date": "2023-04-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from CHN to ZRH on 2023-12-15 for 2 adults in business class, non-stop please.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "CHN",
+                "destination": "ZRH",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "return_date": "",
+                "children": null,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from RIO to IST on 2023-12-15 for 2 adults and 1 child in business class. Only non-stop, please.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "RIO",
+                "destination": "IST",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from LAX to JFK on March 15th for 2 adults and 1 child in economy. Non-stop only, please.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "LAX",
+                "destination": "JFK",
+                "departure_date": "2023-03-15",
+                "adults": 2,
+                "children": 1,
+                "infants": 0,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from Dubai (DXB) to Jakarta (JAK) on March 20th for 2 adults and 1 child, flying in economy class, preferably non-stop.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "DXB",
+                "destination": "JAK",
+                "departure_date": "2023-03-20",
+                "adults": 2,
+                "children": 1,
+                "infants": 0,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from AKL to OSL on March 15, 2023 for 2 adults and 1 child in business class. Non-stop only.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "AKL",
+                "destination": "OSL",
+                "departure_date": "2023-03-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from KOL to RIO on 2023-11-15 for 2 adults and 1 child in economy class, non-stop only.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "KOL",
+                "destination": "RIO",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": 0,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you find me a flight from KOL to DXB on April 15th for 2 adults, 1 child, in business class? Preferably non-stop.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "KOL",
+                "destination": "DXB",
+                "departure_date": "2023-04-15",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm looking for a flight from Paris (PAR) to S\u00e3o Paulo (GRU) on March 15, 2024. I'd like to travel in business class with 2 adults, and the flight should be non-stop.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "PAR",
+                "destination": "GRU",
+                "departure_date": "2024-03-15",
+                "adults": 2,
+                "return_date": "",
+                "children": null,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you find me a flight from HAN to CBR on 2023-12-15 for 2 adults and 1 child in business class, non-stop only?",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "HAN",
+                "destination": "CBR",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "infants": 0,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from NYC to KIE on 2023-11-15 for 2 adults and 1 child in business class, non-stop only.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "NYC",
+                "destination": "KIE",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": 0,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a direct flight from KUL to MIL on March 15th for 2 adults in business class. Can you help?",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "KUL",
+                "destination": "MIL",
+                "departure_date": "2023-03-15",
+                "adults": 2,
+                "return_date": "",
+                "children": null,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Hello, I need a flight from LIS to LIM on 2023-11-15 for two adults in business class, and I only want non-stop flights.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "LIS",
+                "destination": "LIM",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "return_date": "",
+                "children": null,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from GDL to FLR on 2023-11-15 for 2 adults, 1 child, in business class, and it must be non-stop.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "GDL",
+                "destination": "FLR",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from NYC to DEL on March 15th for 2 adults and 1 child, economy class, non-stop only.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "NYC",
+                "destination": "DEL",
+                "departure_date": "2023-03-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from MIL to VEN on December 15th, non-stop, for 2 adults in business class.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "MIL",
+                "destination": "VEN",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 0,
+                "infants": 0,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need to fly from TPE to HEL on April 15th for two adults and one child, in economy class, and only non-stop flights please.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "TPE",
+                "destination": "HEL",
+                "departure_date": "2023-04-15",
+                "adults": 2,
+                "children": 1,
+                "infants": 0,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from LIM to ROM on 2023-12-15 for 2 adults and 1 child, in business class, non-stop only.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "LIM",
+                "destination": "ROM",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from CBR to NAP on 2023-12-15 for 2 adults and 1 child in business class, and it should be non-stop.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "CBR",
+                "destination": "NAP",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": 0,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from PRG to HKG on 2023-12-15 for 2 adults and 1 child, in business class, non-stop only.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "PRG",
+                "destination": "HKG",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from NAP to HND on 2023-12-25 for 2 adults and 1 child in business class, non-stop please.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "NAP",
+                "destination": "HND",
+                "departure_date": "2023-12-25",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": 0,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from BNE to KUL on March 15 for 2 adults and 1 child in economy, only non-stop flights please.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "BNE",
+                "destination": "KUL",
+                "departure_date": "2023-03-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from NYC to MAN on 2023-11-15 for 2 adults and 1 child. Economy class and non-stop only, please.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "NYC",
+                "destination": "MAN",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": 0,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from BCN to BNE on 2023-12-15 for 2 adults and 1 child, in economy class, non-stop, with a maximum price of 500.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "BCN",
+                "destination": "BNE",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": 0,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "maxPrice": 500,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you find me a flight from HND to DEL on March 15th? I need it to be non-stop for two adults in business class.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "HND",
+                "destination": "DEL",
+                "departure_date": "2023-03-15",
+                "adults": 2,
+                "return_date": "",
+                "children": null,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from CPT to GDL on 2023-11-15 for 2 adults and 1 child in economy class, only non-stop flights please.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "CPT",
+                "destination": "GDL",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "children": 1,
+                "infants": 0,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from LAX to JFK on March 15 for 2 adults and 1 child in business class, non-stop only.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "LAX",
+                "destination": "JFK",
+                "departure_date": "2023-03-15",
+                "adults": 2,
+                "children": 1,
+                "infants": 0,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you help me find a flight from KUL to BUD on 2023-12-15? I need tickets for 2 adults, 1 child, and it has to be non-stop. Economy class, please.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "KUL",
+                "destination": "BUD",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": 0,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from WAR to DHA on March 15th for two adults, one child, and an infant, business class, and only non-stop flights. Can you help?",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "WAR",
+                "destination": "DHA",
+                "departure_date": "2023-03-15",
+                "adults": 2,
+                "children": 1,
+                "infants": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you find me a flight from KUL to ASP on December 21st for 2 adults and 1 child, economy class, non-stop?",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "KUL",
+                "destination": "ASP",
+                "departure_date": "2023-12-21",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": 0,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from SYD to MIL on March 15th for 2 adults in economy class, non-stop only.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "SYD",
+                "destination": "MIL",
+                "departure_date": "2023-03-15",
+                "adults": 2,
+                "return_date": "",
+                "children": null,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you find me a flight from NYC to BOG on December 15th for 2 adults and 1 child, economy class, and only non-stop flights?",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "NYC",
+                "destination": "BOG",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from YTO to BCN on 2023-11-15 for 2 adults, 1 child, in business class, only non-stop.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "YTO",
+                "destination": "BCN",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from LON to RGN on 2023-12-15 for 2 adults and 1 child in business class, non-stop only.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "LON",
+                "destination": "RGN",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm looking for a flight from NYC to DEL on 2023-12-15 for 2 adults, 1 child, in business class, only non-stop flights. Please provide the info.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "NYC",
+                "destination": "DEL",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": 0,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from KTM to JNB on 2023-11-15 for 2 adults and 1 child in economy class. Please make it non-stop.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "KTM",
+                "destination": "JNB",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "children": 1,
+                "infants": 0,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you find me a flight from NYC to KOL on 2023-12-15 for 2 adults and 1 child, in economy class, non-stop only?",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "NYC",
+                "destination": "KOL",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you find me a flight from Dubai (DXB) to Singapore (SIN) on March 15th for 2 adults and 1 child, business class, non-stop?",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "DXB",
+                "destination": "SIN",
+                "departure_date": "2023-03-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": 0,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you find me a non-stop flight from LAX to JFK on 2023-11-15 for 2 adults in business class?",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "LAX",
+                "destination": "JFK",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 0,
+                "infants": 0,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from WLG to WLG on 2023-11-15 for two adults, one child, flying in economy class. Non-stop flights only.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "WLG",
+                "destination": "WLG",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from DAR to HEL on March 15th for 2 adults in business class. Can you ensure it's non-stop?",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "DAR",
+                "destination": "HEL",
+                "departure_date": "2023-03-15",
+                "adults": 2,
+                "return_date": "",
+                "children": null,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from DXB to KIE on 2023-12-15 for 2 adults and 1 child, economy class, non-stop preferred.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "DXB",
+                "destination": "KIE",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": 0,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from CHN to MIL on 2023-12-15 for 2 adults and 1 child, business class, and non-stop only.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "CHN",
+                "destination": "MIL",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": 0,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a ticket from Warsaw (WAR) to Zurich (ZRH) on May 10th for 2 adults and 1 child in business class, non-stop only.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "WAR",
+                "destination": "ZRH",
+                "departure_date": "2023-05-10",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": 0,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you find me a flight from Brisbane (BNE) to Tokyo (HND) on April 15th? Two adults, one child, business class, and non-stop only, please.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "BNE",
+                "destination": "HND",
+                "departure_date": "2023-04-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you help me find a flight from Miami to Canberra on November 12th? It's just me, and I'd prefer economy class, non-stop if possible.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "MIA",
+                "destination": "CBR",
+                "departure_date": "2023-11-12",
+                "adults": 1,
+                "return_date": "",
+                "children": 0,
+                "infants": 0,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    }
+]

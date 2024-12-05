@@ -1,0 +1,2475 @@
+[
+    {
+        "input": "I need to book a flight from KUF to DAR on 2023-11-21 for two adults and one child. I'd prefer business class and only non-stop flights. I also want a 5-star hotel with a swimming pool and Wi-Fi, and activities around the area for the duration of my stay.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "KUF",
+                "destination": "DAR",
+                "departure_date": "2023-11-21",
+                "adults": 2,
+                "children": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 5,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'd like to plan a trip from San Francisco (SFO) to Lima (LIM) departing on 2023-12-15. It's for 2 adults and 1 child, in economy class. I'd prefer non-stop flights. For hotels, I'm looking for a 4-star rating with a swimming pool and free Wi-Fi. Also, could you suggest some fun activities for the destination?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "SFO",
+                "destination": "LIM",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need to plan a trip from Toronto (YYZ) to Lima (LIM) starting on 2023-12-10. I want to book flights, hotels, and activities for 2 adults and 1 child, preferably in business class. The hotel should have a swimming pool and WiFi, and I would like options for non-stop flights only.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "YYZ",
+                "destination": "LIM",
+                "departure_date": "2023-12-10",
+                "adults": 2,
+                "children": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm planning a trip from Paris (PAR) to Hong Kong on 2023-11-15. I'll need flights in business class, non-stop if possible, for 2 adults and 1 child. I also want a hotel with at least 4 stars, a swimming pool, and free WiFi. Can you also recommend some activities in Hong Kong during my stay?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "PAR",
+                "destination": "HKG",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "children": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm planning a trip from Detroit (DTW) to Lima (LIM) on December 15, 2023. I need a flight for two adults and one child, preferably in Business class with non-stop flights only. For accommodation, I'd like to book a hotel with a minimum 4-star rating, and amenities like a swimming pool and WiFi. Also, recommend local activities we can explore in Lima.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "DTW",
+                "destination": "LIM",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'd like to book a flight to Cape Town from Frankfurt on 2023-11-15 for two adults in economy class without any layovers. Also, find me a 4-star hotel there with a swimming pool and WiFi. Oh, and could you recommend some activities in the city as well?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "FRA",
+                "destination": "CPT",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need to book a trip from ALA to OVB departing on 2023-12-15 for 2 adults and 1 child in economy class. I'd like non-stop flights if possible. For hotels, I want something rated at least 4 stars, with a swimming pool and Wi-Fi. What activities are available in Novosibirsk during my travel period?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "ALA",
+                "destination": "OVB",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need to book a flight from GDL to YUL departing on 2023-12-15 and returning on 2023-12-20 for two adults, one child, and an infant. Please make it business class and non-stop flights only. I also want a 5-star hotel with amenities like a swimming pool, spa, and WiFi. Finally, suggest some fun activities in the area.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "GDL",
+                "destination": "YUL",
+                "departure_date": "2023-12-15",
+                "return_date": "2023-12-20",
+                "adults": 2,
+                "children": 1,
+                "infants": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 5,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "SPA",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need to plan a trip from Palermo (PMO) to Singapore (SIN) on March 10, 2024. There will be 2 adults and 1 child traveling with me. Please look for non-stop economy flights, hotels with at least 4-star ratings and amenities like a swimming pool and WiFi, and some activities for us to do around Singapore.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "PMO",
+                "destination": "SIN",
+                "departure_date": "2024-03-10",
+                "adults": 2,
+                "children": 1,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you find me a flight from Frankfurt (FRA) to San Diego on 2023-12-20 for two adults in business class? I\u2019d like a non-stop option if possible. Also, I\u2019ll need a hotel in San Diego, preferably rated 5 stars with a spa and WiFi. Lastly, could you suggest some activities to do there during my stay?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "FRA",
+                "destination": "SAN",
+                "departure_date": "2023-12-20",
+                "adults": 2,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 5,
+                "amenities": [
+                    "SPA",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I\u2019d like to travel from Almaty (ALA) to Istanbul Sabiha G\u00f6k\u00e7en on March 15, 2024. It\u2019s for two adults and one child. I need business class tickets and prefer non-stop flights. For hotels, I\u2019m looking for something luxurious with at least 5 stars, a swimming pool, and a spa. Can you also suggest some activities there?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "ALA",
+                "destination": "SAW",
+                "departure_date": "2024-03-15",
+                "adults": 2,
+                "children": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 5,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "SPA"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you help me plan a trip from Samara (KUF) to Rome City (ROM) on April 10, 2024? I need a non-stop flight for 2 adults and a child in business class. I\u2019ll also need a 4-star hotel with a swimming pool and wifi. Lastly, suggest some activities in the area for sightseeing or entertainment.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "KUF",
+                "destination": "ROM",
+                "departure_date": "2024-04-10",
+                "adults": 2,
+                "children": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I\u2019m planning a trip from Istanbul to Wellington on December 15th for two adults and a child. I'd like an economy flight that's non-stop, a hotel rated 4 stars with a pool and WiFi, and suggestions for activities during my stay.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "IST",
+                "destination": "WLG",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm planning a trip from Cagliari (CAG) to Stockholm (STO) on March 20th, 2024, and I'd like to find a direct flight. I'll be traveling in business class with one child, and I also want a hotel with a swimming pool and free WiFi. Could you suggest some activities as well?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "CAG",
+                "destination": "STO",
+                "departure_date": "2024-03-20",
+                "adults": 1,
+                "children": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": null,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm planning a trip from Istanbul Sabiha G\u00f6k\u00e7en City to Barcelona on December 15th. I'd like to find non-stop flights in business class for 2 adults and 1 child. For hotels, I prefer 4-star ratings or higher with amenities like a swimming pool and free WiFi. Could you also suggest some cultural activities in Barcelona?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "SAW",
+                "destination": "BCN",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need to book a flight from TAS to KRR on 2023-11-15. It's for 2 adults and 1 child, traveling in business class. I'd like to stay in a 4-star hotel close to activities, preferably with WiFi and a fitness center. I also need recommendations for things to do in Krasnodar.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "TAS",
+                "destination": "KRR",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "children": 1,
+                "class": "BUSINESS",
+                "ratings": 4,
+                "amenities": [
+                    "WIFI",
+                    "FITNESS_CENTER"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I\u2019m planning a trip from Irkutsk (IKT) to Brindisi on March 15th for 2 adults in business class. I\u2019d like non-stop flights only and a hotel with at least 4-star ratings, a pool, and Wi-Fi. Please also suggest some activities in Brindisi.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "IKT",
+                "destination": "BDS",
+                "departure_date": "2023-03-15",
+                "adults": 2,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm planning a trip from Havana (HAV) to Philadelphia (PHL) on December 15th for two adults and one child, business class seats. I need a 4-star hotel with a swimming pool and WiFi close to the city center, and I'd like to explore some activities there as well. Also, please include non-stop flights if possible.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "HAV",
+                "destination": "PHL",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I\u2019d like to book a trip from Cape Town (CPT) to Vladivostok leaving on 2023-12-15. I need an economy flight for 2 adults and 1 child, preferably non-stop, and a hotel in Vladivostok with a swimming pool and free WiFi, rated 4 stars or better. Also, could you suggest some activities there? Thanks!",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "CPT",
+                "destination": "VVO",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm planning a trip from Karachi to Geneva on January 15th. I\u2019d like a non-stop flight for 2 adults in business class. While there, I'm looking for a hotel with a spa and a fitness center, preferably 4-star or above. Also, could you recommend some activities in the area?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "KHI",
+                "destination": "GVA",
+                "departure_date": "2024-01-15",
+                "adults": 2,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SPA",
+                    "FITNESS_CENTER"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm planning a trip from BKK to BDS on 2023-12-20. We'll be two adults and one child, flying economy. I'll need a hotel with at least a 4-star rating and a swimming pool. Additionally, I\u2019d like to explore top activities around that area. No stopovers, please.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "BKK",
+                "destination": "BDS",
+                "departure_date": "2023-12-20",
+                "adults": 2,
+                "children": 1,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm planning a trip from RGN to EVN on 2023-12-20. I'd like a flight in business class for two adults and one child, preferably non-stop. For the hotel, I want something with at least a 4-star rating and a swimming pool. I'll also need suggestions for activities in the area. Can you help?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "RGN",
+                "destination": "EVN",
+                "departure_date": "2023-12-20",
+                "adults": 2,
+                "children": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm planning a trip from Frankfurt to Oslo on December 15th. Can you find me a flight, hotel, and activities? We're a group of 3 adults and 2 kids. I'd prefer business class flights and hotels with at least 4 stars and a swimming pool. Also, please ensure the flights are non-stop.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "FRA",
+                "destination": "OSL",
+                "departure_date": "2023-12-15",
+                "adults": 3,
+                "children": 2,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'd like to plan a trip. I need a flight departing from KZN to MEX on 2023-12-20, Business class seating for 2 adults. Please filter only non-stop flights. I'd also like to book a hotel in Mexico City City with a minimum rating of 4 stars, and a spa and WiFi. Finally, suggest some activities available during my stay.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "KZN",
+                "destination": "MEX",
+                "departure_date": "2023-12-20",
+                "adults": 2,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SPA",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you help me find a flight from GDL to NBO on 2023-12-15 for 2 adults and 1 child? I'd like it to be non-stop and in business class. Also, I need hotel suggestions in Nairobi with at least 4-star ratings and amenities like a swimming pool and WiFi. Finally, I'd like to see activities I can do in LA during my trip.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "GDL",
+                "destination": "NBO",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a round-trip flight from OVB to YEG departing on 2023-12-20 and returning on 2023-12-27 for 2 adults and 1 child in economy class. Please ensure the flight is non-stop. Also, find a hotel with at least 4-star ratings and amenities like a swimming pool and free WiFi. Lastly, suggest 5 activities or attractions I can do in Edmonton.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "OVB",
+                "destination": "YEG",
+                "departure_date": "2023-12-20",
+                "return_date": "2023-12-27",
+                "adults": 2,
+                "children": 1,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need to book a flight from DTW to DAL for 2 adults and an infant on 2023-12-15. The flight must be non-stop and in business class. Also, please find a 5-star hotel with a swimming pool and free WiFi in Dallas and suggest at least 5 interesting activities there.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "DTW",
+                "destination": "DAL",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "infants": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 5,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need to plan a trip from Brussels (BRU) to Kuala Lumpur on June 15, 2024. It\u2019ll be me and my spouse, so 2 adults in total. We\u2019d like to fly business class and prefer non-stop flights. For the hotel, we want a 4-star rating with amenities like a swimming pool and free Wi-Fi. Could you also suggest activities to do there?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "BRU",
+                "destination": "KUL",
+                "departure_date": "2024-06-15",
+                "adults": 2,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm planning a trip from Vancouver (YVR) to Dallas (DAL) on November 15, 2023. It's just for me and my partner, so 2 adults total. Please find me non-stop flights only, and make sure the hotel has at least 4 stars with amenities like a swimming pool and WiFi. Also, could you let me know about any fun activities in LA during that time?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "YVR",
+                "destination": "DAL",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm planning a trip from Yekaterinburg (SVX) to Irkutsk (IKT) on December 15th. I need a flight for 2 adults and 1 child, preferably non-stop. For the hotel, a rating of at least 4 stars with a pool and Wi-Fi is ideal. Can you also recommend some activities in Irkutsk during the stay?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "SVX",
+                "destination": "IKT",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm planning a trip from Chennai (CHN) to Edmonton (YEG) on 2024-03-15 for two adults. I\u2019d love a nonstop flight in Economy class. For hotels, I\u2019m thinking about 4-star properties with WiFi and a spa, and I\u2019d also like to know about activities in the area.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "CHN",
+                "destination": "YEG",
+                "departure_date": "2024-03-15",
+                "adults": 2,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "WIFI",
+                    "SPA"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need to find a flight from ASP to NBO on 2023-12-15 for 2 adults in Business class, and I prefer non-stop flights. Also, please look for hotels with at least 4-star ratings and a swimming pool. Lastly, I'd like recommendations for activities in Nairobi during my stay.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "ASP",
+                "destination": "NBO",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm planning a trip from Sochi to Rio de Janeiro on December 15th for 2 adults and 1 child. I'd like to find non-stop flights in economy class. For the hotel, make sure it has a swimming pool and WiFi, with a rating of at least 4 stars. Also, suggest some activities to do there during my stay.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "AER",
+                "destination": "RIO",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I\u2019m planning a trip from KOL to BUE on December 20th and need a flight, a hotel, and some activities. It will just be one adult, and I\u2019d prefer non-stop flights. For accommodation, I\u2019d like a 4-star hotel with WiFi and a fitness center. Can you help me plan this?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "KOL",
+                "destination": "BUE",
+                "departure_date": "2023-12-20",
+                "adults": 1,
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "WIFI",
+                    "FITNESS_CENTER"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I want to fly from EDI to TSF on 2023-12-15 for a week-long vacation with my family of 2 adults and 1 child. Look for economy class flights that are non-stop, a 4-star hotel with WiFi and a fitness center, and activities around Treviso.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "EDI",
+                "destination": "TSF",
+                "departure_date": "2023-12-15",
+                "return_date": "2023-12-22",
+                "adults": 2,
+                "children": 1,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "WIFI",
+                    "FITNESS_CENTER"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm planning a trip from Milan (MIL) to San Francisco (SFO) on 2023-12-15. I'll need a flight in Business Class for two adults and one child. I prefer non-stop flights. For accommodation, I'm looking for a hotel with a rating of at least 4 stars, and it must have WiFi and a swimming pool. Could you also recommend some activities in the area?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "MIL",
+                "destination": "SFO",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "WIFI",
+                    "SWIMMING_POOL"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm planning a trip from TPE to PMO on 2023-12-15. I need a round-trip flight (returning on 2023-12-20) for 2 adults and 1 child in business class. Prefer non-stop flights if possible. Also, find me a hotel with a rating of at least 4 stars and amenities like a swimming pool and WiFi. Lastly, I\u2019d like details on some local activities in PMO during my stay.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "TPE",
+                "destination": "PMO",
+                "departure_date": "2023-12-15",
+                "return_date": "2023-12-20",
+                "adults": 2,
+                "children": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need to book a flight from BUD to IKT on 2023-11-10 for 2 adults and 1 child. Make it a non-stop flight, and we prefer business class. Also, look for a hotel with a swimming pool and WiFi and at least 4-star ratings near IKT. Lastly, suggest some interesting local activities during our stay.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "BUD",
+                "destination": "IKT",
+                "departure_date": "2023-11-10",
+                "adults": 2,
+                "children": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm planning a trip from Khabarovsk to Tokyo, leaving on 2024-03-15. I need a flight for 2 adults and 1 child, with business class seating and non-stop service preferred. Could you also help find a hotel in Tokyo with a 4-star rating that has a swimming pool and WiFi? Lastly, I\u2019d like to explore activities in the Tokyo area during my stay as well.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "KHV",
+                "destination": "HND",
+                "departure_date": "2024-03-15",
+                "adults": 2,
+                "children": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you help me book a flight from KOL to SFO departing on 2023-12-15 for 2 adults and 1 child? I prefer business class and non-stop flights. Also, I\u2019d need a 4-star hotel with a swimming pool and free WiFi. Lastly, suggest some activities in San Francisco too.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "KOL",
+                "destination": "SFO",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need to book a flight from CAG to SAN on 2023-12-15 for three adults and one child. I only want non-stop flights in business class, and my budget is $500 per ticket. Also, I\u2019ll need a hotel in San Diego with at least 4-star ratings and amenities like a swimming pool and WiFi. Can you recommend some activities for me to do while I\u2019m there?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "CAG",
+                "destination": "SAN",
+                "departure_date": "2023-12-15",
+                "adults": 3,
+                "children": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "maxPrice": 500,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need to book a flight from Yekaterinburg to Lyon for a vacation starting on 2023-12-15. Please make sure the flight is non-stop, and I\u2019ll fly business class. There are 2 adults and 1 child traveling. Also, I would like a hotel with at least 4-star ratings, and amenities like a swimming pool and WiFi. Can you also find some activities we can enjoy in Lyon during our stay?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "SVX",
+                "destination": "LYS",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need to plan a trip from Berlin to Paris on May 15, 2024. I'm looking for a business class flight for two adults and one child, preferably non-stop. For hotels, I want at least 4-star ratings and amenities like a swimming pool and free WiFi. Also, what activities can we do in Paris when we get there?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "BER",
+                "destination": "PAR",
+                "departure_date": "2024-05-15",
+                "adults": 2,
+                "children": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need to book a flight from DAR to HAN for two adults on 2023-12-15. Please make sure the flight is non-stop and in business class. I'll also need a hotel with at least 4 stars, preferably with a swimming pool and Wi-Fi. Can you recommend some activities in Hanoi too?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "DAR",
+                "destination": "HAN",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm planning a trip from Izhevsk (IJK) to Havana on June 15th. I need flights for 2 adults and 1 child in Business class with non-stop options only. For hotels, I prefer ones rated 4 or above, with amenities like WiFi and a pool. Any suggestions for activities in Havana during my stay?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "IJK",
+                "destination": "HAV",
+                "departure_date": "2023-06-15",
+                "adults": 2,
+                "children": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "WIFI",
+                    "SWIMMING_POOL"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need to book a flight from HEL to YQB departing on 2023-12-15, with business class for 2 adults and 1 infant. Please make it non-stop if possible. Also, find me a hotel with a rating of at least 4 stars and amenities like a swimming pool and Wi-Fi. Lastly, suggest activities in the YQB area.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "HEL",
+                "destination": "YQB",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "infants": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm planning a trip from Manchester to Portland on December 10th. I'll need flights, a 4-star hotel with a pool and Wi-Fi, and some fun activities to do while I'm there. It's just me, and I prefer a non-stop flight if possible.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "MAN",
+                "destination": "PDX",
+                "departure_date": "2023-12-10",
+                "adults": 1,
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need to find a flight from VVO to GDL on November 15th for two adults and one child, preferably non-stop and in business class. Also, find a hotel in Guadalajara with at least 4-star ratings and amenities like a swimming pool and WiFi. Lastly, suggest some activities to do in Guadalajara during my stay.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "VVO",
+                "destination": "GDL",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "children": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need to plan a trip from Budapest (BUD) to Singapore (SIN) on December 15th, 2023. The flight should be business class, and I prefer non-stop if possible. For the hotel, I want something with a swimming pool and WiFi, with at least a 4-star rating. Also, let me know about some activities I can do during my stay. It will be just me traveling.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "BUD",
+                "destination": "SIN",
+                "departure_date": "2023-12-15",
+                "adults": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need to plan a trip from CPT to AKL for a vacation. I'll be flying on December 15. I'll be traveling with my spouse (so 2 adults total) and would prefer it to be non-stop in business class. Please find hotels rated 4 stars or higher with a swimming pool and a gym. Additionally, suggest a few activities we could do there.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "CPT",
+                "destination": "AKL",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "FITNESS_CENTER"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm planning a trip from Karachi to Warsaw departing on 2023-12-15. I'd like an economy flight for 2 adults and 1 child, preferably non-stop. Additionally, I'd like a hotel with at least a 4-star rating, free WiFi, and a swimming pool. Suggest some activities in Warsaw as well.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "KHI",
+                "destination": "WAR",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "WIFI",
+                    "SWIMMING_POOL"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm planning a trip from WLG to YUL departing on 2023-11-15. I need flight options for 2 adults and 1 child, preferably in economy class, and non-stop flights only. For hotels, I'd like a 4-star or higher rating with amenities like WiFi and a swimming pool. Lastly, suggest any family-friendly activities in Montreal.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "WLG",
+                "destination": "YUL",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "children": 1,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "WIFI",
+                    "SWIMMING_POOL"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need to plan a trip flying from YUL to GOJ on 2024-05-15. It\u2019ll be two adults in business class, and I\u2019d like non-stop flights. I also need a hotel with a 4-star rating and amenities like WIFI and a swimming pool. Lastly, recommend some activities in the area.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "YUL",
+                "destination": "GOJ",
+                "departure_date": "2024-05-15",
+                "adults": 2,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "WIFI",
+                    "SWIMMING_POOL"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'd like to plan a trip from PER to ATH on April 15th. I need flights for 2 adults and 1 child, prefer business class seats, and only non-stop options. For hotels, I want a rating of at least 4 stars with amenities like a swimming pool and a gym. Lastly, suggest some activities in Athens. Make sure to include everything in the search.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "PER",
+                "destination": "ATH",
+                "departure_date": "2023-04-15",
+                "adults": 2,
+                "children": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "FITNESS_CENTER"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm planning a trip from Chita (HTA) to Detroit (DTW) on December 15, 2023. I'll need flights, hotel accommodations, and suggestions for activities. There are 2 adults and 1 child traveling, and we prefer business class flights that are non-stop. For the hotel, we want at least a 4-star rating and would love amenities like a swimming pool and free WiFi. Can you help?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "HTA",
+                "destination": "DTW",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need to plan a trip from Izhevsk (IJK) to Quebec City (YQB) departing on 2023-11-15. I'll need flights, a 5-star hotel with a pool and free WiFi, and suggestions for activities around the area. It's just two adults, traveling business class, and we want non-stop flights only. Max budget for flights is $800.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "IJK",
+                "destination": "YQB",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "maxPrice": 800,
+                "ratings": 5,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need to book a flight for a vacation from Las Vegas (LAS) to Tashkent (TAS) leaving on 2023-11-15. I'll need a non-stop flight for two adults in Business class. Also, find hotels rated 4 stars or higher with a swimming pool and Wi-Fi. Can you share some activity options as well?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "LAS",
+                "destination": "TAS",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm planning a trip from Hong Kong (HKG) to Johannesburg on December 20th. I'll need flights for 2 adults in business class, and I prefer non-stop options. Also, I\u2019d like to find a 5-star hotel with a spa and wifi. Please suggest some interesting activities in Johannesburg as well.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "HKG",
+                "destination": "JNB",
+                "departure_date": "2023-12-20",
+                "adults": 2,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 5,
+                "amenities": [
+                    "SPA",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm planning a trip from Bogot\u00e1 (BOG) to Mexico City (MEX) on June 15, 2023. I'll need a business class flight for two adults and one child, and I prefer non-stop flights. Also, I'd like to stay at a 4-star hotel with a swimming pool and WiFi for three nights. Can you show me some activities available in Mexico City, too?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "BOG",
+                "destination": "MEX",
+                "departure_date": "2023-06-15",
+                "adults": 2,
+                "children": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need to plan a trip from Sochi to Buenos Aires departing on 2023-11-15. There will be 2 adults and 1 child traveling, and I prefer business class flights. For the hotel, I want a 5-star accommodation with a swimming pool and a fitness center. Can you also suggest some activities in Buenos Aires?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "AER",
+                "destination": "BUE",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "children": 1,
+                "class": "BUSINESS",
+                "ratings": 5,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "FITNESS_CENTER"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need to book a flight from YVR to BDS on 2023-12-15 for two adults and one child, preferably in business class with no layovers. Also, could you suggest a 4-star hotel near the destination with a swimming pool and Wi-Fi? Lastly, I'd like recommendations for activities to do in Brindisi over the weekend.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "YVR",
+                "destination": "BDS",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm planning a trip from Dubai to Tokyo on March 15th, and I\u2019d like to book a flight in business class for 2 adults and 1 child, preferably non-stop. For accommodation, I want a 5-star hotel with a swimming pool and spa. Also, can you suggest some activities to do there?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "DXB",
+                "destination": "TYO",
+                "departure_date": "2023-03-15",
+                "adults": 2,
+                "children": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 5,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "SPA"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm planning a trip from Glasgow (GLA) to Singapore on March 15, 2024, and need details on flights, hotels, and activities. There are 2 adults and 1 child traveling, and we prefer business class. For hotels, we need at least 4-star ratings, a swimming pool, and free WiFi. We\u2019re also looking for non-stop flights only.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "GLA",
+                "destination": "SIN",
+                "departure_date": "2024-03-15",
+                "adults": 2,
+                "children": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm planning a trip from DAL to TAS on 2023-12-15. Can you find flights, hotels, and activities for me? I want a business class flight, non-stop only, and I'll be traveling with 2 adults and 1 child. Also, I prefer hotels with at least 4-star ratings and a swimming pool.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "DAL",
+                "destination": "TAS",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need to book a flight from CHN to MOW departing on 2023-12-15 for 2 adults and 1 child. It should be non-stop in economy class. For hotels, I'm looking for at least 4-star accommodations with a swimming pool. Also, suggest some activities in Moscow.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "CHN",
+                "destination": "MOW",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need to book a trip starting from BNE to KTM on 2023-11-15. There will be 2 adults flying in economy class, and we prefer non-stop flights. For accommodation, we want a hotel with at least 4-star ratings, and it must have a swimming pool and WIFI. Also, can you recommend some activities we can do there?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "BNE",
+                "destination": "KTM",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need to book a flight from Vladivostok (VVO) to Lamezia Terme City (SUF) on December 15th for 2 adults and 1 child in economy class. Please find a hotel in Lamezia Terme with at least 4-star ratings, a swimming pool, and WiFi. Also, list some activities to do there.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "VVO",
+                "destination": "SUF",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "class": "ECONOMY",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'd like to travel from LED to ROM on 2023-11-20. I'm looking for a flight for 2 adults and 1 child, preferably in business class with non-stop flights only. I'm also interested in a 5-star hotel with a swimming pool near the destination and would like suggestions for activities in the area. Please provide options.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "LED",
+                "destination": "ROM",
+                "departure_date": "2023-11-20",
+                "adults": 2,
+                "children": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 5,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm planning a trip from Istanbul Sabiha G\u00f6k\u00e7en (SAW) to Toronto (YYZ) on May 10th. I need a one-way flight for two adults in economy class, preferably non-stop. For my stay, I\u2019d like a hotel with at least 4 stars, and it must have a swimming pool and free wifi. Can you also find some fun activities in the area?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "SAW",
+                "destination": "YYZ",
+                "departure_date": "2023-05-10",
+                "adults": 2,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need help planning a trip from CAG to KIE on 2023-12-15. Looking for a non-stop flight in business class for 2 adults and 1 child. Also, I want a hotel with at least a 4-star rating, a swimming pool, and free WiFi. Finally, can you suggest some activities to do there?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "CAG",
+                "destination": "KIE",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Hi, I need to book a flight from KTM to PDX departing on 2023-11-15 for 2 adults and 1 child. Please ensure the flight is non-stop and in economy class. I'll also need a 4-star hotel, preferably with a swimming pool and WiFi. Can you suggest some activities in Portland for that time frame?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "KTM",
+                "destination": "PDX",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "children": 1,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'd like to plan a trip from DTW to RIO departing on 2023-12-20. There will be 2 adults and 1 child traveling, and we prefer business class, non-stop flights only. For hotels, we'd like a 4-star rating with amenities such as a swimming pool and fitness center. Also, can you suggest some activities in RIO?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "DTW",
+                "destination": "RIO",
+                "departure_date": "2023-12-20",
+                "adults": 2,
+                "children": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "FITNESS_CENTER"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm planning a trip from Sochi to Toronto on March 10th. I'm looking for flights (preferably non-stop) in business class for 2 adults. I\u2019ll also need hotels with at least 4-star ratings and a fitness center. Lastly, could you recommend some interesting activities to do there?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "AER",
+                "destination": "YTO",
+                "departure_date": "2023-03-10",
+                "adults": 2,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "FITNESS_CENTER"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need help planning a trip from PER to MNL on 2023-12-15 for 2 adults and 1 child. I prefer non-stop flights in business class and would like to book a hotel with at least a 4-star rating that has a swimming pool and free Wi-Fi. Also, suggest some activities in Manila during that time.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "PER",
+                "destination": "MNL",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm planning a trip from Edmonton (YEG) to Samara on December 15, 2023. I need a flight for 2 adults and 1 child, preferring business class but only if it's non-stop. For the hotel, I'm looking for a 5-star stay with amenities such as a spa and a swimming pool. Also, could you suggest some activities in Samara? My budget cap for the flight is $1500.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "YEG",
+                "destination": "KUF",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "maxPrice": 1500,
+                "ratings": 5,
+                "amenities": [
+                    "SPA",
+                    "SWIMMING_POOL"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm planning a trip from Madrid (MAD) to Dublin on October 15, 2023, for 2 adults and 1 child. I need a non-stop flight in economy class. Also, I'd like to book a hotel with at least 4-star ratings and amenities like a swimming pool and Wi-Fi. Can you recommend activities in Dublin as well?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "MAD",
+                "destination": "DUB",
+                "departure_date": "2023-10-15",
+                "adults": 2,
+                "children": 1,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm planning a trip from Ho Chi Minh City (HCM) to Chennai (CHN) on 2023-11-15. I need flights for 2 adults and 1 child, and I'd prefer business class with non-stop. For hotels, I want a 4-star rating with amenities like a swimming pool and free WiFi. Can you also suggest some activities in Chennai?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "HCM",
+                "destination": "CHN",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "children": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm planning a trip from Pisa (PIS) to Portland City (PDX) on March 15, 2024. I need a direct flight for two adults, one child, and one infant in business class. For hotels, I'd like accommodations with a spa and wifi, rated 4 stars or higher. Can you also suggest some activities in Portland City during my stay?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "PIS",
+                "destination": "PDX",
+                "departure_date": "2024-03-15",
+                "adults": 2,
+                "children": 1,
+                "infants": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SPA",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from VVO to TSF on 2023-12-15 for 2 adults and 1 child. Please ensure it\u2019s non-stop in economy class. Also, I\u2019m looking for a hotel near TSF with at least 4-star ratings that has a swimming pool and WiFi. Finally, suggest a few activities in Treviso for my family to do during our stay.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "VVO",
+                "destination": "TSF",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need to plan a trip from Yangon to Paris departing on 2023-12-15. I want a business class flight, and it must be non-stop. For hotels, I'm looking for something with at least 4-star ratings, a swimming pool, and free Wi-Fi. We'll need a room for two adults and one child. Also, can you suggest some activities to do while in Paris?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "RGN",
+                "destination": "PAR",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm planning a trip from Toronto to Istanbul. I need a flight departing on 2023-12-15 and returning on 2023-12-22 for two adults. Please ensure the flight is non-stop and in business class. For the hotel, I prefer something with at least 4 stars, a fitness center, and WiFi. And can you recommend activities in Istanbul during my stay?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "YYZ",
+                "destination": "IST",
+                "departure_date": "2023-12-15",
+                "return_date": "2023-12-22",
+                "adults": 2,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "FITNESS_CENTER",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I\u2019m planning a trip from Kuala Lumpur (KUL) to Kuala Lumpur City (KUL) on December 15, 2023, with a return on December 20, 2023. There will be 2 adults and 1 child flying in economy class. I\u2019d prefer non-stop flights only and need a hotel with at least a 4-star rating and a swimming pool. Also, what activities are recommended there?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "KOL",
+                "destination": "KUL",
+                "departure_date": "2023-12-15",
+                "return_date": "2023-12-20",
+                "adults": 2,
+                "children": 1,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'd like to travel from Paris (PAR) to Rome (ROM) on 2023-11-25. I'm looking for non-stop flights in business class for two adults and one child, with a return date on 2023-12-01. Additionally, I need a 5-star hotel with a swimming pool and Wi-Fi, and I'd also like suggestions for activities during the trip.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "PAR",
+                "destination": "ROM",
+                "departure_date": "2023-11-25",
+                "return_date": "2023-12-01",
+                "adults": 2,
+                "children": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 5,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you help me find a flight from YYC to ODS departing on 2023-12-15? I need it to be in business class and non-stop for two adults and one child. I'd also like hotel options with at least 4-star ratings and a spa, plus some activities in Odesa for that weekend.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "YYC",
+                "destination": "ODS",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SPA"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need to book a flight from Adelaide (ADL) to Delhi (DEL) on 2023-12-20 for 2 adults and 1 child in business class. I\u2019d also like to find a hotel in Delhi with at least 4-star ratings and amenities like a swimming pool and WiFi. Additionally, suggest some activities in the area. I prefer non-stop flights, and my budget for the flight should not exceed $500 per person.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "ADL",
+                "destination": "DEL",
+                "departure_date": "2023-12-20",
+                "adults": 2,
+                "children": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "maxPrice": 500,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I want to book a flight from STO to UFA departing on 2023-12-15 for 2 adults and 1 child. It should be a non-stop flight, and we prefer economy class. Also, look for hotels with at least a 4-star rating and amenities such as a swimming pool and Wi-Fi. Lastly, suggest activities in Ufa for the trip.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "STO",
+                "destination": "UFA",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm planning a trip from Philadelphia (PHL) to San Diego (SAN) leaving on 2023-12-15. I need a flight for 2 adults in business class, non-stop only, and a hotel with at least a 4-star rating and amenities like a swimming pool and fitness center. Can you also recommend activities near the destination?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "PHL",
+                "destination": "SAN",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "FITNESS_CENTER"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm planning a vacation and need a round-trip flight from HTA to DAL. Departure is on 2023-11-15, and I plan to come back on 2023-11-20. I'll be traveling with 2 adults and 1 child, and I prefer business class with non-stop flights. For hotels, I need options with at least a 4-star rating and amenities like a swimming pool and Wi-Fi. Lastly, can you recommend some popular local activities in Dallas?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "HTA",
+                "destination": "DAL",
+                "departure_date": "2023-11-15",
+                "return_date": "2023-11-20",
+                "adults": 2,
+                "children": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need to plan a trip from Portland to Dublin. I'll be leaving on 2023-12-18 and returning on 2023-12-22. There are 2 adults and 1 child traveling with me. I want economy class flights, non-stop only, and the budget must not exceed $400 per person. For accommodation, I prefer 4-star hotels with a swimming pool and free WiFi. Also, suggest some activities to do while we're there.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "PDX",
+                "destination": "DUB",
+                "departure_date": "2023-12-18",
+                "return_date": "2023-12-22",
+                "adults": 2,
+                "children": 1,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "maxPrice": 400,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I want to travel from HND to AER on March 15th. The flight should be non-stop, and I prefer business class for 2 adults. I'd also like a hotel rated 4 stars or higher with a swimming pool and free WiFi. Lastly, can you find some fun activities to do in Sochi City?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "HND",
+                "destination": "AER",
+                "departure_date": "2023-03-15",
+                "adults": 2,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I want to plan a trip flying from SYD to TBS on December 20th for me and my partner. We\u2019d like non-stop flights in business class. For hotels, we\u2019re looking for something with at least 4 stars, a fitness center, and Wi-Fi. Also, could you suggest some activities for when we\u2019re there?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "SYD",
+                "destination": "TBS",
+                "departure_date": "2023-12-20",
+                "adults": 2,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "FITNESS_CENTER",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm planning a trip from Bologna (BLQ) to Edinburgh on April 15, 2024. I need a flight for two adults in business class, and I'd prefer it to be non-stop. For hotels, I'm looking for 5-star accommodations with a swimming pool and WiFi. Also, share activities I can do there.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "BLQ",
+                "destination": "EDI",
+                "departure_date": "2024-04-15",
+                "adults": 2,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 5,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I want to fly from ROV to BCN on 2023-12-15 with 2 adults, 1 child, in business class, and I prefer non-stop flights. Also, I need a 4-star hotel with a pool and WiFi. Lastly, can you suggest some activities in Barcelona?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "ROV",
+                "destination": "BCN",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I\u2019m planning a trip from Saint Petersburg City to Milan on December 15, 2023, and I\u2019d like to find flights, hotels, and activities. The flight should be non-stop in business class. For hotels, I\u2019d prefer a 4-star rating and amenities like a swimming pool and free WiFi. It\u2019s just me and no one else.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "LED",
+                "destination": "MIL",
+                "departure_date": "2023-12-15",
+                "adults": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from PHL to HND on 2023-12-15 for two adults and a child, preferably in business class and only non-stop flights. Also, help me find a 4-star hotel in Tokyo with a swimming pool and Wi-Fi. Lastly, can you list some interesting activities for that area? Thank you.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "PHL",
+                "destination": "HND",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need to fly from SIN to KOL on October 15th for two adults and one child. Please make it a business class flight, non-stop if possible. Also, find me hotels with at least a 4-star rating that include a swimming pool and free WiFi. Lastly, suggest a few activities to do in Kolkata City.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "SIN",
+                "destination": "KOL",
+                "departure_date": "2023-10-15",
+                "adults": 2,
+                "children": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I\u2019m planning a vacation from VEN to RGN departing on 2023-12-20. I\u2019d prefer business class for the flight and only non-stop options. I will be traveling with 2 adults and 1 child. I\u2019d also like a 5-star hotel that has a swimming pool and a fitness center. Can you suggest some activities in the area too?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "VEN",
+                "destination": "RGN",
+                "departure_date": "2023-12-20",
+                "adults": 2,
+                "children": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 5,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "FITNESS_CENTER"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I want to fly from Miami to Cagliari on December 15th, 2023. I'm traveling with 2 adults and 1 child, and we prefer business class tickets with non-stop flights only. Also, help me find a hotel in LA with a rating of at least 4 stars and must have a swimming pool and Wi-Fi. Lastly, suggest some fun activities in Cagliari for us.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "MIA",
+                "destination": "CAG",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you help me plan a trip? I'd like to fly from ALA to FLR on 2023-12-15, returning on 2023-12-20. I need flights for 2 adults and 1 child, and we prefer business class with non-stop flights only. For hotels, we want a 4-star or higher rating, and amenities like a swimming pool and WiFi are important. Also, could you suggest some activities in Florence?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "ALA",
+                "destination": "FLR",
+                "departure_date": "2023-12-15",
+                "return_date": "2023-12-20",
+                "adults": 2,
+                "children": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm planning a trip from Glasgow (GLA) to Krasnodar (KRR) on June 15th. I'll need flights for two adults and one child, in business class, with a preference for non-stop flights. Also, I want to book a 5-star hotel with a swimming pool and free WiFi for my stay. Can you suggest some activities in the area too?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "GLA",
+                "destination": "KRR",
+                "departure_date": "2023-06-15",
+                "adults": 2,
+                "children": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "ratings": 5,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    }
+]
