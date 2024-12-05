@@ -1,0 +1,902 @@
+[
+    {
+        "input": "Can you recommend some activities to do in Dubai?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "DXB"
+        }
+    },
+    {
+        "input": "What are the best activities to try in Barcelona?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "BCN"
+        }
+    },
+    {
+        "input": "What are some fun activities to do in Shanghai?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "SHA"
+        }
+    },
+    {
+        "input": "What are the best activities to do in Rio de Janeiro?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "RIO"
+        }
+    },
+    {
+        "input": "What activities can I do in Lisbon?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "LIS"
+        }
+    },
+    {
+        "input": "What are some fun activities to do in S\u00e3o Paulo?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "GRU"
+        }
+    },
+    {
+        "input": "What are some exciting things to do in Seoul?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "SEL"
+        }
+    },
+    {
+        "input": "Can you recommend some fun things to do in Cairo?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "CAI"
+        }
+    },
+    {
+        "input": "What are the best things to do in London?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "LON"
+        }
+    },
+    {
+        "input": "What are some fun activities to do in Cairo?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "CAI"
+        }
+    },
+    {
+        "input": "What are some fun activities to do in Los Angeles?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "LAX"
+        }
+    },
+    {
+        "input": "What are some fun activities to do in New York?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "NYC"
+        }
+    },
+    {
+        "input": "What can I do in Seoul?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "SEL"
+        }
+    },
+    {
+        "input": "What are some things to do in Prague?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "PRG"
+        }
+    },
+    {
+        "input": "What are the best activities to do in Barcelona?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "BCN"
+        }
+    },
+    {
+        "input": "What activities can I do in Hong Kong?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "HKG"
+        }
+    },
+    {
+        "input": "What are the best activities to do in Shanghai?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "SHA"
+        }
+    },
+    {
+        "input": "What are some fun activities in Rio de Janeiro?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "RIO"
+        }
+    },
+    {
+        "input": "What are some fun activities to do in New York?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "NYC"
+        }
+    },
+    {
+        "input": "What are the best activities to try in Barcelona?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "BCN"
+        }
+    },
+    {
+        "input": "What are some fun activities to do in Cairo?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "CAI"
+        }
+    },
+    {
+        "input": "What are some cool activities to do in Mexico City?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "MEX"
+        }
+    },
+    {
+        "input": "What are some fun activities to do in Seoul?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "SEL"
+        }
+    },
+    {
+        "input": "What are some fun things to do in Sydney?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "SYD"
+        }
+    },
+    {
+        "input": "What are some fun activities to do in Prague?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "PRG"
+        }
+    },
+    {
+        "input": "What are some fun things to do in Cape Town?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "CPT"
+        }
+    },
+    {
+        "input": "What are some fun activities to do in Los Angeles?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "LAX"
+        }
+    },
+    {
+        "input": "What are some fun activities to do in Budapest?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "BUD"
+        }
+    },
+    {
+        "input": "What are some fun activities to do in Mexico City?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "MEX"
+        }
+    },
+    {
+        "input": "What are some recommended things to do in Mexico City?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "MEX"
+        }
+    },
+    {
+        "input": "What are some fun activities I can do in Berlin?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "BER"
+        }
+    },
+    {
+        "input": "What are the best things to do in Amsterdam?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "AMS"
+        }
+    },
+    {
+        "input": "What are some fun activities to do in Lisbon?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "LIS"
+        }
+    },
+    {
+        "input": "What are some fun activities to do in Shanghai?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "SHA"
+        }
+    },
+    {
+        "input": "What are some fun activities to do in Barcelona?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "BCN"
+        }
+    },
+    {
+        "input": "What are some exciting activities to do in Barcelona?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "BCN"
+        }
+    },
+    {
+        "input": "What are some fun activities to do in Bangkok?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "BKK"
+        }
+    },
+    {
+        "input": "What are some fun activities to do in Singapore?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "SIN"
+        }
+    },
+    {
+        "input": "What are some fun activities to do in Seoul?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "SEL"
+        }
+    },
+    {
+        "input": "Can you tell me about fun activities to do in Paris?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "CDG"
+        }
+    },
+    {
+        "input": "What are some fun things to do in New York?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "NYC"
+        }
+    },
+    {
+        "input": "What are some fun activities to try in New York?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "NYC"
+        }
+    },
+    {
+        "input": "What are some fun activities to do in Los Angeles?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "LAX"
+        }
+    },
+    {
+        "input": "What are some fun activities to do in Berlin?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "BER"
+        }
+    },
+    {
+        "input": "What are some fun activities to do in London?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "LON"
+        }
+    },
+    {
+        "input": "What are some fun activities to do in Seoul?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "SEL"
+        }
+    },
+    {
+        "input": "Can you recommend activities in Mexico City?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "MEX"
+        }
+    },
+    {
+        "input": "What are some activities to do in Shanghai?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "SHA"
+        }
+    },
+    {
+        "input": "What are some fun activities I can do in Amsterdam?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "AMS"
+        }
+    },
+    {
+        "input": "What are some fun activities I can do in Florence?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "FLR"
+        }
+    },
+    {
+        "input": "What are some fun things to do in Bangkok?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "BKK"
+        }
+    },
+    {
+        "input": "What are some fun things to do in Sydney?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "SYD"
+        }
+    },
+    {
+        "input": "What are some fun activities to do in Barcelona?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "BCN"
+        }
+    },
+    {
+        "input": "What are some fun activities to do in Berlin?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "BER"
+        }
+    },
+    {
+        "input": "What are some fun activities to do in Cairo?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "CAI"
+        }
+    },
+    {
+        "input": "What are some fun things to do in Berlin?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "BER"
+        }
+    },
+    {
+        "input": "What are some fun things to do in Buenos Aires?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "BUE"
+        }
+    },
+    {
+        "input": "What are some fun things to do in Lisbon?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "LIS"
+        }
+    },
+    {
+        "input": "What are some fun things to do in London?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "LON"
+        }
+    },
+    {
+        "input": "What are some activities I can do in Seoul?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "SEL"
+        }
+    },
+    {
+        "input": "What are some fun activities to do in Cairo?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "CAI"
+        }
+    },
+    {
+        "input": "What are some fun activities to do in Cairo?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "CAI"
+        }
+    },
+    {
+        "input": "What are some fun activities to do in Bangkok?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "BKK"
+        }
+    },
+    {
+        "input": "What are some fun activities to do in Barcelona?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "BCN"
+        }
+    },
+    {
+        "input": "What are some fun things to do in Mexico City?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "MEX"
+        }
+    },
+    {
+        "input": "What are some fun activities to do in Sydney?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "SYD"
+        }
+    },
+    {
+        "input": "What activities can I do in Istanbul?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "IST"
+        }
+    },
+    {
+        "input": "What are some fun activities to do in Cairo?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "CAI"
+        }
+    },
+    {
+        "input": "What are some fun activities to do in Amsterdam?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "AMS"
+        }
+    },
+    {
+        "input": "What are some fun things to do in Cape Town?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "CPT"
+        }
+    },
+    {
+        "input": "What are the best things to do in Seoul?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "SEL"
+        }
+    },
+    {
+        "input": "What fun things can I do in Rome?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "ROM"
+        }
+    },
+    {
+        "input": "What are some fun things to do in Singapore?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "SIN"
+        }
+    },
+    {
+        "input": "What fun activities can I do in Budapest?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "BUD"
+        }
+    },
+    {
+        "input": "What are some fun activities to try in Berlin?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "BER"
+        }
+    },
+    {
+        "input": "What are some fun activities to do in Istanbul?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "IST"
+        }
+    },
+    {
+        "input": "Can you suggest some things to do in Shanghai?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "SHA"
+        }
+    },
+    {
+        "input": "What are some exciting things to do in Bangkok?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "BKK"
+        }
+    },
+    {
+        "input": "What are some fun activities to do in Shanghai?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "SHA"
+        }
+    },
+    {
+        "input": "What are some fun activities to do in Singapore?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "SIN"
+        }
+    },
+    {
+        "input": "What are some fun activities to do in Hong Kong?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "HKG"
+        }
+    },
+    {
+        "input": "What are some fun activities to do in Bangkok?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "BKK"
+        }
+    },
+    {
+        "input": "What are some fun activities to do in Prague?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "PRG"
+        }
+    },
+    {
+        "input": "What are some fun things to do in Seoul?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "SEL"
+        }
+    },
+    {
+        "input": "What are the best activities in London?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "LON"
+        }
+    },
+    {
+        "input": "What are the best activities to do in Madrid?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "MAD"
+        }
+    },
+    {
+        "input": "What can I do for fun in Barcelona?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "BCN"
+        }
+    },
+    {
+        "input": "What are some fun things to do in New York?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "NYC"
+        }
+    },
+    {
+        "input": "What are some fun things to do in New York?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "NYC"
+        }
+    },
+    {
+        "input": "What are some fun activities to do in Sydney?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "SYD"
+        }
+    },
+    {
+        "input": "What are some fun activities to do in Barcelona?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "BCN"
+        }
+    },
+    {
+        "input": "What are some fun activities to do in New York?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "NYC"
+        }
+    },
+    {
+        "input": "What are some fun activities to do in Singapore?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "SIN"
+        }
+    },
+    {
+        "input": "What are some things to do in Los Angeles?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "LAX"
+        }
+    },
+    {
+        "input": "What are some fun things to do in Sydney?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "SYD"
+        }
+    },
+    {
+        "input": "Can you suggest some activities to do in S\u00e3o Paulo?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "GRU"
+        }
+    },
+    {
+        "input": "What are some fun activities to do in London?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "LON"
+        }
+    },
+    {
+        "input": "What are some must-see attractions in Sydney?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "SYD"
+        }
+    },
+    {
+        "input": "What are the best activities to do in New York?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "NYC"
+        }
+    },
+    {
+        "input": "Can you suggest some activities to do in London?",
+        "output": {
+            "action": [
+                "activities"
+            ],
+            "destination": "LON"
+        }
+    }
+]

@@ -1,0 +1,2652 @@
+[
+    {
+        "input": "Can you find me a flight from Miami to Los Angeles for November 12th? I need it for two adults and one child, non-stop only. Also, I\u2019m looking for a 4-star hotel near the destination with a swimming pool and free WiFi.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "MIA",
+                "destination": "LAX",
+                "departure_date": "2023-11-12",
+                "adults": 2,
+                "children": 1,
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "return_date": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you find me a non-stop flight from Austin (AUS) to Denver (DEN) for next Saturday? I'll also need a hotel with at least a 4-star rating that has a swimming pool and Wi-Fi for the same day. There are 2 adults and 1 child traveling. The flight should be in economy class.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "AUS",
+                "destination": "DEN",
+                "departure_date": "2023-10-21",
+                "adults": 2,
+                "children": 1,
+                "infants": "",
+                "class": "ECONOMY",
+                "nonStop": true,
+                "maxPrice": "",
+                "return_date": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need to book a flight from ORD to SFO on 2023-12-15 for 2 adults, non-stop only. Also, could you find me a hotel in San Francisco for the same day near a spa and with a 4-star rating?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "ORD",
+                "destination": "SFO",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "ratings": 4,
+                "amenities": [
+                    "SPA"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from LAX to JFK on June 15th for 2 adults, and also find me a 4-star hotel near JFK with a swimming pool and WiFi.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "LAX",
+                "destination": "JFK",
+                "departure_date": "2023-06-15",
+                "adults": 2,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": "",
+                "maxPrice": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from NYC to LAX on 2023-11-15. Non-stop only. Also, looking for a hotel with a pool and free WiFi for that stay. Max price for flights $500.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "NYC",
+                "destination": "LAX",
+                "departure_date": "2023-11-15",
+                "adults": 1,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": 500,
+                "ratings": "",
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Hi, I need a flight from Los Angeles to New York on 2023-12-15 and a hotel for 2 adults with a swimming pool and WiFi. Non-stop flights only, please. My budget is $800 for the flight.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "LAX",
+                "destination": "JFK",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": 800,
+                "ratings": "",
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you find me a non-stop flight from JFK to LAX for 2 adults and 1 child on 2023-12-20? Also, I need a hotel there with at least 4 stars and a swimming pool.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "JFK",
+                "destination": "LAX",
+                "departure_date": "2023-12-20",
+                "adults": 2,
+                "children": 1,
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "return_date": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm planning a trip from San Francisco to Chicago on March 15. I need a hotel with at least a 4-star rating, and I also prefer a non-stop flight. I'll be traveling with my wife and our 2 kids. Can you also include a return flight for March 20?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "SFO",
+                "destination": "ORD",
+                "departure_date": "2023-03-15",
+                "adults": 2,
+                "children": 2,
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "return_date": "2023-03-20",
+                "ratings": 4,
+                "amenities": [],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Hi, I'm looking to book a flight from LAX to JFK on 2023-12-15 for 2 adults and 1 child. Also, I need a hotel in New York City, preferably 4 stars with a swimming pool and free WiFi.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "LAX",
+                "destination": "JFK",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "infants": "",
+                "class": "",
+                "nonStop": "",
+                "maxPrice": "",
+                "return_date": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you find a flight from LAX to JFK for October 15th? I also need a hotel in New York for 3 adults with a swimming pool and a fitness center. Return must be on October 20th.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "LAX",
+                "destination": "JFK",
+                "departure_date": "2023-10-15",
+                "adults": 3,
+                "return_date": "2023-10-20",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": "",
+                "maxPrice": "",
+                "ratings": "",
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "FITNESS_CENTER"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need to book a flight from JFK to SFO for two adults on 2023-12-15. Only non-stop flights are acceptable. I'd also like a 4-star hotel with a swimming pool and WiFi for the same dates.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "JFK",
+                "destination": "SFO",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from JFK to LAX on December 15th for two adults and one child, non-stop if possible, and also looking for a 4-star hotel nearby with WiFi and a swimming pool.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "JFK",
+                "destination": "LAX",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "return_date": "",
+                "ratings": 4,
+                "amenities": [
+                    "WIFI",
+                    "SWIMMING_POOL"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Hi, I need a flight from JFK to LAX on 2023-11-10 for two adults and one child. The flight should be non-stop, and I want a hotel near LAX with at least 4 stars and a swimming pool. Can you help me?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "JFK",
+                "destination": "LAX",
+                "departure_date": "2023-11-10",
+                "adults": 2,
+                "children": 1,
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "return_date": "",
+                "maxPrice": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'd like to book a flight from New York (JFK) to Los Angeles (LAX) on 2023-12-15. It's for two adults and we prefer non-stop flights only. Also, please find a 5-star hotel with a fitness center and WiFi in Los Angeles for the same dates.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "JFK",
+                "destination": "LAX",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "ratings": 5,
+                "amenities": [
+                    "FITNESS_CENTER",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Hi, I'm looking for a flight from LAX to NYC for two adults on 2023-11-15. I need a hotel in NYC for the same trip with at least a 4-star rating and free Wi-Fi. Can you assist?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "LAX",
+                "destination": "NYC",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": "",
+                "maxPrice": "",
+                "ratings": 4,
+                "amenities": [
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Looking for a direct flight from NYC to LAX on March 20 with a 5-star hotel stay. No kids, just me, please.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "NYC",
+                "destination": "LAX",
+                "departure_date": "2023-03-20",
+                "adults": 1,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "ratings": 5,
+                "amenities": [],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from ATL to LAX on 2023-12-15 and a 4-star hotel in Los Angeles with a pool. Non-stop flights only. Traveling for two adults and one kid.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "ATL",
+                "destination": "LAX",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "return_date": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from JFK to LAX on 2023-11-25 for two adults and one child. Ensure it's non-stop. For hotels, I want something close with a 5-star rating, a swimming pool, and a spa.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "JFK",
+                "destination": "LAX",
+                "departure_date": "2023-11-25",
+                "adults": 2,
+                "children": 1,
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "return_date": "",
+                "ratings": 5,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "SPA"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'd like to book a flight from NYC to Los Angeles for 2 adults and a kid on March 15th. Also, please look for hotels with at least 4-star ratings and a swimming pool.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "NYC",
+                "destination": "LAX",
+                "departure_date": "2023-03-15",
+                "adults": 2,
+                "children": 1,
+                "infants": "",
+                "class": "",
+                "nonStop": "",
+                "maxPrice": "",
+                "return_date": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Hi, I need a flight from LAX to JFK on 2023-12-15 for 3 adults, and also a hotel with at least a 4-star rating near JFK. Can you help?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "LAX",
+                "destination": "JFK",
+                "departure_date": "2023-12-15",
+                "adults": 3,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": "",
+                "maxPrice": "",
+                "ratings": 4,
+                "amenities": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Hi, I'd like to book a flight from New York to Chicago for February 15th. Also, I need a hotel with a swimming pool and WiFi, rated at least 4 stars. It's just for one person, no need for a return flight.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "JFK",
+                "destination": "ORD",
+                "departure_date": "2024-02-15",
+                "adults": 1,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": "",
+                "maxPrice": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Hi, I need a non-stop flight for two adults from Chicago to New York on 2023-12-15 and a hotel with a swimming pool and free WiFi. Please suggest options.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "CHI",
+                "destination": "NYC",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "ratings": "",
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Hey, can you find me a hotel in Los Angeles and a flight from JFK to LAX for March 15th? I\u2019d like non-stop flights only, and the hotel should have a swimming pool and Wi-Fi. Traveling with 2 adults and 1 child.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "JFK",
+                "destination": "LAX",
+                "departure_date": "2023-03-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "ratings": "",
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Hi, I'm looking to fly from SFO to JFK on 2023-12-20 for two adults and a child. I'd like non-stop flights only. Also, I need a hotel in the area with a spa and a swimming pool. Could you help with this?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "SFO",
+                "destination": "JFK",
+                "departure_date": "2023-12-20",
+                "adults": 2,
+                "children": 1,
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "return_date": "",
+                "ratings": "",
+                "amenities": [
+                    "SPA",
+                    "SWIMMING_POOL"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need to book a flight from SYD to LAX on 2023-12-15 for 2 adults and 1 child. Only non-stop flights, please. Also, find me a hotel for the same day near LAX with a swimming pool and air conditioning.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "SYD",
+                "destination": "LAX",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "return_date": "",
+                "ratings": "",
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "AIR_CONDITIONING"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need to find a flight from SFO to New York City for October 21st. It should be non-stop, and I want a hotel with at least 4 stars and a swimming pool. This is for 2 adults and 1 child.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "SFO",
+                "destination": "NYC",
+                "departure_date": "2023-10-21",
+                "adults": 2,
+                "children": 1,
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "return_date": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Hi, can you help me find a flight from SFO to JFK on 2023-12-15? I'd like it to be non-stop, and the max price is $500. Also, I need a hotel in New York for the same day with a minimum of 4 stars and a swimming pool.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "SFO",
+                "destination": "JFK",
+                "departure_date": "2023-12-15",
+                "adults": 1,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": 500,
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from LAX to JFK on 2023-12-15 for 2 adults and 1 child. Also, I want to book a hotel near JFK with at least 4 stars and amenities like free WIFI and a fitness center.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "LAX",
+                "destination": "JFK",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": "",
+                "class": "",
+                "nonStop": "",
+                "maxPrice": "",
+                "ratings": 4,
+                "amenities": [
+                    "WIFI",
+                    "FITNESS_CENTER"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm planning a trip from San Francisco to New York on March 15 with my partner. Could you also look for a 4-star hotel with WiFi and a swimming pool?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "SFO",
+                "destination": "NYC",
+                "departure_date": "2023-03-15",
+                "adults": 2,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": "",
+                "maxPrice": "",
+                "ratings": 4,
+                "amenities": [
+                    "WIFI",
+                    "SWIMMING_POOL"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Hi there, I'm looking for a flight from NYC to LAX for next Friday, with non-stop flights only. I also need a hotel near LAX with at least 4 stars and access to a swimming pool and WiFi. Two adults will be traveling.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "NYC",
+                "destination": "LAX",
+                "departure_date": "2023-10-20",
+                "adults": 2,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Hi, I need to book a flight from NYC to LAX on 2023-12-15. The flight should be non-stop, and I also need a hotel with at least 4-star ratings and a swimming pool. It's for 2 adults and 1 child.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "NYC",
+                "destination": "LAX",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "return_date": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm planning a trip from Los Angeles to New York on December 15th. I'm looking for a 4-star hotel near the destination and a flight for 2 adults and no stops. Budget for flights max $400 please.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "LAX",
+                "destination": "JFK",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": 400,
+                "ratings": 4,
+                "amenities": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Hi, I'm planning a trip from Boston to Miami for a group of 3 adults and 2 kids on April 15th. I need non-stop flights only, and I want hotels with a swimming pool and spa, rated at least 4 stars. Can you help?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "BOS",
+                "destination": "MIA",
+                "departure_date": "2023-04-15",
+                "adults": 3,
+                "children": 2,
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "return_date": "",
+                "maxPrice": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "SPA"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need to book a flight from LAX to NYC for 2 adults and 1 child on 2023-12-20. Make sure it's non-stop. Also, I need a 4-star hotel in NYC with a swimming pool and WiFi. The budget for the hotel is no more than $300 per night.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "LAX",
+                "destination": "NYC",
+                "departure_date": "2023-12-20",
+                "adults": 2,
+                "children": 1,
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "return_date": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Hi, I need to book a flight from JFK to LAX on 2023-12-15 for 2 adults and 1 child. Also, could you find a 4-star hotel nearby with a swimming pool and free WiFi?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "JFK",
+                "destination": "LAX",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": "",
+                "class": "",
+                "nonStop": "",
+                "maxPrice": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Hi, I need a flight from Los Angeles (LAX) to New York (JFK) on April 15, 2024. It's just for one person, and I also need a hotel with at least 4 stars and a swimming pool.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "LAX",
+                "destination": "JFK",
+                "departure_date": "2024-04-15",
+                "adults": 1,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": "",
+                "maxPrice": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Hi, I'd like to find a non-stop flight from JFK to LAX for two adults on March 25, 2024, and a 4-star hotel near the destination. Also, if the hotel has Wi-Fi and a swimming pool, it would be great.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "JFK",
+                "destination": "LAX",
+                "departure_date": "2024-03-25",
+                "adults": 2,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "ratings": 4,
+                "amenities": [
+                    "WIFI",
+                    "SWIMMING_POOL"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you help me book a flight to Paris (CDG) from Miami (MIA) on the 2023-12-05? I need non-stop flights, and for hotels, I prefer 4-star hotels with a swimming pool and spa facilities.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "MIA",
+                "destination": "CDG",
+                "departure_date": "2023-12-05",
+                "adults": 1,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "SPA"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a non-stop flight from LAX to JFK for two adults on April 15th and a 4-star hotel with a pool. Can you also check for a return flight on April 20th?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "LAX",
+                "destination": "JFK",
+                "departure_date": "2023-04-15",
+                "adults": 2,
+                "return_date": "2023-04-20",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Hi, I'm planning a trip from Denver to Miami on 2023-12-15. I'd like a direct flight and a 4-star hotel near the beach. There will be two of us traveling.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "DEN",
+                "destination": "MIA",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "ratings": 4,
+                "amenities": [],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm planning a trip from Boston to Miami on March 15th. I'll be traveling with my partner, and we want non-stop flights. For hotels, we're looking for something with a swimming pool and a 4-star rating.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "BOS",
+                "destination": "MIA",
+                "departure_date": "2023-03-15",
+                "adults": 2,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you find me a non-stop flight from LAX to NYC on 2023-12-15 for two adults and one child? I also need a hotel in NYC with a swimming pool and WiFi, and a rating of at least 4 stars.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "LAX",
+                "destination": "NYC",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you find a non-stop flight from JFK to LAX for 2 adults on 2023-12-15, and also recommend hotels with at least 4-star ratings near LAX?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "JFK",
+                "destination": "LAX",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "ratings": 4,
+                "amenities": [],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you help me book a flight from SFO to JFK for October 15th? I'd prefer only non-stop flights and for hotels, I want something rated 4 stars or more with a pool and a spa.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "SFO",
+                "destination": "JFK",
+                "departure_date": "2023-10-15",
+                "adults": 1,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "SPA"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Hi, I'm planning a trip from Austin to Miami on 2023-11-18. I'm looking for a hotel with a swimming pool and a rating of at least 4 stars. Also, for the flight, non-stop options only and traveling with 2 adults and 2 children. Can you help?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "AUS",
+                "destination": "MIA",
+                "departure_date": "2023-11-18",
+                "adults": 2,
+                "children": 2,
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "return_date": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from Los Angeles to Tokyo on October 15th for two adults and a kid. Please make sure the flight is non-stop. Also, I\u2019m looking for a hotel near Tokyo with at least 4 stars and free WiFi.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "LAX",
+                "destination": "TYO",
+                "departure_date": "2023-10-15",
+                "adults": 2,
+                "children": 1,
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "return_date": "",
+                "ratings": 4,
+                "amenities": [
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from LAX to JFK on 2023-11-15 for 2 adults and 1 infant. It should be non-stop and come back on 2023-11-20. Also, looking for 4-star hotels near JFK with wifi and a swimming pool.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "LAX",
+                "destination": "JFK",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "return_date": "2023-11-20",
+                "children": "",
+                "infants": 1,
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "ratings": 4,
+                "amenities": [
+                    "WIFI",
+                    "SWIMMING_POOL"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Hi, I'm looking for a flight from New York to Los Angeles on 2023-12-15, and also need a hotel in LA for 3 adults. The hotel should have a swimming pool and air conditioning, and I'd prefer a max price of $150 per night. Non-stop flight only, please.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "JFK",
+                "destination": "LAX",
+                "departure_date": "2023-12-15",
+                "adults": 3,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": 150,
+                "ratings": "",
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "AIR_CONDITIONING"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Hi, I'm planning a trip from New York (JFK) to Paris and need a flight for two adults on March 20, 2024. I'd prefer non-stop flights. Also, please find me a 5-star hotel with a spa and air conditioning. Thanks!",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "JFK",
+                "destination": "CDG",
+                "departure_date": "2024-03-20",
+                "adults": 2,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "ratings": 5,
+                "amenities": [
+                    "SPA",
+                    "AIR_CONDITIONING"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you help me book a flight from LAX to NYC for February 15th? I need a return flight on February 20th, first class, and a hotel with a gym and Wi-Fi rated at least 4 stars.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "LAX",
+                "destination": "NYC",
+                "departure_date": "2023-02-15",
+                "adults": 1,
+                "return_date": "2023-02-20",
+                "children": "",
+                "infants": "",
+                "class": "FIRST",
+                "nonStop": "",
+                "maxPrice": "",
+                "ratings": 4,
+                "amenities": [
+                    "FITNESS_CENTER",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you help me book a flight from NYC to MIA on 2023-12-15? I need a hotel there for 2 adults and would prefer a 4-star rating with a swimming pool and free WiFi.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "NYC",
+                "destination": "MIA",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": "",
+                "maxPrice": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm looking for a flight from LAX to JFK on 2023-11-15 for 2 adults and 1 child, non-stop only. I also need a hotel with at least 4-star ratings, and it must have Wi-Fi and a swimming pool.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "LAX",
+                "destination": "JFK",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "children": 1,
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "return_date": "",
+                "ratings": 4,
+                "amenities": [
+                    "WIFI",
+                    "SWIMMING_POOL"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Hi, I need a round-trip flight for 2 adults from LAX to NYC departing on 2023-11-15 with a return on 2023-11-20. Also, I'd like to book a 4-star hotel with a swimming pool and WiFi in New York for the same dates.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "LAX",
+                "destination": "NYC",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "return_date": "2023-11-20",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": "",
+                "maxPrice": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm planning a trip to Tokyo from Los Angeles on June 15th. I will be needing a hotel with at least 4-star ratings and WiFi for my stay. Can you find non-stop flights only?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "LAX",
+                "destination": "HND",
+                "departure_date": "2023-06-15",
+                "adults": 1,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "ratings": 4,
+                "amenities": [
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you help me find a direct flight from JFK to LAX for April 20th? I\u2019m also looking for a hotel with a minimum of 4-star ratings and amenities like WiFi and a swimming pool.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "JFK",
+                "destination": "LAX",
+                "departure_date": "2023-04-20",
+                "adults": 1,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "ratings": 4,
+                "amenities": [
+                    "WIFI",
+                    "SWIMMING_POOL"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'd like to book a non-stop flight from NYC to LAX on 2023-12-15 for 2 adults and 1 child. Also, find me a hotel in Los Angeles rated 4 stars with a swimming pool and WiFi.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "NYC",
+                "destination": "LAX",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Hi, can you help me find a flight from Dallas to San Francisco on 2023-12-15? I also need a 4-star hotel in San Francisco with WiFi and a fitness center for 2 adults. A non-stop flight is preferred!",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "DFW",
+                "destination": "SFO",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "ratings": 4,
+                "amenities": [
+                    "WIFI",
+                    "FITNESS_CENTER"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you help me book a non-stop flight from LAX to JFK for 2 adults on 2023-12-15, and also find a hotel with a swimming pool and a fitness center in New York? I'd prefer the hotel to have a rating of 4 stars or above.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "LAX",
+                "destination": "JFK",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "FITNESS_CENTER"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from JFK to LAX for next Friday for 2 adults and 1 child, non-stop only, and I'd also like to find a 4-star hotel near LAX with free WiFi and a swimming pool. Can you help?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "JFK",
+                "destination": "LAX",
+                "departure_date": "2023-10-20",
+                "adults": 2,
+                "children": 1,
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "return_date": "",
+                "ratings": 4,
+                "amenities": [
+                    "WIFI",
+                    "SWIMMING_POOL"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from Miami to Paris on October 15th, and a hotel in Paris for 2 adults with a minimum rating of 4 stars and a swimming pool. Can you help?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "MIA",
+                "destination": "PAR",
+                "departure_date": "2023-10-15",
+                "adults": 2,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": "",
+                "maxPrice": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you find me a flight from JFK to LAX on 2023-12-15 for 2 adults and 1 child? I need non-stop flights only. Also, I want a hotel with a swimming pool and a spa in Los Angeles for the same date, rated at least 4 stars.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "JFK",
+                "destination": "LAX",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "return_date": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "SPA"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm planning a trip from New York to Los Angeles on April 15th. I need flights for 2 adults and 1 child, non-stop only. Also, a 4-star hotel with a swimming pool and free WiFi. Can you help?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "JFK",
+                "destination": "LAX",
+                "departure_date": "2023-04-15",
+                "adults": 2,
+                "children": 1,
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from NYC to LAX next Friday for 2 adults and 1 child, and I also want to book a hotel there with at least a 4-star rating and a swimming pool.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "NYC",
+                "destination": "LAX",
+                "departure_date": "2023-10-20",
+                "adults": 2,
+                "children": 1,
+                "infants": "",
+                "class": "",
+                "nonStop": "",
+                "maxPrice": "",
+                "return_date": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you help me find a flight from SFO to JFK on March 15th? I need it to be non-stop, and I\u2019m also looking for a hotel near JFK with at least 4 stars and a spa.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "SFO",
+                "destination": "JFK",
+                "departure_date": "2023-03-15",
+                "adults": 1,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "ratings": 4,
+                "amenities": [
+                    "SPA"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you help me find a hotel in Boston and a flight from Denver to Boston on March 15th? I need tickets for 2 adults, non-stop flights only, and the hotel must have a swimming pool and WiFi.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "DEN",
+                "destination": "BOS",
+                "departure_date": "2023-03-15",
+                "adults": 2,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "ratings": "",
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you help me find a flight from Boston to Miami on 2023-12-15? Also, I\u2019d like to book a hotel there with a swimming pool and a spa, preferably with a rating of 4 or higher.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "BOS",
+                "destination": "MIA",
+                "departure_date": "2023-12-15",
+                "adults": 1,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": "",
+                "maxPrice": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "SPA"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you find me a hotel in Denver and a flight from LAX to DEN on April 21st? I need non-stop flights and the hotel should have at least 4-star ratings with a swimming pool and free WiFi. There are 2 adults and 1 child traveling.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "LAX",
+                "destination": "DEN",
+                "departure_date": "2023-04-21",
+                "adults": 2,
+                "children": 1,
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "return_date": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from LAX to JFK on March 15th for 2 adults and 1 child. Also, I want to book a 4-star hotel near JFK with a swimming pool and free WiFi. What are my options?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "LAX",
+                "destination": "JFK",
+                "departure_date": "2023-03-15",
+                "adults": 2,
+                "children": 1,
+                "infants": "",
+                "class": "",
+                "nonStop": "",
+                "maxPrice": "",
+                "return_date": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from Los Angeles to Tokyo on March 15th for two adults and one child. Please make sure the flights are non-stop. Also, recommend a hotel with at least 4 stars and a pool.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "LAX",
+                "destination": "TYO",
+                "departure_date": "2023-03-15",
+                "adults": 2,
+                "children": 1,
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "return_date": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from New York City (JFK) to Los Angeles (LAX) departing on 2023-11-15. It should be non-stop, and I\u2019ll need a hotel nearby with at least 4 stars and WiFi. This is for 2 adults. Please find options.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "JFK",
+                "destination": "LAX",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "ratings": 4,
+                "amenities": [
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from LAX to JFK on 2023-11-10, non-stop preferred, for 2 adults. Also, find me a 4-star hotel near the destination with a swimming pool and WiFi.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "LAX",
+                "destination": "JFK",
+                "departure_date": "2023-11-10",
+                "adults": 2,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm planning a trip from Los Angeles to Tokyo on March 15th, and I want a non-stop flight. Also, I need a hotel with a spa and air conditioning. It's just me traveling.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "LAX",
+                "destination": "HND",
+                "departure_date": "2023-03-15",
+                "adults": 1,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "ratings": "",
+                "amenities": [
+                    "SPA",
+                    "AIR_CONDITIONING"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from NYC to LAX on 2023-12-15 for 2 adults and a decent hotel nearby with a swimming pool and fitness center. Non-stop flights only please.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "NYC",
+                "destination": "LAX",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "ratings": "",
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "FITNESS_CENTER"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from JFK to LAX for 2 adults on 2023-12-20. Make it non-stop and find me a 4-star hotel nearby with a pool and WiFi.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "JFK",
+                "destination": "LAX",
+                "departure_date": "2023-12-20",
+                "adults": 2,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you help me find a flight from LAX to NYC on 2023-11-15, and also a hotel with at least 4 stars? I need it for 2 adults and 1 child. Please include non-stop flights only, and the hotel must have a swimming pool and Wi-Fi.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "LAX",
+                "destination": "NYC",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "children": 1,
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "return_date": "",
+                "maxPrice": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you help me book a flight from JFK to LAX on 2023-12-15 for 2 adults and a hotel with a swimming pool and WiFi? I would also prefer non-stop flights only.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "JFK",
+                "destination": "LAX",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "ratings": "",
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a non-stop flight from JFK to LAX for two adults on 2023-11-20. Can you also find a hotel in Los Angeles with a pool and a gym, rated 4 stars?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "JFK",
+                "destination": "LAX",
+                "departure_date": "2023-11-20",
+                "adults": 2,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "FITNESS_CENTER"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I want to book a flight from NYC to LAX on 2023-12-15 for two adults and one child. Preferably non-stop flights only. Also, I need a hotel near LAX with a swimming pool and a rating of at least 4 stars.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "NYC",
+                "destination": "LAX",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "return_date": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from LAX to JFK on 2023-11-15 for two adults and one child, non-stop only, and a stay at a 4-star hotel with a swimming pool. What's available?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "LAX",
+                "destination": "JFK",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "children": 1,
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "return_date": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you help me find a non-stop flight from JFK to LAX for two adults on 2023-11-15? Also, I need a hotel with a swimming pool and a 4-star rating.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "JFK",
+                "destination": "LAX",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from New York (JFK) to Los Angeles (LAX) on 2023-11-15 for two adults and one child. I also want a 4-star hotel with a fitness center. Non-stop flights only.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "JFK",
+                "destination": "LAX",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "children": 1,
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "return_date": "",
+                "ratings": 4,
+                "amenities": [
+                    "FITNESS_CENTER"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm looking for a non-stop flight from LAX to JFK on 2023-12-15 for 2 adults and 1 child. I'd also like a hotel with at least 4 stars and a swimming pool. Could you help me with that?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "LAX",
+                "destination": "JFK",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "return_date": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Hi, I need a flight from Denver to Miami for March 15th, and can you also find me a hotel with a swimming pool and WiFi? It's for 2 adults and I want non-stop flights only.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "DEN",
+                "destination": "MIA",
+                "departure_date": "2023-03-15",
+                "adults": 2,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "ratings": "",
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you find me a flight from JFK to LAX on 2023-12-15 for 2 adults and a hotel with a pool and WiFi? Non-stop flights only, please.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "JFK",
+                "destination": "LAX",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "ratings": "",
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you help me find a flight from Denver to Los Angeles on April 15th? I prefer non-stop flights only. Also, I'm interested in a 4-star hotel with a swimming pool for that trip.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "DEN",
+                "destination": "LAX",
+                "departure_date": "2023-04-15",
+                "adults": 1,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm planning a trip from New York to Los Angeles on April 15th. I also need a 4-star hotel with WiFi and a swimming pool. Oh, and make it non-stop flights only, please.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "NYC",
+                "destination": "LAX",
+                "departure_date": "2023-04-15",
+                "adults": 1,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "ratings": 4,
+                "amenities": [
+                    "WIFI",
+                    "SWIMMING_POOL"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from JFK to LAX on October 15th for two adults and one child, non-stop flights only. Also, could you recommend a 4-star hotel in Los Angeles with a swimming pool and a fitness center?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "JFK",
+                "destination": "LAX",
+                "departure_date": "2023-10-15",
+                "adults": 2,
+                "children": 1,
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "return_date": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "FITNESS_CENTER"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Hi, I'm looking for a flight from JFK to SFO on March 15th. I'm traveling with my partner and we'd like non-stop flights only. Also, we need a hotel with at least 4 stars and a spa. Budget is $500 for the flight and no more than $300/night for the hotel. Can you help?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "JFK",
+                "destination": "SFO",
+                "departure_date": "2023-03-15",
+                "adults": 2,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": 500,
+                "ratings": 4,
+                "amenities": [
+                    "SPA"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you help me find a flight from BOS to LAX on 2023-12-15? I'd also like a hotel in Los Angeles with a pool and WiFi. Looking for two adults, and a hotel with at least 4 stars.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "BOS",
+                "destination": "LAX",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": "",
+                "maxPrice": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from Chicago to Miami on 2023-11-10 for two adults and one child. Also looking for a 4-star hotel with free WiFi and a swimming pool for the same trip.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "CHI",
+                "destination": "MIA",
+                "departure_date": "2023-11-10",
+                "adults": 2,
+                "children": 1,
+                "infants": "",
+                "class": "",
+                "nonStop": "",
+                "maxPrice": "",
+                "return_date": "",
+                "ratings": 4,
+                "amenities": [
+                    "WIFI",
+                    "SWIMMING_POOL"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from New York (JFK) to Los Angeles (LAX) on 2023-12-20 for 2 adults and 1 child. I'd also like a 4-star hotel with a fitness center and WiFi close to the city center. Non-stop flights only, please.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "JFK",
+                "destination": "LAX",
+                "departure_date": "2023-12-20",
+                "adults": 2,
+                "children": 1,
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "return_date": "",
+                "maxPrice": "",
+                "ratings": 4,
+                "amenities": [
+                    "FITNESS_CENTER",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm looking for a flight from NYC to MIA on the 15th of November for two adults. Please also find me a hotel with at least 4 stars and a swimming pool near Miami.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "NYC",
+                "destination": "MIA",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "children": "",
+                "infants": "",
+                "return_date": "",
+                "class": "",
+                "nonStop": "",
+                "maxPrice": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you help me find a flight from SFO to JFK for March 15th? I need it for 2 adults and one child, non-stop only. Also, I\u2019d like a hotel near JFK with at least 4-star ratings and a swimming pool.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "SFO",
+                "destination": "JFK",
+                "departure_date": "2024-03-15",
+                "adults": 2,
+                "children": 1,
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "return_date": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you find me a non-stop flight from New York (JFK) to Los Angeles (LAX) for May 12th? Also, I need a 4-star hotel with both a swimming pool and a fitness center.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "JFK",
+                "destination": "LAX",
+                "departure_date": "2023-05-12",
+                "adults": 1,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "FITNESS_CENTER"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm looking for a non-stop flight from New York to Los Angeles on November 20th for two adults and one child. Can you also find me a 4-star hotel in Los Angeles with a swimming pool and free Wi-Fi?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "NYC",
+                "destination": "LAX",
+                "departure_date": "2023-11-20",
+                "adults": 2,
+                "children": 1,
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "return_date": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Hi, can you help me book a flight from Los Angeles (LAX) to New York (JFK) for June 15th? I also need a hotel around that area, preferably at least 4 stars and with a swimming pool. It's just for one adult.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "LAX",
+                "destination": "JFK",
+                "departure_date": "2023-06-15",
+                "adults": 1,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": "",
+                "maxPrice": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from LAX to JFK for two adults on October 15th, and I'm also looking for a 4-star hotel near JFK with a swimming pool and WiFi. Non-stop flights only, please.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "LAX",
+                "destination": "JFK",
+                "departure_date": "2023-10-15",
+                "adults": 2,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Hi, I'm planning a trip from Los Angeles to Miami on 2023-12-15. I'll travel with one child and prefer non-stop flights only. For hotels, I need a swimming pool and WiFi. Can you help?",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "LAX",
+                "destination": "MIA",
+                "departure_date": "2023-12-15",
+                "adults": 1,
+                "children": 1,
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "return_date": "",
+                "maxPrice": "",
+                "ratings": "",
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from LAX to JFK for next Friday and also a hotel with a swimming pool near JFK. It's for me, my spouse, and one child. Please keep the flight non-stop and the hotel should have at least 4 stars.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "LAX",
+                "destination": "JFK",
+                "departure_date": "2023-10-13",
+                "adults": 2,
+                "children": 1,
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "return_date": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ],
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm looking for a flight from JFK to LAX on 2024-02-14 for 2 adults and 1 child, only non-stop. Also, a hotel with at least 4-star ratings and a swimming pool. Budget for flights: under $400.",
+        "output": {
+            "action": [
+                "search_flights",
+                "search_hotels"
+            ],
+            "action_input": {
+                "origin": "JFK",
+                "destination": "LAX",
+                "departure_date": "2024-02-14",
+                "adults": 2,
+                "children": 1,
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": 400,
+                "return_date": "",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ],
+                "max": 5
+            }
+        }
+    }
+]

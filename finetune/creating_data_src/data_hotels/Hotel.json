@@ -1,0 +1,1558 @@
+[
+    {
+        "input": "Can you find me some hotels in Kyiv with a swimming pool and WiFi?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "KIE",
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find me hotels in Rio de Janeiro with a swimming pool and a gym?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "RIO",
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "FITNESS_CENTER"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find hotels in Mexico City with a swimming pool and air conditioning, please?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "MEX",
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "AIR_CONDITIONING"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find me hotels in S\u00e3o Paulo with a swimming pool and spa?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "GRU",
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "SPA"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find me 4-star hotels in Rome with a swimming pool and free WiFi?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "ROM",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you help me find 5-star hotels with a swimming pool and spa in Rome?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "ROM",
+                "ratings": 5,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "SPA"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find me 5-star hotels with a swimming pool and free WiFi in Bogot\u00e1?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "BOG",
+                "ratings": 5,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find 4-star hotels with a swimming pool in Havana?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "HAV",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find me a 4-star hotel in Karachi with a pool and wifi?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "KHI",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find hotels in Seoul with a swimming pool and free WiFi?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "SEL",
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you help me find a 5-star hotel in Warsaw with a swimming pool and WiFi?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "WAR",
+                "ratings": 5,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you help me find hotels in Santiago with a spa and a swimming pool?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "SCL",
+                "amenities": [
+                    "SPA",
+                    "SWIMMING_POOL"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you show me hotels in Berlin with 5-star ratings and a swimming pool?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "BER",
+                "ratings": 5,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find me hotels in Brussels with a swimming pool and at least a 4-star rating?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "BRU",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find me hotels in Ho Chi Minh City with a swimming pool and at least 4-star ratings?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "HCM",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find me some hotels in S\u00e3o Paulo with a swimming pool and free WiFi?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "GRU",
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find hotels in Berlin with a swimming pool and a 5-star rating?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "BER",
+                "ratings": 5,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find me hotels in New York with a swimming pool and at least a 4-star rating?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "NYC",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ]
+            }
+        }
+    },
+    {
+        "input": "I'm looking for hotels in Tokyo with a pool and spa, preferably 4 stars.",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "TYO",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "SPA"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find me 4-star hotels with a swimming pool in Delhi?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "DEL",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Could you find me a 5-star hotel with a swimming pool and WiFi in Venice?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "VEN",
+                "ratings": 5,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find me 4-star hotels in Hanoi with a swimming pool and WiFi?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "HAN",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find 5-star hotels with a swimming pool and free WiFi in Bangkok?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "BKK",
+                "ratings": 5,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you help me find 4-star hotels with a swimming pool and free wifi in Santiago?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "SCL",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ]
+            }
+        }
+    },
+    {
+        "input": "I want to find hotels in Glasgow with a swimming pool and spa, preferably 4 stars.",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "GLA",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "SPA"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find me hotels in S\u00e3o Paulo with a pool and a fitness center, preferably 4-star?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "GRU",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "FITNESS_CENTER"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Show me 5-star hotels with a spa and WiFi in Zurich.",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "ZRH",
+                "ratings": 5,
+                "amenities": [
+                    "SPA",
+                    "WIFI"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find 4-star hotels in Kuala Lumpur with a spa and WiFi?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "KUL",
+                "ratings": 4,
+                "amenities": [
+                    "SPA",
+                    "WIFI"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find me hotels in Ho Chi Minh City with a spa and a swimming pool? Preferably 4-star hotels.",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "HCM",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "SPA"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find me hotels in Tokyo with a swimming pool and wifi? Preferably minimum 4 stars.",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "TYO",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find me a 4-star hotel in Amsterdam with a swimming pool and WiFi?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "AMS",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find me 4-star hotels with a swimming pool in Santiago?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "SCL",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you help me find 5-star hotels with a swimming pool and WiFi in Hong Kong?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "HKG",
+                "ratings": 5,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find hotels in Delhi with a swimming pool and at least 4-star rating?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "DEL",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you help me find 5-star hotels with a spa and swimming pool in Lima?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "LIM",
+                "ratings": 5,
+                "amenities": [
+                    "SPA",
+                    "SWIMMING_POOL"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you help me find hotels in Tokyo with a pool and a spa? Preferably 4-star hotels.",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "HND",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "SPA"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find me a 4-star hotel in Dhaka with a pool and free Wi-Fi?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "DHA",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you help me find hotels in Ho Chi Minh City with a swimming pool and spa? I don't need any specific star rating.",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "HCM",
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "SPA"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find me hotels in Miami with a 4-star rating and a swimming pool?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "MIA",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ]
+            }
+        }
+    },
+    {
+        "input": "I would like to find 4-star hotels in Manchester with a swimming pool and free WiFi.",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "MAN",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you help me find 5-star hotels in Madrid with a swimming pool and free WiFi?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "MAD",
+                "ratings": 5,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find me hotels in Prague with a 5-star rating and a swimming pool?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "PRG",
+                "ratings": 5,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find hotels in Tokyo with a pool and a gym?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "HND",
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "FITNESS_CENTER"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you help me find hotels in Edinburgh with a swimming pool and a fitness center?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "EDI",
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "FITNESS_CENTER"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find me some 5-star hotels in Dubai with a swimming pool and WiFi?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "DXB",
+                "ratings": 5,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find 4-star hotels in Venice with a swimming pool and free WiFi?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "VEN",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you help me find hotels in Cairo with a spa and a swimming pool? Also, I\u2019d like them to be 4-star rated.",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "CAI",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "SPA"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find hotels in Nairobi with a swimming pool and at least a 4-star rating?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "NBO",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find me hotels in Mumbai with a swimming pool and at least 4-star ratings?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "BOM",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find hotels in Amsterdam with a swimming pool and 4-star ratings?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "AMS",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you help me find hotels in New York with a swimming pool, gym, and spa? Preferably 5-star.",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "NYC",
+                "ratings": 5,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "FITNESS_CENTER",
+                    "SPA"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find me 4-star hotels with a swimming pool and WiFi in Johannesburg?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "JNB",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find 4-star hotels in Moscow with a swimming pool and WiFi?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "MOW",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find me some hotels in Wellington with a 4-star rating and that have a swimming pool and free WiFi?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "WLG",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find 4-star hotels in Madrid with a swimming pool and free WiFi?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "MAD",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Could you find me hotels in Milan with a swimming pool and a spa?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "MIL",
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "SPA"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find me some 4-star hotels in Havana with a swimming pool and free Wi-Fi?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "HAV",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you help me find 5-star hotels in Santiago that offer a swimming pool and free WiFi?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "SCL",
+                "ratings": 5,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you help me find 4-star hotels in Stockholm with a spa and swimming pool?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "STO",
+                "ratings": 4,
+                "amenities": [
+                    "SPA",
+                    "SWIMMING_POOL"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find me a hotel in London with 5-star rating and a swimming pool?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "LON",
+                "ratings": 5,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find me hotels in Chicago with a swimming pool and a spa?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "CHI",
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "SPA"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find a hotel in Islamabad with a swimming pool, air conditioning, and at least 4 stars?",
+        "output": {
+            "action": "search_hotels",
+            "action_input": {
+                "cityCode": "ISB",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "AIR_CONDITIONING"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you help me find a hotel in Canberra with a swimming pool and wifi? Preferably 4-star hotels.",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "CBR",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find me hotels in Bogot\u00e1 with 4-star ratings and that have a swimming pool and free WiFi?",
+        "output": {
+            "action": "search_hotels",
+            "action_input": {
+                "cityCode": "BOG",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ]
+            }
+        }
+    },
+    {
+        "input": "I'm looking for a 4-star hotel in Cape Town with a swimming pool and WiFi.",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "CPT",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find me hotels in Tokyo with a swimming pool and wifi?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "TYO",
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you help me find a 4-star hotel with a swimming pool in Miami?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "MIA",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you help me find a 4-star hotel in Tokyo with a swimming pool and WiFi?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "HND",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find me a hotel in Mumbai with a 4-star rating and WiFi?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "BOM",
+                "ratings": 4,
+                "amenities": [
+                    "WIFI"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find me luxury hotels in Kolkata with a swimming pool and a spa? Preferably 5-star properties.",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "KOL",
+                "ratings": 5,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "SPA"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find hotels in Seoul with at least 4-star ratings and a swimming pool?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "SEL",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you help me find hotels in S\u00e3o Paulo with a 5-star rating and a swimming pool?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "GRU",
+                "ratings": 5,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find 5-star hotels in Kyiv with a swimming pool and WiFi?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "KIE",
+                "ratings": 5,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ]
+            }
+        }
+    },
+    {
+        "input": "I'm looking for 5-star hotels in Lima with a swimming pool and free wifi.",
+        "output": {
+            "action": "search_hotels",
+            "action_input": {
+                "cityCode": "LIM",
+                "ratings": 5,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find me hotels in Toronto with a swimming pool and WiFi?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "YTO",
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find me hotels in Wellington with a swimming pool and at least a 4-star rating?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "WLG",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find me 4-star hotels in Taipei with a swimming pool and free WiFi?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "TPE",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find me 4-star hotels in Delhi with a swimming pool and free Wi-Fi?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "DEL",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ]
+            }
+        }
+    },
+    {
+        "input": "I need to find hotels in Dublin with a swimming pool and spa, preferably 4 stars or higher.",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "DUB",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "SPA"
+                ]
+            }
+        }
+    },
+    {
+        "input": "I\u2019m looking for hotels in Johannesburg with a swimming pool and WIFI, preferably 4-star.",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "JNB",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ]
+            }
+        }
+    },
+    {
+        "input": "I am looking for a 4-star hotel in Istanbul with free Wi-Fi and a pool.",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "IST",
+                "ratings": 4,
+                "amenities": [
+                    "WIFI",
+                    "SWIMMING_POOL"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find hotels in Naples with a 4-star rating and a spa?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "NAP",
+                "ratings": 4,
+                "amenities": [
+                    "SPA"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you help me find 4-star hotels in Darwin with a swimming pool and free WiFi?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "DAR",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find me 4-star hotels with a pool and free wifi in Rio de Janeiro?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "RIO",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ]
+            }
+        }
+    },
+    {
+        "input": "I'm looking for a hotel in Guadalajara with a swimming pool and spa. Preferably 5-star.",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "GDL",
+                "ratings": 5,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "SPA"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you help me find 5-star hotels in Canberra with a swimming pool and free WiFi?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "CBR",
+                "ratings": 5,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find hotels in Seoul with at least 4-star ratings and a swimming pool?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "SEL",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find me 4-star hotels in Brussels with a fitness center and free WiFi?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "BRU",
+                "ratings": 4,
+                "amenities": [
+                    "FITNESS_CENTER",
+                    "WIFI"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find 5-star hotels with a spa and swimming pool in Kolkata?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "KOL",
+                "ratings": 5,
+                "amenities": [
+                    "SPA",
+                    "SWIMMING_POOL"
+                ]
+            }
+        }
+    },
+    {
+        "input": "I need hotels in Shanghai with a 4-star rating and a pool.",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "SHA",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find me a hotel in Manchester with a swimming pool and a spa?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "MAN",
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "SPA"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find me hotels in Addis Ababa that are 4-star and have WiFi and a swimming pool?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "ADD",
+                "ratings": 4,
+                "amenities": [
+                    "WIFI",
+                    "SWIMMING_POOL"
+                ]
+            }
+        }
+    },
+    {
+        "input": "I'm looking for hotels in Budapest with a swimming pool and WiFi, preferably 5-star.",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "BUD",
+                "ratings": 5,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find hotels in Ho Chi Minh City with a swimming pool and at least a 4-star rating?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "HCM",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find me hotels in Kyiv with a swimming pool and fitness center? I'd like something with at least a 4-star rating.",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "KIE",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "FITNESS_CENTER"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you help me find 4-star hotels in Kuala Lumpur with a swimming pool and free wifi?",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "KUL",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find me some hotels in S\u00e3o Paulo with a swimming pool and a spa? 4-star hotels would be great.",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "GRU",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "SPA"
+                ]
+            }
+        }
+    },
+    {
+        "input": "I'm planning a trip to Santiago and I want to find 5-star hotels with a swimming pool and free WiFi.",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "SCL",
+                "ratings": 5,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "WIFI"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you find me hotels in Taipei with a swimming pool and a spa? Preferably 4-star hotels.",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "TPE",
+                "ratings": 4,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "SPA"
+                ]
+            }
+        }
+    },
+    {
+        "input": "Can you help me find hotels in S\u00e3o Paulo with a swimming pool and a spa? I\u2019d prefer 5-star options.",
+        "output": {
+            "action": [
+                "search_hotels"
+            ],
+            "action_input": {
+                "cityCode": "GRU",
+                "ratings": 5,
+                "amenities": [
+                    "SWIMMING_POOL",
+                    "SPA"
+                ]
+            }
+        }
+    }
+]
