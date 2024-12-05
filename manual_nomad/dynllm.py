@@ -116,7 +116,7 @@ def NomadAI(prompt, context):
         'content': (
             """You are a travel assistant. Greet them accordingly, but your task is to determine if the user's prompt specifies:
             1. Two cities
-            2. A Date
+            2. Departure Date
 
             If either one is missing, explain nicely what information the user needs to input, 
 
@@ -158,8 +158,7 @@ def NomadAI(prompt, context):
             You are a data parser for a travel related input.
             Your task is to read user input, and parse it into json format like below based on starting location, destination, and date.
             Only give the output as json format
-
-            {"endpoint": "/search_flights", "params": {"originLocationCode": "3 letter code", "destinationLocationCode": "3 letter code", "departureDate": "date format", "adults": 1}}
+            {"action": ["search_flights"], "action_input": {"origin": "3 letter code", "destination": "3 letter code", "departure_date": "date format", "adults": 1}
             """
         )
     }
@@ -182,32 +181,31 @@ def NomadAI(prompt, context):
         client_secret=os.getenv('AMADEUS_CLIENT_SECRET')
     )
 
-
     empty = {}
-    for request in [response_json]:
-        endpoint = request.get("endpoint")
-        params = request.get("params", {})
-        print(params)
+    for request in response_json['action']:
+        # endpoint = request.get("endpoint")
+        # params = request.get("params", {})
+        # print(params)
         
-        if endpoint == "/search_flights":
+        if request == "search_flights":
             try:
                 response = amadeus.shopping.flight_offers_search.get(
-                    originLocationCode=params['originLocationCode'],
-                    destinationLocationCode=params['destinationLocationCode'],
-                    departureDate=params['departureDate'],
-                    adults=params['adults'],
-                    max=5)
+                    originLocationCode=response_json['action_input']['origin'],
+                    destinationLocationCode=response_json['action_input']['destination'],
+                    departureDate=response_json['action_input']['departure_date'],
+                    adults=response_json['action_input']['adults'],
+                    max=10)
 
                 flights = response.data
 
                 clean_flights = extract_info(flights)
 
-                price = params.get('price', None)
-                cabin = params.get('cabin', None)
+                price = response_json['action_input'].get('maxPrice', None) if response_json['action_input'].get('maxPrice') != 'null' else None
+                cabin = response_json['action_input'].get('class', None) if response_json['action_input'].get('class') != 'null' else None
 
                 filtered_flights = filter_flights(clean_flights, max_price=price, cabin_class=cabin)
 
-                result = filtered_flights[:10]
+                result = filtered_flights[:5]
                 print(result)
 
 
@@ -222,13 +220,89 @@ def NomadAI(prompt, context):
             except:
                 result = "No flights available"
                 print(result)
-        elif endpoint == "/search_hotels":
-            # Call the hotels API with the provided params
-            print(params)
-        else:
-            print(f"Unknown endpoint: {endpoint}")
+
+
+
+        elif request == "search_hotels":
+
+            rating = response_json['action_input'].get('ratings',5)
+
+            response = amadeus.reference_data.locations.hotels.by_city.get(
+                cityCode=response_json['action_input']['destination'],
+                ratings=[rating],
+                radius=30)
+
+            hotels = response.data
+
+            sorted_hotels = sorted(
+                [
+                    {
+                        'iataCode': hotel['iataCode'],
+                        'name': hotel['name'],
+                        'address': hotel['address'],
+                        'distance': hotel['distance'],
+                        'rating': hotel['rating']
+                    }
+                    for hotel in hotels
+                ],
+                key=lambda x: x['distance']['value']
+            )
+
+            result = sorted_hotels[:10]
+            print(result)
+        elif request == "activities":
+            result = f"search activities to do in {response_json['action_input']['destination']} and respond to user"
         
-        empty[endpoint] = result
+        empty[request] = result
+
+
+
+    # empty = {}
+    # for request in [response_json]:
+    #     endpoint = request.get("endpoint")
+    #     params = request.get("params", {})
+    #     print(params)
+        
+    #     if endpoint == "/search_flights":
+    #         try:
+    #             response = amadeus.shopping.flight_offers_search.get(
+    #                 originLocationCode=params['originLocationCode'],
+    #                 destinationLocationCode=params['destinationLocationCode'],
+    #                 departureDate=params['departureDate'],
+    #                 adults=params['adults'],
+    #                 max=5)
+
+    #             flights = response.data
+
+    #             clean_flights = extract_info(flights)
+
+    #             price = params.get('price', None)
+    #             cabin = params.get('cabin', None)
+
+    #             filtered_flights = filter_flights(clean_flights, max_price=price, cabin_class=cabin)
+
+    #             result = filtered_flights[:10]
+    #             print(result)
+
+
+    #             # keys_to_filter = ['numberOfBookableSeats','itineraries','price']
+
+    #             # result = [
+    #             #     {key: value for key, value in dictionary.items() if key in keys_to_filter}
+    #             #     for dictionary in flights
+    #             # ]
+
+    #         #     rd = response.data
+    #         except:
+    #             result = "No flights available"
+    #             print(result)
+    #     elif endpoint == "/search_hotels":
+    #         # Call the hotels API with the provided params
+    #         print(params)
+    #     else:
+    #         print(f"Unknown endpoint: {endpoint}")
+        
+    #     empty[endpoint] = result
 
 
 

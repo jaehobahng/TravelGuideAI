@@ -45,7 +45,6 @@ pip install requirements.txt
 
 ```
 .
-├── __pycache__/
 ├── images/
 ├── langchain_nomad/
 │   ├── __pycache__/
