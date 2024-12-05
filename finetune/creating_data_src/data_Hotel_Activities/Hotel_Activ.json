@@ -1,13 +1,13 @@
 [
     {
-        "input": "Can you help me find a hotel in Paris with a swimming pool and also recommend some activities nearby?",
+        "input": "Can you help me find a hotel in Minneapolis with a swimming pool and also recommend some activities nearby?",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "MSP",
                 "amenities": [
                     "SWIMMING_POOL"
                 ]
@@ -15,14 +15,14 @@
         }
     },
     {
-        "input": "Can you find me hotels in Paris with a 4-star rating and WiFi? Also, list some activities to do in the area.",
+        "input": "Can you find me hotels in Vladikavkaz with a 4-star rating and WiFi? Also, list some activities to do in the area.",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "OGZ",
                 "ratings": 4,
                 "amenities": [
                     "WIFI"
@@ -31,14 +31,14 @@
         }
     },
     {
-        "input": "Can you help me find 4-star hotels and activities in Paris with a swimming pool and WiFi?",
+        "input": "Can you help me find 4-star hotels and activities in Kaliningrad with a swimming pool and WiFi?",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "KGD",
                 "ratings": 4,
                 "amenities": [
                     "SWIMMING_POOL",
@@ -48,14 +48,14 @@
         }
     },
     {
-        "input": "I'm planning a trip to Paris. Can you suggest some activities and hotels with at least a 4-star rating and must-have amenities like WiFi and a swimming pool?",
+        "input": "I'm planning a trip to Catania. Can you suggest some activities and hotels with at least a 4-star rating and must-have amenities like WiFi and a swimming pool?",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "CTA",
                 "ratings": 4,
                 "amenities": [
                     "WIFI",
@@ -65,14 +65,14 @@
         }
     },
     {
-        "input": "Can you help me find hotels with a pool and Wi-Fi, and also suggest some activities in Paris?",
+        "input": "Can you help me find hotels with a pool and Wi-Fi, and also suggest some activities in Bangkok?",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "BKK",
                 "amenities": [
                     "SWIMMING_POOL",
                     "WIFI"
@@ -81,14 +81,14 @@
         }
     },
     {
-        "input": "Can you help me find 4-star hotels and activities near Paris? I need options with a swimming pool and WiFi.",
+        "input": "Can you help me find 4-star hotels and activities near Nairobi? I need options with a swimming pool and WiFi.",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "NBO",
                 "ratings": 4,
                 "amenities": [
                     "SWIMMING_POOL",
@@ -114,14 +114,14 @@
         }
     },
     {
-        "input": "Can you help me find hotels and activities in Paris? I'd like a 5-star hotel with a swimming pool and free Wi-Fi.",
+        "input": "Can you help me find hotels and activities in S\u00e3o Paulo? I'd like a 5-star hotel with a swimming pool and free Wi-Fi.",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "GRU",
                 "ratings": 5,
                 "amenities": [
                     "SWIMMING_POOL",
@@ -148,14 +148,14 @@
         }
     },
     {
-        "input": "Can you recommend some 4-star hotels with a pool and WiFi as well as activities in New York City?",
+        "input": "Can you recommend some 4-star hotels with a pool and WiFi as well as activities in San Diego City?",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "NYC",
+                "destination": "SAN",
                 "ratings": 4,
                 "amenities": [
                     "SWIMMING_POOL",
@@ -165,14 +165,14 @@
         }
     },
     {
-        "input": "Can you help me find activities and hotels with a pool and WiFi in Los Angeles?",
+        "input": "Can you help me find activities and hotels with a pool and WiFi in Santiago?",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "LAX",
+                "destination": "SCL",
                 "amenities": [
                     "SWIMMING_POOL",
                     "WIFI"
@@ -181,14 +181,14 @@
         }
     },
     {
-        "input": "Can you suggest some hotels and fun activities in Paris? I would prefer hotels with air conditioning and WiFi.",
+        "input": "Can you suggest some hotels and fun activities in Buenos Aires? I would prefer hotels with air conditioning and WiFi.",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "BUE",
                 "amenities": [
                     "AIR_CONDITIONING",
                     "WIFI"
@@ -210,14 +210,14 @@
         }
     },
     {
-        "input": "Can you help me find 4-star hotels with a swimming pool and activities to do in Paris?",
+        "input": "Can you help me find 4-star hotels with a swimming pool and activities to do in Chicago?",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "ORD",
                 "ratings": 4,
                 "amenities": [
                     "SWIMMING_POOL"
@@ -226,14 +226,14 @@
         }
     },
     {
-        "input": "Can you help me find hotels and activities in Miami with at least 4-star ratings and a pool?",
+        "input": "Can you help me find hotels and activities in Cape Town with at least 4-star ratings and a pool?",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "MIA",
+                "destination": "CPT",
                 "ratings": 4,
                 "amenities": [
                     "SWIMMING_POOL"
@@ -242,14 +242,14 @@
         }
     },
     {
-        "input": "Can you help me find hotels and activities in Paris? I prefer places with a pool and a gym.",
+        "input": "Can you help me find hotels and activities in Nizhny Novgorod? I prefer places with a pool and a gym.",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "GOJ",
                 "amenities": [
                     "SWIMMING_POOL",
                     "FITNESS_CENTER"
@@ -258,14 +258,14 @@
         }
     },
     {
-        "input": "Can you help me find activities and hotels in Paris? I would like a hotel with free WiFi and a swimming pool.",
+        "input": "Can you help me find activities and hotels in Manchester? I would like a hotel with free WiFi and a swimming pool.",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "MAN",
                 "amenities": [
                     "WIFI",
                     "SWIMMING_POOL"
@@ -274,14 +274,14 @@
         }
     },
     {
-        "input": "Can you help me find hotels in Paris with a swimming pool and wifi, and activities nearby?",
+        "input": "Can you help me find hotels in Odesa with a swimming pool and wifi, and activities nearby?",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "ODS",
                 "amenities": [
                     "SWIMMING_POOL",
                     "WIFI"
@@ -290,14 +290,14 @@
         }
     },
     {
-        "input": "Can you help me find activities and a hotel in Paris? I'm looking for a 4-star place with a swimming pool and free WiFi.",
+        "input": "Can you help me find activities and a hotel in Wellington? I'm looking for a 4-star place with a swimming pool and free WiFi.",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "WLG",
                 "ratings": 4,
                 "amenities": [
                     "SWIMMING_POOL",
@@ -307,14 +307,14 @@
         }
     },
     {
-        "input": "Can you recommend activities and 4-star hotels with a pool and Wi-Fi in Paris?",
+        "input": "Can you recommend activities and 4-star hotels with a pool and Wi-Fi in San Francisco?",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "SFO",
                 "ratings": 4,
                 "amenities": [
                     "SWIMMING_POOL",
@@ -324,14 +324,14 @@
         }
     },
     {
-        "input": "Can you help me find activities and hotels in Miami with a pool and WiFi?",
+        "input": "Can you help me find activities and hotels in Dallas with a pool and WiFi?",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "MIA",
+                "destination": "DAL",
                 "amenities": [
                     "SWIMMING_POOL",
                     "WIFI"
@@ -340,14 +340,14 @@
         }
     },
     {
-        "input": "Can you find hotels with a pool and a gym in Miami and suggest some activities there?",
+        "input": "Can you find hotels with a pool and a gym in Rome and suggest some activities there?",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "MIA",
+                "destination": "ROM",
                 "amenities": [
                     "SWIMMING_POOL",
                     "FITNESS_CENTER"
@@ -356,14 +356,14 @@
         }
     },
     {
-        "input": "Can you find me hotels in Paris with a swimming pool and good activities I can do nearby?",
+        "input": "Can you find me hotels in Venice with a swimming pool and good activities I can do nearby?",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "VEN",
                 "amenities": [
                     "SWIMMING_POOL"
                 ]
@@ -371,14 +371,14 @@
         }
     },
     {
-        "input": "Can you find me some activities and hotels in Miami? I would like hotels to have a swimming pool and offer free Wi-Fi.",
+        "input": "Can you find me some activities and hotels in Las Vegas? I would like hotels to have a swimming pool and offer free Wi-Fi.",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "MIA",
+                "destination": "LAS",
                 "amenities": [
                     "SWIMMING_POOL",
                     "WIFI"
@@ -387,14 +387,14 @@
         }
     },
     {
-        "input": "Can you help me find hotels and activities in Los Angeles? I want a hotel with a swimming pool and Wi-Fi.",
+        "input": "Can you help me find hotels and activities in Moscow? I want a hotel with a swimming pool and Wi-Fi.",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "LAX",
+                "destination": "MOW",
                 "amenities": [
                     "SWIMMING_POOL",
                     "WIFI"
@@ -403,14 +403,14 @@
         }
     },
     {
-        "input": "Can you provide information on activities and hotels in Los Angeles with a swimming pool and a gym?",
+        "input": "Can you provide information on activities and hotels in Dublin with a swimming pool and a gym?",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "LAX",
+                "destination": "DUB",
                 "amenities": [
                     "SWIMMING_POOL",
                     "FITNESS_CENTER"
@@ -419,14 +419,14 @@
         }
     },
     {
-        "input": "Can you suggest activities and 4-star hotels in Paris with a spa and WiFi?",
+        "input": "Can you suggest activities and 4-star hotels in Tashkent with a spa and WiFi?",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "TAS",
                 "ratings": 4,
                 "amenities": [
                     "SPA",
@@ -436,14 +436,14 @@
         }
     },
     {
-        "input": "Can you help me find activities and a hotel in Paris? I'd like something with a swimming pool and Wi-Fi.",
+        "input": "Can you help me find activities and a hotel in Kazan? I'd like something with a swimming pool and Wi-Fi.",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "KZN",
                 "amenities": [
                     "SWIMMING_POOL",
                     "WIFI"
@@ -484,14 +484,14 @@
         }
     },
     {
-        "input": "Can you find me some 5-star hotels and activities in Paris with a swimming pool and free WiFi?",
+        "input": "Can you find me some 5-star hotels and activities in Petropavlovsk-Kamchatsky with a swimming pool and free WiFi?",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "PKC",
                 "ratings": 5,
                 "amenities": [
                     "SWIMMING_POOL",
@@ -518,14 +518,14 @@
         }
     },
     {
-        "input": "Can you recommend activities and 4-star or higher hotels in Paris with access to a swimming pool and spa?",
+        "input": "Can you recommend activities and 4-star or higher hotels in Bangkok with access to a swimming pool and spa?",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "BKK",
                 "ratings": 4,
                 "amenities": [
                     "SWIMMING_POOL",
@@ -535,14 +535,14 @@
         }
     },
     {
-        "input": "Can you help me find hotels with a swimming pool and air conditioning in Miami? Also, I want to know about activities there.",
+        "input": "Can you help me find hotels with a swimming pool and air conditioning in Islamabad? Also, I want to know about activities there.",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "MIA",
+                "destination": "ISB",
                 "amenities": [
                     "SWIMMING_POOL",
                     "AIR_CONDITIONING"
@@ -551,14 +551,14 @@
         }
     },
     {
-        "input": "Can you help me find activities and 5-star hotels in Paris with a swimming pool and free WiFi?",
+        "input": "Can you help me find activities and 5-star hotels in Dallas with a swimming pool and free WiFi?",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "DAL",
                 "ratings": 5,
                 "amenities": [
                     "SWIMMING_POOL",
@@ -568,14 +568,14 @@
         }
     },
     {
-        "input": "Can you suggest some fun activities and 4-star hotels in Paris? I need a gym and WiFi at the hotel.",
+        "input": "Can you suggest some fun activities and 4-star hotels in Chicago? I need a gym and WiFi at the hotel.",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "ORD",
                 "ratings": 4,
                 "amenities": [
                     "FITNESS_CENTER",
@@ -585,14 +585,14 @@
         }
     },
     {
-        "input": "Can you suggest some 5-star hotels with a swimming pool and spa in Paris? Also, what activities are available there?",
+        "input": "Can you suggest some 5-star hotels with a swimming pool and spa in Kolkata? Also, what activities are available there?",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "KOL",
                 "ratings": 5,
                 "amenities": [
                     "SWIMMING_POOL",
@@ -602,14 +602,14 @@
         }
     },
     {
-        "input": "Can you help me find 4-star hotels with a spa and WiFi in Paris? Also, suggest some activities to do there.",
+        "input": "Can you help me find 4-star hotels with a spa and WiFi in Havana? Also, suggest some activities to do there.",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "HAV",
                 "ratings": 4,
                 "amenities": [
                     "SPA",
@@ -619,14 +619,14 @@
         }
     },
     {
-        "input": "Can you suggest hotels with a pool and WiFi in Paris? Also, any fun activities in the area?",
+        "input": "Can you suggest hotels with a pool and WiFi in Singapore? Also, any fun activities in the area?",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "SIN",
                 "amenities": [
                     "SWIMMING_POOL",
                     "WIFI"
@@ -635,14 +635,14 @@
         }
     },
     {
-        "input": "Can you suggest some 4-star hotels with a spa and fitness center in New York? Also, recommend activities nearby.",
+        "input": "Can you suggest some 4-star hotels with a spa and fitness center in Brindisi? Also, recommend activities nearby.",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "NYC",
+                "destination": "BDS",
                 "ratings": 4,
                 "amenities": [
                     "SPA",
@@ -652,14 +652,14 @@
         }
     },
     {
-        "input": "Can you help me find activities and 4-star hotels with a spa and WiFi in Paris?",
+        "input": "Can you help me find activities and 4-star hotels with a spa and WiFi in Montreal?",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "YUL",
                 "ratings": 4,
                 "amenities": [
                     "SPA",
@@ -669,14 +669,14 @@
         }
     },
     {
-        "input": "Can you find me activities and hotels in Paris? I\u2019d like a 4-star hotel with a spa and a swimming pool.",
+        "input": "Can you find me activities and hotels in Hanoi? I\u2019d like a 4-star hotel with a spa and a swimming pool.",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "HAN",
                 "ratings": 4,
                 "amenities": [
                     "SPA",
@@ -702,14 +702,14 @@
         }
     },
     {
-        "input": "Can you find me some 5-star hotels with a swimming pool and fitness center in Paris? Also, let me know about activities there.",
+        "input": "Can you find me some 5-star hotels with a swimming pool and fitness center in Naples? Also, let me know about activities there.",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "NAP",
                 "ratings": 5,
                 "amenities": [
                     "SWIMMING_POOL",
@@ -719,14 +719,14 @@
         }
     },
     {
-        "input": "Can you suggest activities and find me hotels with at least 4-star ratings and a swimming pool in Los Angeles?",
+        "input": "Can you suggest activities and find me hotels with at least 4-star ratings and a swimming pool in Treviso?",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "LAX",
+                "destination": "TSF",
                 "ratings": 4,
                 "amenities": [
                     "SWIMMING_POOL"
@@ -735,14 +735,14 @@
         }
     },
     {
-        "input": "Could you find activities and hotels in Miami? I'd love to have access to a pool and a spa in the hotel.",
+        "input": "Could you find activities and hotels in Santiago? I'd love to have access to a pool and a spa in the hotel.",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "MIA",
+                "destination": "SCL",
                 "amenities": [
                     "SWIMMING_POOL",
                     "SPA"
@@ -751,14 +751,14 @@
         }
     },
     {
-        "input": "Can you help me find 4-star hotels and activities in Paris? I specifically need those with a swimming pool and free WiFi.",
+        "input": "Can you help me find 4-star hotels and activities in Austin? I specifically need those with a swimming pool and free WiFi.",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "AUS",
                 "ratings": 4,
                 "amenities": [
                     "SWIMMING_POOL",
@@ -768,14 +768,14 @@
         }
     },
     {
-        "input": "Can you help me find activities and hotels in Paris? I\u2019d also like the hotels to have a swimming pool and air conditioning.",
+        "input": "Can you help me find activities and hotels in Atlanta? I\u2019d also like the hotels to have a swimming pool and air conditioning.",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "ATL",
                 "amenities": [
                     "SWIMMING_POOL",
                     "AIR_CONDITIONING"
@@ -801,14 +801,14 @@
         }
     },
     {
-        "input": "Can you help me find hotels and activities in New York City? I prefer hotels with a swimming pool and a gym, and they should have at least a 4-star rating.",
+        "input": "Can you help me find hotels and activities in Vladikavkaz City? I prefer hotels with a swimming pool and a gym, and they should have at least a 4-star rating.",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "NYC",
+                "destination": "OGZ",
                 "ratings": 4,
                 "amenities": [
                     "SWIMMING_POOL",
@@ -818,14 +818,14 @@
         }
     },
     {
-        "input": "Can you help me find hotels and activities in Paris with a swimming pool and free WIFI? Also, I'd prefer 4-star hotels.",
+        "input": "Can you help me find hotels and activities in Helsinki with a swimming pool and free WIFI? Also, I'd prefer 4-star hotels.",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "HEL",
                 "ratings": 4,
                 "amenities": [
                     "SWIMMING_POOL",
@@ -835,14 +835,14 @@
         }
     },
     {
-        "input": "Can you suggest activities and provide hotel options in Miami? I need a 5-star place with a swimming pool and Wi-Fi.",
+        "input": "Can you suggest activities and provide hotel options in Houston? I need a 5-star place with a swimming pool and Wi-Fi.",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "MIA",
+                "destination": "IAH",
                 "ratings": 5,
                 "amenities": [
                     "SWIMMING_POOL",
@@ -852,14 +852,14 @@
         }
     },
     {
-        "input": "Can you suggest hotels with a swimming pool in Paris and also recommend some activities there?",
+        "input": "Can you suggest hotels with a swimming pool in Toronto and also recommend some activities there?",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "YTO",
                 "amenities": [
                     "SWIMMING_POOL"
                 ]
@@ -882,14 +882,14 @@
         }
     },
     {
-        "input": "Can you help me find activities and hotels in Paris with a 5-star rating and a swimming pool?",
+        "input": "Can you help me find activities and hotels in Seattle with a 5-star rating and a swimming pool?",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "SEA",
                 "ratings": 5,
                 "amenities": [
                     "SWIMMING_POOL"
@@ -915,14 +915,14 @@
         }
     },
     {
-        "input": "Can you help me find hotels and activities in Paris? I'd like hotels with at least 4 stars and a swimming pool.",
+        "input": "Can you help me find hotels and activities in Munich? I'd like hotels with at least 4 stars and a swimming pool.",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "MUC",
                 "ratings": 4,
                 "amenities": [
                     "SWIMMING_POOL"
@@ -931,14 +931,14 @@
         }
     },
     {
-        "input": "Can you help me find hotels and activities in Miami with a swimming pool and free WiFi?",
+        "input": "Can you help me find hotels and activities in Kolkata with a swimming pool and free WiFi?",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "MIA",
+                "destination": "KOL",
                 "amenities": [
                     "SWIMMING_POOL",
                     "WIFI"
@@ -947,14 +947,14 @@
         }
     },
     {
-        "input": "Can you help me find hotels and fun activities in Paris? I'm looking for places with a good swimming pool and WiFi.",
+        "input": "Can you help me find hotels and fun activities in Glasgow? I'm looking for places with a good swimming pool and WiFi.",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "GLA",
                 "amenities": [
                     "SWIMMING_POOL",
                     "WIFI"
@@ -963,14 +963,14 @@
         }
     },
     {
-        "input": "Can you suggest activities and a nice hotel in Paris? I need a hotel with a spa and wifi.",
+        "input": "Can you suggest activities and a nice hotel in Kuala Lumpur? I need a hotel with a spa and wifi.",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "KUL",
                 "amenities": [
                     "SPA",
                     "WIFI"
@@ -979,14 +979,14 @@
         }
     },
     {
-        "input": "Can you help me find hotels and activities in Paris? I would like a 4-star hotel with a swimming pool and WiFi.",
+        "input": "Can you help me find hotels and activities in Makhachkala? I would like a 4-star hotel with a swimming pool and WiFi.",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "MCX",
                 "ratings": 4,
                 "amenities": [
                     "SWIMMING_POOL",
@@ -996,14 +996,14 @@
         }
     },
     {
-        "input": "Can you help me find fun activities and 4-star hotels in Paris? I also want a swimming pool and a fitness center in the hotel.",
+        "input": "Can you help me find fun activities and 4-star hotels in Odesa? I also want a swimming pool and a fitness center in the hotel.",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "ODS",
                 "ratings": 4,
                 "amenities": [
                     "SWIMMING_POOL",
@@ -1029,14 +1029,14 @@
         }
     },
     {
-        "input": "Can you suggest hotels and activities in Paris that allow pets and have a swimming pool? Also, the hotels should at least have a 4-star rating.",
+        "input": "Can you suggest hotels and activities in Cape Town that allow pets and have a swimming pool? Also, the hotels should at least have a 4-star rating.",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "CPT",
                 "ratings": 4,
                 "amenities": [
                     "SWIMMING_POOL",
@@ -1062,14 +1062,14 @@
         }
     },
     {
-        "input": "Can you help me find 4-star hotels with a spa and activities to do in Paris?",
+        "input": "Can you help me find 4-star hotels with a spa and activities to do in Tashkent?",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "TAS",
                 "ratings": 4,
                 "amenities": [
                     "SPA"
@@ -1078,14 +1078,14 @@
         }
     },
     {
-        "input": "Can you help me find 4-star hotels and activities in Paris? I'm looking for places with a pool and free WiFi.",
+        "input": "Can you help me find 4-star hotels and activities in Makhachkala? I'm looking for places with a pool and free WiFi.",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "MCX",
                 "ratings": 4,
                 "amenities": [
                     "SWIMMING_POOL",
@@ -1095,14 +1095,14 @@
         }
     },
     {
-        "input": "Can you suggest hotels in Miami with a swimming pool and WiFi, and also let me know about activities there?",
+        "input": "Can you suggest hotels in Naples with a swimming pool and WiFi, and also let me know about activities there?",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "MIA",
+                "destination": "NAP",
                 "amenities": [
                     "SWIMMING_POOL",
                     "WIFI"
@@ -1127,14 +1127,14 @@
         }
     },
     {
-        "input": "Can you suggest some activities and 4-star hotels in New York with a spa and free WiFi?",
+        "input": "Can you suggest some activities and 4-star hotels in Seoul with a spa and free WiFi?",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "NYC",
+                "destination": "SEL",
                 "ratings": 4,
                 "amenities": [
                     "SPA",
@@ -1144,14 +1144,14 @@
         }
     },
     {
-        "input": "I'm planning a trip to Paris and need a hotel with a pool and free wifi, plus I'm hoping for some fun activities there as well.",
+        "input": "I'm planning a trip to Ho Chi Minh City and need a hotel with a pool and free wifi, plus I'm hoping for some fun activities there as well.",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "HCM",
                 "amenities": [
                     "SWIMMING_POOL",
                     "WIFI"
@@ -1160,14 +1160,14 @@
         }
     },
     {
-        "input": "Can you help me find activities and 4-star hotels with a pool and free WiFi in Paris?",
+        "input": "Can you help me find activities and 4-star hotels with a pool and free WiFi in Nairobi?",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "NBO",
                 "ratings": 4,
                 "amenities": [
                     "SWIMMING_POOL",
@@ -1177,14 +1177,14 @@
         }
     },
     {
-        "input": "Can you help me find hotels with a swimming pool and activities to do in Los Angeles?",
+        "input": "Can you help me find hotels with a swimming pool and activities to do in Havana?",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "LAX",
+                "destination": "HAV",
                 "amenities": [
                     "SWIMMING_POOL"
                 ]
@@ -1192,14 +1192,14 @@
         }
     },
     {
-        "input": "Can you help me find 4-star hotels in NYC with a spa and free WiFi? Also, what are the top activities there?",
+        "input": "Can you help me find 4-star hotels in MOW with a spa and free WiFi? Also, what are the top activities there?",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "NYC",
+                "destination": "MOW",
                 "ratings": 4,
                 "amenities": [
                     "SPA",
@@ -1209,14 +1209,14 @@
         }
     },
     {
-        "input": "Can you help me find activities and 4-star hotels in New York with amenities like a swimming pool and free WiFi?",
+        "input": "Can you help me find activities and 4-star hotels in Naples with amenities like a swimming pool and free WiFi?",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "NYC",
+                "destination": "NAP",
                 "ratings": 4,
                 "amenities": [
                     "SWIMMING_POOL",
@@ -1226,14 +1226,14 @@
         }
     },
     {
-        "input": "Can you help me find 4-star hotels with a swimming pool and free WiFi in Paris, along with some activities to do?",
+        "input": "Can you help me find 4-star hotels with a swimming pool and free WiFi in Shanghai, along with some activities to do?",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "SHA",
                 "ratings": 4,
                 "amenities": [
                     "SWIMMING_POOL",
@@ -1243,14 +1243,14 @@
         }
     },
     {
-        "input": "Can you suggest some activities and find 4-star hotels in Paris with a swimming pool and free WiFi?",
+        "input": "Can you suggest some activities and find 4-star hotels in Santiago with a swimming pool and free WiFi?",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "SCL",
                 "ratings": 4,
                 "amenities": [
                     "SWIMMING_POOL",
@@ -1276,14 +1276,14 @@
         }
     },
     {
-        "input": "Can you help me find hotels and activities in Paris? I'd like a 5-star hotel and it must have a swimming pool and WiFi.",
+        "input": "Can you help me find hotels and activities in Istanbul Sabiha G\u00f6k\u00e7en? I'd like a 5-star hotel and it must have a swimming pool and WiFi.",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "SAW",
                 "ratings": 5,
                 "amenities": [
                     "SWIMMING_POOL",
@@ -1293,14 +1293,14 @@
         }
     },
     {
-        "input": "Can you help me find 5-star hotels and things to do in Los Angeles with a pool and free WiFi?",
+        "input": "Can you help me find 5-star hotels and things to do in Shanghai with a pool and free WiFi?",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "LAX",
+                "destination": "SHA",
                 "ratings": 5,
                 "amenities": [
                     "SWIMMING_POOL",
@@ -1310,14 +1310,14 @@
         }
     },
     {
-        "input": "Can you help me find activities and hotels in Paris? I'd prefer hotels that are 4-star or higher and offer amenities like a swimming pool and WiFi.",
+        "input": "Can you help me find activities and hotels in Simferopol? I'd prefer hotels that are 4-star or higher and offer amenities like a swimming pool and WiFi.",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "SIP",
                 "ratings": 4,
                 "amenities": [
                     "SWIMMING_POOL",
@@ -1327,14 +1327,14 @@
         }
     },
     {
-        "input": "Can you help me find hotels in Los Angeles with a pool and free wifi, and also tell me about activities there?",
+        "input": "Can you help me find hotels in Guadalajara with a pool and free wifi, and also tell me about activities there?",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "LAX",
+                "destination": "GDL",
                 "amenities": [
                     "SWIMMING_POOL",
                     "WIFI"
@@ -1343,14 +1343,14 @@
         }
     },
     {
-        "input": "Can you help me find 4-star hotels and activities in Paris with a spa and WiFi?",
+        "input": "Can you help me find 4-star hotels and activities in Auckland with a spa and WiFi?",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "AKL",
                 "ratings": 4,
                 "amenities": [
                     "SPA",
@@ -1393,14 +1393,14 @@
         }
     },
     {
-        "input": "Can you suggest hotels and activities in Paris? I'm looking for hotels with a swimming pool and spa, preferably 4 stars.",
+        "input": "Can you suggest hotels and activities in Canberra? I'm looking for hotels with a swimming pool and spa, preferably 4 stars.",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "CBR",
                 "ratings": 4,
                 "amenities": [
                     "SWIMMING_POOL",
@@ -1410,14 +1410,14 @@
         }
     },
     {
-        "input": "Can you help me find 4-star hotels and activities in New York with amenities like a swimming pool and a spa?",
+        "input": "Can you help me find 4-star hotels and activities in Adelaide with amenities like a swimming pool and a spa?",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "NYC",
+                "destination": "ADL",
                 "ratings": 4,
                 "amenities": [
                     "SWIMMING_POOL",
@@ -1427,14 +1427,14 @@
         }
     },
     {
-        "input": "Can you help me find some 5-star hotels with a pool and WiFi, as well as activities in Paris?",
+        "input": "Can you help me find some 5-star hotels with a pool and WiFi, as well as activities in Catania?",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "CTA",
                 "ratings": 5,
                 "amenities": [
                     "SWIMMING_POOL",
@@ -1461,14 +1461,14 @@
         }
     },
     {
-        "input": "Can you find me some 4-star hotels with a swimming pool and spa, as well as activities to do in Los Angeles?",
+        "input": "Can you find me some 4-star hotels with a swimming pool and spa, as well as activities to do in Mineralnye Vody?",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "LAX",
+                "destination": "MRV",
                 "ratings": 4,
                 "amenities": [
                     "SWIMMING_POOL",
@@ -1478,14 +1478,14 @@
         }
     },
     {
-        "input": "Could you help me find activities and 4-star hotels in Paris with a swimming pool and WiFi?",
+        "input": "Could you help me find activities and 4-star hotels in Almaty with a swimming pool and WiFi?",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "ALA",
                 "ratings": 4,
                 "amenities": [
                     "SWIMMING_POOL",
@@ -1495,14 +1495,14 @@
         }
     },
     {
-        "input": "Can you help me find 5-star hotels with a swimming pool and a spa in Paris? Also, suggest some activities in the area.",
+        "input": "Can you help me find 5-star hotels with a swimming pool and a spa in Santiago? Also, suggest some activities in the area.",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "SCL",
                 "ratings": 5,
                 "amenities": [
                     "SWIMMING_POOL",
@@ -1512,14 +1512,14 @@
         }
     },
     {
-        "input": "Can you help me find hotels and activities in Miami with a pool and Wi-Fi?",
+        "input": "Can you help me find hotels and activities in Sochi with a pool and Wi-Fi?",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "MIA",
+                "destination": "AER",
                 "amenities": [
                     "SWIMMING_POOL",
                     "WIFI"
@@ -1528,14 +1528,14 @@
         }
     },
     {
-        "input": "Can you help me find hotels in Paris with a swimming pool and free WiFi, and also suggest some activities nearby?",
+        "input": "Can you help me find hotels in Hong Kong with a swimming pool and free WiFi, and also suggest some activities nearby?",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "HKG",
                 "amenities": [
                     "SWIMMING_POOL",
                     "WIFI"
@@ -1544,14 +1544,14 @@
         }
     },
     {
-        "input": "Can you help me find activities and a hotel in Paris with at least 4-star ratings and WiFi?",
+        "input": "Can you help me find activities and a hotel in Kyiv with at least 4-star ratings and WiFi?",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "KIE",
                 "ratings": 4,
                 "amenities": [
                     "WIFI"
@@ -1560,14 +1560,14 @@
         }
     },
     {
-        "input": "Can you find some activities and 5-star hotels with a spa and swimming pool in Paris?",
+        "input": "Can you find some activities and 5-star hotels with a spa and swimming pool in Toronto?",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "YTO",
                 "ratings": 5,
                 "amenities": [
                     "SPA",
@@ -1577,14 +1577,14 @@
         }
     },
     {
-        "input": "Can you help me find activities and 4-star hotels with a pool and WiFi in Los Angeles?",
+        "input": "Can you help me find activities and 4-star hotels with a pool and WiFi in Paris?",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "LAX",
+                "destination": "PAR",
                 "ratings": 4,
                 "amenities": [
                     "SWIMMING_POOL",
@@ -1610,14 +1610,14 @@
         }
     },
     {
-        "input": "Can you help me find hotels in Paris with a swimming pool and Wi-Fi? Also, I\u2019d like to know about activities in the area.",
+        "input": "Can you help me find hotels in Sydney with a swimming pool and Wi-Fi? Also, I\u2019d like to know about activities in the area.",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "SYD",
                 "amenities": [
                     "SWIMMING_POOL",
                     "WIFI"
@@ -1626,14 +1626,14 @@
         }
     },
     {
-        "input": "Can you suggest activities and find me 4-star hotels in Paris? Looking for places with a pool and free Wi-Fi.",
+        "input": "Can you suggest activities and find me 4-star hotels in Atlanta? Looking for places with a pool and free Wi-Fi.",
         "output": {
             "action": [
                 "search_hotels",
                 "activities"
             ],
             "action_input": {
-                "destination": "PAR",
+                "destination": "ATL",
                 "ratings": 4,
                 "amenities": [
                     "SWIMMING_POOL",
