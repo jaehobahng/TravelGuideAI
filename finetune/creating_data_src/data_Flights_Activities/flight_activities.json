@@ -1,0 +1,5104 @@
+[
+    {
+        "input": "What are activities and flights from Kathmandu to JFK on Wednesday, July 26th? Can we have a Business Class ticket for two adults?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "KTM",
+                "destination": "UFA",
+                "departure_date": "2023-07-26",
+                "adults": 2,
+                "class": "BUSINESS"
+            }
+        }
+    },
+    {
+        "input": "What is the cheapest flight from London to Paris on 2022-07-25 with a non-stop return?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "LON",
+                "destination": "PAR",
+                "departure_date": "2022-07-25",
+                "return_date": "2022-07-29",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "flight from Seoul to Mumbai on january 1st",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "SEL",
+                "destination": "BOM",
+                "departure_date": "2023-01-01",
+                "adults": 2,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "from London to Paris on 2022-07-15, how many non-stop flights are there? I have a family of four with two children.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "LON",
+                "destination": "PAR",
+                "departure_date": "2022-07-15",
+                "adults": 1,
+                "children": 2,
+                "infants": 0,
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from MIA to HAV on 2024-03-25 with return on 2024-03-31 for 3 adults, 2 children, and want non-stop flights only.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "MIA",
+                "destination": "HAV",
+                "departure_date": "2024-03-25",
+                "return_date": "2024-03-31",
+                "adults": 3,
+                "children": 2,
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "One way flight from Sydney to Barcelona on October 12th for two adults.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "SYD",
+                "destination": "BCN",
+                "departure_date": "2022-10-12",
+                "adults": 2,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm looking for activities and flights from JFK to MIA on 2024-03-16, please also provide non-stop flights.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "LYS",
+                "destination": "MIA",
+                "departure_date": "2024-03-16",
+                "adults": 1,
+                "return_date": "",
+                "children": 0,
+                "infants": 0,
+                "class": "",
+                "nonStop": true,
+                "maxPrice": -1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I would like a flight from Venice to Edmonton with my family on December 15th.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "VEN",
+                "destination": "YEG",
+                "departure_date": "2022-12-15",
+                "adults": 1,
+                "return_date": "",
+                "children": 0,
+                "infants": 0,
+                "class": "",
+                "nonStop": false,
+                "maxPrice": 1000000,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "How many flight options from London to Rome on March 15th with 2 adults, non-stop flights only?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "LON",
+                "destination": "FCO",
+                "departure_date": "2024-03-15",
+                "adults": 2,
+                "nonStop": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Book a flight from JFK to Brisbane on 2022-07-15 for me and my family.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "SAN",
+                "destination": "BNE",
+                "departure_date": "2022-07-15",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I am looking for flights from London to Paris on August 1st, return flight not needed.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "LON",
+                "destination": "PAR",
+                "departure_date": "2023-08-01",
+                "return_date": "",
+                "adults": "1",
+                "children": "0",
+                "infants": "0",
+                "class": "",
+                "nonStop": false,
+                "maxPrice": 0,
+                "max": "5"
+            }
+        }
+    },
+    {
+        "input": "flight from Berlin to Paris on 2022-07-15 with 1 adult, flight information only",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "BER",
+                "destination": "PAR",
+                "departure_date": "2022-07-15",
+                "adults": 1,
+                "return_date": "",
+                "children": 0,
+                "infants": 0,
+                "class": "",
+                "nonStop": false,
+                "maxPrice": 0,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Hello, I'm planning a trip from Cape Town to Brindisi on June 15th for me and my family. Please show non-stop flights only.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "CPT",
+                "destination": "BDS",
+                "departure_date": "2023-06-15",
+                "adults": 1,
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What is information about a flight from Madrid (MAD) to Chicago (ORD) on 2022-07-15? I want economy class, no stop flights",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "MAD",
+                "destination": "ORD",
+                "departure_date": "2022-07-15",
+                "adults": 1,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "flight from Chicago to Cape Town on Saturday 2024-02-03, non-stop only, economy class for two adults",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "ORD",
+                "destination": "CPT",
+                "departure_date": "2024-02-03",
+                "adults": 2,
+                "max": 5,
+                "class": "ECONOMY",
+                "nonStop": true
+            }
+        }
+    },
+    {
+        "input": "What's a good flight from Amsterdam to JFK on Saturday, June 17th with two adults?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "AMS",
+                "destination": "PRG",
+                "departure_date": "2023-06-17",
+                "adults": 2,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Hello, I'd like to book a flight from Dhaka to NYC on Friday, May 27th with my family of four.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "DHA",
+                "destination": "NYC",
+                "departure_date": "2022-05-27",
+                "adults": 1,
+                "children": 3
+            }
+        }
+    },
+    {
+        "input": "One-way flight from San Francisco to JFK on 2024-07-15 for 2 adults",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "max": 5,
+                "origin": "SFO",
+                "destination": "HAV",
+                "departure_date": "2024-07-15",
+                "adults": 2
+            }
+        }
+    },
+    {
+        "input": "flight from Vladikavkaz to Rome on 2024-02-27 with 2 adults, return flight on 2024-03-01, economy class, non-stop",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "OGZ",
+                "destination": "FCO",
+                "departure_date": "2024-02-27",
+                "adults": 2,
+                "return_date": "2024-03-01",
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'd like to travel from Addis Ababa (Addis Ababa) to San Diego City (JFK), return on August 15th, for me and my partner, with a maximum of $1000 per ticket, only non-stop flights.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "ADD",
+                "destination": "SAN",
+                "departure_date": "2023-08-01",
+                "return_date": "2023-08-15",
+                "adults": 2,
+                "maxPrice": 1000,
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What activities are available in Paris? I am looking for a flight from Barcelona to Paris on August 15th, with a return on August 22nd, one adult, two children, economy class.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "BCN",
+                "destination": "PAR",
+                "departure_date": "2023-08-15",
+                "return_date": "2023-08-22",
+                "adults": 1,
+                "children": 2,
+                "class": "ECONOMY"
+            }
+        }
+    },
+    {
+        "input": "What activities and flights are available from JFK to Auckland on 2024-03-15 for 2 adults, and we only want non-stop flights?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "SUF",
+                "destination": "AKL",
+                "departure_date": "2024-03-15",
+                "adults": 2,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What is information on flights from Phoenix to JFK for tomorrow? I want economy class with two adults.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "destination": "CAI",
+                "origin": "PHX",
+                "departure_date": "2024-02-28",
+                "adults": 2,
+                "class": "ECONOMY",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What is a flight from Calgary to Makhachkala on 2024-02-20 and activities for that day?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "YYC",
+                "destination": "MCX",
+                "departure_date": "2024-02-20",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Hanoi to Rome, depart on June 10th, return on June 17th, 2 adults, economy class only non-stop flights",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "HAN",
+                "destination": "FCO",
+                "departure_date": "2023-06-10",
+                "return_date": "2023-06-17",
+                "adults": 2,
+                "class": "",
+                "nonStop": true,
+                "maxPrice": null,
+                "children": null,
+                "infants": null,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Flight from Mumbai (JFK) to Rostov-on-Don (Rostov-on-Don) on July 10th, returning on July 17th for a family of 3.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "BOM",
+                "destination": "ROV",
+                "departure_date": "2022-07-10",
+                "return_date": "2022-07-17",
+                "adults": 1,
+                "children": 0,
+                "infants": 0,
+                "class": "",
+                "nonStop": false,
+                "maxPrice": 0,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What flights are there from San Francisco to JFK on 2024-02-14? I'd like to know about activities too.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "SFO",
+                "destination": "DTW",
+                "departure_date": "2024-02-14",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "How many activities are there around Kazan Eiffel Tower? I need a flight from London LHR to Kazan KZN on June 15th, one-way for two adults.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "LHR",
+                "destination": "KZN",
+                "departure_date": "2024-06-15",
+                "adults": 2,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Flights from New York to Naples on April 15th, return on May 1st with two adults",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "NYC",
+                "destination": "NAP",
+                "departure_date": "2024-04-15",
+                "return_date": "2024-05-01",
+                "adults": 2,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "How much does it cost for a flight from Minneapolis to NYC on August 15th?",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "MSP",
+                "destination": "NYC",
+                "departure_date": "2023-08-15",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Flights from Saint Petersburg to JFK on 2024-03-15, please also give me info for activities.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "LED",
+                "destination": "YTO",
+                "departure_date": "2024-03-15",
+                "adults": 1,
+                "return_date": "",
+                "children": 0,
+                "infants": 0,
+                "class": "",
+                "nonStop": false,
+                "maxPrice": 0,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Quebec City for activities on July 15th with my wife. We are flying from Quebec City (YQB) to Prague (JFK), we'd like a flight with at least one stop, return date is July 22nd.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "YQB",
+                "destination": "PRG",
+                "departure_date": "2023-07-15",
+                "return_date": "2023-07-22",
+                "adults": 1,
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": false,
+                "maxPrice": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What activities are there for 1 adult going from Houston to Madrid on a Tuesday, return flight Saturday, non-stop flights only?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "IAH",
+                "destination": "MAD",
+                "departure_date": "2023-08-15",
+                "return_date": "2023-08-19",
+                "adults": 1,
+                "class": "",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm looking for flights from Ho Chi Minh City to JFK on August 15th, please include activities information as well.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "HCM",
+                "destination": "AAQ",
+                "departure_date": "2023-08-15",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "flight from Petropavlovsk-Kamchatsky to Paris on June 15th, non-stop flights only",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "PKC",
+                "destination": "PAR",
+                "departure_date": "2023-06-15",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What activities and flights are available from Makhachkala to Rome on 2024-07-15?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "MCX",
+                "destination": "FCO",
+                "departure_date": "2024-07-15",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "what are activities near me? I am traveling from Jfk to Lax on 2024-03-25, with my family of 4 (2 kids) for vacation",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "MUC",
+                "destination": "BER",
+                "departure_date": "2024-03-25",
+                "return_date": "",
+                "adults": 2,
+                "children": 2,
+                "infants": 0,
+                "class": "",
+                "nonStop": false,
+                "maxPrice": 10000,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What activities are available in Irkutsk on the 15th? I'm flying from JFK airport to IKT airport.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "KIE",
+                "destination": "IKT",
+                "departure_date": "2024-05-15",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Show me flights from Verona (Verona) to Philadelphia City (JFK) on Friday, August 13th with a return flight on Sunday, August 15th and one adult traveling in economy class.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "VRN",
+                "destination": "PHL",
+                "departure_date": "2024-08-13",
+                "return_date": "2024-08-15",
+                "adults": 1,
+                "class": "ECONOMY",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Ulyanovsk, London, July 25th",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "ULY",
+                "destination": "LON",
+                "departure_date": "2023-07-25",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What activities are there for a flight from Cape Town JFK to Makhachkala Makhachkala on Saturday, April 17th?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "CPT",
+                "destination": "MCX",
+                "departure_date": "2021-04-17",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Flight from Brussels to MIA on Jan 1, 2024 with two adults",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "BRU",
+                "destination": "MIA",
+                "departure_date": "2024-01-01",
+                "adults": 2,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What activities are available for a family of four from London to Yekaterinburg on June 15th?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "LON",
+                "destination": "SVX",
+                "departure_date": "2024-06-15",
+                "adults": 2,
+                "children": 2,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Flight from San Diego (JFK) to Chita (HTA) on June 15, 2024 for one person.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "SAN",
+                "destination": "HTA",
+                "departure_date": "2024-06-15",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What's available for flights from Catania to JFK on June 15th, 2024? I'll have my wife and two kids with me.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "CTA",
+                "destination": "RIO",
+                "departure_date": "2024-06-15",
+                "adults": "2",
+                "children": "2",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What are activities and flight prices for Boston (BOS) to Rome (FCO), departing from Boston on April 15th, with return date of April 22nd, for 2 adults and a child?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "BOS",
+                "destination": "FCO",
+                "departure_date": "2024-04-15",
+                "return_date": "2024-04-22",
+                "adults": 2,
+                "children": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "flight from London to Paris on June 15th for 2 people and return flight on June 22nd, with two children and max price of 5000",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "LON",
+                "destination": "PAR",
+                "departure_date": "2024-06-15",
+                "return_date": "2024-06-22",
+                "adults": 2,
+                "children": 2,
+                "maxPrice": 5000,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I am flying from JFK to Makhachkala on January 15th, 2024.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "ATL",
+                "destination": "MCX",
+                "departure_date": "2024-01-15",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What's the best way to get from Catania CTA to Taipei JFK on 2024-07-15? I'm looking for a flight with two adults.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "CTA",
+                "destination": "TPE",
+                "departure_date": "2024-07-15",
+                "adults": 2,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What activities are available in Nizhny Novgorod on January 10th, 2024? I am flying from Dallas JFK airport to Nizhny Novgorod GOJ airport with a return flight two days later.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "DAL",
+                "destination": "GOJ",
+                "departure_date": "2024-01-10",
+                "return_date": "2024-01-12",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "From Chita to Barcelona on July 10th with two adults, return on July 15th.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "HTA",
+                "destination": "BCN",
+                "departure_date": "2023-07-10",
+                "return_date": "2023-07-15",
+                "adults": 2,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "flight from MIA to Samara on July 17th, class is Business",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "MIA",
+                "destination": "KUF",
+                "departure_date": "2023-07-17",
+                "adults": 1,
+                "class": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "what activities can I do in Hanoi? I am looking for flights from Rio de Janeiro to HAN on a Friday.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "RIO",
+                "destination": "HAN",
+                "departure_date": "2023-09-15",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What is the flight information for Oslo (OSL) to BUD (BUD) on 2024-07-15? I am looking for non-stop flights.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "OSL",
+                "destination": "BUD",
+                "departure_date": "2024-07-15",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Please show me activities and flights from Calgary to London on June 15th, for two adults.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "YYC",
+                "destination": "LON",
+                "departure_date": "2024-06-15",
+                "adults": 2,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "flight from Chita to Bangkok on July 25th for 2 adults",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "HTA",
+                "destination": "BKK",
+                "departure_date": "2023-07-25",
+                "adults": 2,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Flights from Madrid to Paris on 2024-03-16 and activities for families with 2 children",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "MAD",
+                "destination": "PAR",
+                "departure_date": "2024-03-16",
+                "adults": 1,
+                "children": 2,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "what is available for flights from Singapore to ORD on 2024-07-15? please show only non-stop flights.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "SIN",
+                "destination": "ORD",
+                "departure_date": "2024-07-15",
+                "adults": 1,
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "How much is a flight from Delhi to JFK on June 15th, 2022? What activities are available around the airport?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "DEL",
+                "destination": "RIO",
+                "departure_date": "2022-06-15",
+                "adults": "1",
+                "max": "5"
+            }
+        }
+    },
+    {
+        "input": "I would like to find a flight from JFK to DXB on 2022-07-15, please also include activities for this trip.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "SAW",
+                "destination": "DXB",
+                "departure_date": "2022-07-15",
+                "adults": 1,
+                "return_date": "",
+                "children": 0,
+                "infants": 0,
+                "class": "",
+                "nonStop": false,
+                "maxPrice": 0,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "flight from Istanbul Sabiha G\u00f6k\u00e7en to JFK on July 10, 2024 with 1 adult and non-stop flights only",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "SAW",
+                "destination": "WAR",
+                "departure_date": "2024-07-10",
+                "adults": 1,
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "flight from London to Paris on May 15th, non-stop",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "LON",
+                "destination": "PAR",
+                "departure_date": "2024-05-15",
+                "max": 5,
+                "nonStop": "true"
+            }
+        }
+    },
+    {
+        "input": "What flights are available from Tyumen to Istanbul on June 10, 2024? How much does it cost for a family of four with two children under 2 years old?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "TJM",
+                "destination": "IST",
+                "departure_date": "2024-06-10",
+                "adults": 2,
+                "children": 2,
+                "infants": 2
+            }
+        }
+    },
+    {
+        "input": "What activities are available for Dallas to Chicago? And I need a flight on July 15th with one adult, return on July 22nd, non-stop only.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "DAL",
+                "destination": "ORD",
+                "departure_date": "2023-07-15",
+                "return_date": "2023-07-22",
+                "adults": 1,
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "what flights do I have from Brussels to Manila on July 15?",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "BRU",
+                "destination": "MNL",
+                "departure_date": "2022-07-15",
+                "adults": 1,
+                "class": "",
+                "nonStop": "",
+                "maxPrice": "",
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Flight from Berlin to Rome, June 15th, return on June 22nd, economy class, 2 adults and 1 child.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "BER",
+                "destination": "ROM",
+                "departure_date": "2024-06-15",
+                "return_date": "2024-06-22",
+                "adults": 2,
+                "children": 1,
+                "class": "ECONOMY",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "flights from Helsinki (JFK) to Tokyo for tomorrow with 2 adults, non-stop flights only",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "HEL",
+                "destination": "NRT",
+                "departure_date": "2023-03-15",
+                "adults": 2,
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can I get a flight from Glasgow to Odesa on December 15, 2022? And also some activities",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "GLA",
+                "destination": "ODS",
+                "departure_date": "2022-12-15",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from Treviso JFK on October 10, 2024, back and forth for me, my wife, and our two kids.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "TSF",
+                "destination": "KHI",
+                "departure_date": "2024-10-10",
+                "return_date": "2024-10-24",
+                "adults": 2,
+                "children": 2,
+                "infants": 0,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "flight from Madrid to Barcelona on June 15th, 2024, with a return flight two days later and only non-stop flights",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "MAD",
+                "destination": "BCN",
+                "departure_date": "2024-06-15",
+                "return_date": "2024-06-17",
+                "adults": "1",
+                "nonStop": "true",
+                "max": "5"
+            }
+        }
+    },
+    {
+        "input": "Book a flight from Portland to JFK on 2022-07-15, with 1 adult, and also show me activities in Simferopol",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "PDX",
+                "destination": "SIP",
+                "departure_date": "2022-07-15",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Flight from Hong Kong to Rome for 2 adults on July 15th, return on July 22nd.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "HKG",
+                "destination": "FCO",
+                "departure_date": "2024-07-15",
+                "return_date": "2024-07-22",
+                "adults": 2,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Yekaterinburg to New York",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "SVX",
+                "destination": "NYC",
+                "departure_date": "2024-03-16"
+            }
+        }
+    },
+    {
+        "input": "flight from Stockholm to Kazan on 2022-07-15, please also suggest activities.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "STO",
+                "destination": "KZN",
+                "departure_date": "2022-07-15",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "flight from Austin to Rome on 2022-09-01, non-stop flights only",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "AUS",
+                "destination": "ROM",
+                "departure_date": "2022-09-01",
+                "adults": 1,
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What flights are available from S\u00e3o Paulo to JFK on a specific day?",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "GRU",
+                "destination": "KHV",
+                "departure_date": "2023-07-22",
+                "adults": 1,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": "",
+                "maxPrice": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I want to go from Yerevan to Rome on August 15, 2024 with my wife.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "EVN",
+                "destination": "FCO",
+                "departure_date": "2024-08-15",
+                "return_date": "",
+                "adults": 1,
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": false,
+                "maxPrice": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "One way flight from Dublin to JFK on August 25th for two adults with economy class",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "DUB",
+                "destination": "ATL",
+                "departure_date": "2023-08-25",
+                "adults": 2,
+                "class": "ECONOMY",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What activities are available in Paris? I'm flying from London to Paris on 2024-02-15, return on 2024-02-22.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "LON",
+                "destination": "PAR",
+                "departure_date": "2024-02-15",
+                "return_date": "2024-02-22",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Madrid to Las Vegas for July 15th, only non-stop flights.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "MAD",
+                "destination": "LAS",
+                "departure_date": "2022-07-15",
+                "adults": 1,
+                "max": 5,
+                "nonStop": true
+            }
+        }
+    },
+    {
+        "input": "I'm looking for activities and a flight from Sydney to NYC on 2024-02-27 with 2 adults and 1 child.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "SYD",
+                "destination": "NYC",
+                "departure_date": "2024-02-27",
+                "adults": 2,
+                "children": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you give me flight prices from Seoul to OVB for next Wednesday, return on Saturday?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "SEL",
+                "destination": "OVB",
+                "departure_date": "2024-02-21",
+                "return_date": "2024-02-24",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What is the flight duration from LAX to NYC on June 1st?"
+    },
+    {
+        "input": "What activities and flights are available from LAX to JFK on 2024-03-15?"
+    },
+    {
+        "input": "Request for a flight from Dallas to ORD on 2022-06-15 with 2 adults, return date of 2022-06-20, non-stop only.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "DAL",
+                "destination": "ORD",
+                "departure_date": "2022-06-15",
+                "return_date": "2022-06-20",
+                "adults": 2,
+                "children": 0,
+                "infants": 0,
+                "class": "",
+                "nonStop": true,
+                "maxPrice": 10000,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "One-way flight from JFK to MIA on July 1st, with one adult.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "VIE",
+                "destination": "MIA",
+                "departure_date": "2023-07-01",
+                "adults": 1
+            }
+        }
+    },
+    {
+        "input": "What activities and a flight from Sydney (JFK) to Treviso (Treviso) on January 15, 2024?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "SYD",
+                "destination": "TSF",
+                "departure_date": "2024-01-15",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What activities are there near JFK airport? I'm flying from Krasnodar to Delhi on May 1st, but please only show non-stop flights and it's just for me.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "KRR",
+                "destination": "DEL",
+                "departure_date": "2024-05-01",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I want to book a flight from JFK to HTA on Saturday, March 19th for 2 adults with a max price of $1000. Also show me activities available in HTA.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "KHV",
+                "destination": "HTA",
+                "departure_date": "2022-03-19",
+                "return_date": "",
+                "adults": 2,
+                "children": "",
+                "infants": "",
+                "class": "ECONOMY",
+                "nonStop": "",
+                "maxPrice": 1000,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "flight from Brussels to Venice on january 15th",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "BRU",
+                "destination": "VEN",
+                "departure_date": "2024-01-15",
+                "adults": 2,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "ECONOMY",
+                "nonStop": false,
+                "maxPrice": null,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm looking for flights from Saint Petersburg to JFK on March 12th, with a return on April 15th, and I'd like economy class.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "LED",
+                "destination": "SYD",
+                "departure_date": "2023-03-12",
+                "return_date": "2023-04-15",
+                "adults": 1,
+                "class": "ECONOMY",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Flights from JFK to MIA on 2024-07-15, return on 2024-07-22, with two adults, non-stop flights only",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "IKT",
+                "destination": "MIA",
+                "departure_date": "2024-07-15",
+                "return_date": "2024-07-22",
+                "adults": 2,
+                "maxPrice": null,
+                "class": null,
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Flight from MIA to CTA on 2024-07-15, return on 2024-07-22, 2 adults and 1 child, economy class, non-stop flights only.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "MIA",
+                "destination": "CTA",
+                "departure_date": "2024-07-15",
+                "return_date": "2024-07-22",
+                "adults": 2,
+                "children": 1,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Flight from Irkutsk to JFK on May 1st, please also provide activities.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "IKT",
+                "destination": "DTW",
+                "departure_date": "2024-05-01",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "flight from Cairo to MIA on 2022-07-25, return on 2022-08-01, 1 adult, non-stop",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "CAI",
+                "destination": "MIA",
+                "departure_date": "2022-07-25",
+                "return_date": "2022-08-01",
+                "adults": 1,
+                "max": 5,
+                "nonStop": true
+            }
+        }
+    },
+    {
+        "input": "Flights from MIA to Rome on 2024-07-15, return date is 2024-07-20, 2 adults, 1 child, first class only non-stop flights",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "MIA",
+                "destination": "ROM",
+                "departure_date": "2024-07-15",
+                "return_date": "2024-07-20",
+                "adults": 2,
+                "children": 1,
+                "class": "FIRST",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Need flight from Alice Springs (JFK) to Karachi, on July 12th, 2024, returning July 19th with 2 adults",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "ASP",
+                "destination": "KHI",
+                "departure_date": "2024-07-12",
+                "return_date": "2024-07-19",
+                "adults": 2,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "flight from Mineralnye Vody to Rome on 2022-07-15 for 1 adult, activities in Barcelona",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "MRV",
+                "destination": "FCO",
+                "departure_date": "2022-07-15",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Flight from Istanbul Sabiha G\u00f6k\u00e7en to OSL on October 15th, non-stop economy class for two adults",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "SAW",
+                "destination": "OSL",
+                "departure_date": "2024-10-15",
+                "return_date": "",
+                "adults": 2,
+                "children": 0,
+                "infants": 0,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What is available for a flight from Seattle to Hong Kong on Monday, June 14th with my family of three?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "SEA",
+                "destination": "HKG",
+                "departure_date": "2021-06-14",
+                "adults": 1,
+                "children": 2,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "flights from Dubai JFK to Catania Catania on 2022-09-01 for 1 adult, non-stop flights only",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "DXB",
+                "destination": "CTA",
+                "departure_date": "2022-09-01",
+                "adults": 1,
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "flight from Miami to New York on July 25th for 2 adults",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "MIA",
+                "destination": "NYC",
+                "departure_date": "2023-07-25",
+                "adults": 2,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "flight from Rome JFK to Bangkok Bangkok on July 15th, non-stop.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "ROM",
+                "destination": "BKK",
+                "departure_date": "2023-07-15",
+                "adults": "1",
+                "max": "5"
+            }
+        }
+    },
+    {
+        "input": "What's the best way to get from Mumbai (BOM) to Rome (FCO) on 2024-06-15? Please include flights with an economy class for two adults, three children, and one infant.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "BOM",
+                "destination": "FCO",
+                "departure_date": "2024-06-15",
+                "adults": 2,
+                "children": 3,
+                "infants": 1,
+                "class": "ECONOMY",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "flight from NY to LA on 2022-07-25",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "NY",
+                "destination": "LA",
+                "departure_date": "2022-07-25",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "How much does a flight from Brindisi to JFK cost on 2022-09-01? I'm traveling with my spouse and would like to fly back on 2022-09-05.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "BDS",
+                "destination": "PER",
+                "departure_date": "2022-09-01",
+                "return_date": "2022-09-05",
+                "adults": 2,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Flights from Dublin to Pisa on August 15th, non-stop only",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "DUB",
+                "destination": "PIS",
+                "departure_date": "2023-08-15",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What activities are there around Tokyo? I want to fly from Tokyo to Paris, return on August 10th with my family (2 adults + 2 children) on business class and only non-stop flights. What is the price cap?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "TYO",
+                "destination": "PAR",
+                "departure_date": "2023-08-01",
+                "return_date": "2023-08-10",
+                "adults": 2,
+                "children": 2,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "maxPrice": null,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "flight from Verona to Athens for January 15th, return on January 22nd with a family of four (2 adults and 2 children), first class only.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "VRN",
+                "destination": "ATH",
+                "departure_date": "2023-01-15",
+                "return_date": "2023-01-22",
+                "adults": 2,
+                "children": 2,
+                "class": "FIRST",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "flight from Calgary JFK to Naples Naples on 2022-07-25 with a return on 2022-08-01 for 2 adults, 1 child, non-stop flights only",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "YYC",
+                "destination": "NAP",
+                "departure_date": "2022-07-25",
+                "return_date": "2022-08-01",
+                "adults": 2,
+                "children": 1,
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What are my options for activities and flights from Hanoi to NYC on 2022-07-15? I'm looking for a return flight with at least one non-stop option, up to $1000 total cost, with me and one child.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "HAN",
+                "destination": "NYC",
+                "departure_date": "2022-07-15",
+                "return_date": "2022-07-22",
+                "children": 1,
+                "maxPrice": 1000,
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What activities can I do in Havana on Friday, April 15th? Can you also find me a flight from HAV to DTW for that day?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "HAV",
+                "destination": "DTW",
+                "departure_date": "2022-04-15"
+            }
+        }
+    },
+    {
+        "input": "",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "NYC",
+                "destination": "SVX",
+                "departure_date": "2023-03-15",
+                "adults": 2,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": "",
+                "maxPrice": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Please give me information for activities and a flight from Tbilisi to JFK on January 10th, 2024.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "TBS",
+                "destination": "PER",
+                "departure_date": "2024-01-10",
+                "return_date": "",
+                "adults": 1,
+                "children": 0,
+                "infants": 0,
+                "class": "",
+                "nonStop": false,
+                "maxPrice": null,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Flight from Palermo to JFK on Monday, non-stop only",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "PMO",
+                "destination": "PHL",
+                "departure_date": "2023-08-21",
+                "adults": 1,
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "flight from London to Rome on July 15th, return flight on July 22nd for two adults and three children.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "LON",
+                "destination": "ROM",
+                "departure_date": "2024-07-15",
+                "return_date": "2024-07-22",
+                "adults": 2,
+                "children": 3,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "flight from Krasnodar to Rome on January 15, 2024",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "KRR",
+                "destination": "FCO",
+                "departure_date": "2024-01-15",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you show me flights from Treviso (JFK) to Dhaka (Dhaka) on October 15th? I'd like a Premium Economy ticket for two adults.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "TSF",
+                "destination": "DHA",
+                "departure_date": "2023-10-15",
+                "adults": 2,
+                "class": "PREMIUM_ECONOMY"
+            }
+        }
+    },
+    {
+        "input": "flight from JFK to MIA on 2022-07-25, one way, ECONOMY class",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "ALA",
+                "destination": "MIA",
+                "departure_date": "2022-07-25",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm looking for activities and a flight from Cagliari to Rome on July 15th, please.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "CAG",
+                "destination": "FCO",
+                "departure_date": "2023-07-15",
+                "adults": "1",
+                "max": "5"
+            }
+        }
+    },
+    {
+        "input": "I am looking for a flight from Krasnodar to Rome on August 10th with two adults, one child and one infant. Can you also show me some activities?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "KRR",
+                "destination": "FCO",
+                "departure_date": "2023-08-10",
+                "return_date": "",
+                "adults": 2,
+                "children": 1,
+                "infants": 1,
+                "class": "",
+                "nonStop": false,
+                "maxPrice": 0,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What activities can I do in Rio de Janeiro on June 15th? Also, book a flight from Brussels to Rio de Janeiro for tomorrow.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "BRU",
+                "destination": "RIO",
+                "departure_date": "2024-06-15",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What activities can I do in Hong Kong? I'd like a flight from Hong Kong (HKG) to Tokyo (NRT) on August 15, 2023.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "HKG",
+                "destination": "NRT",
+                "departure_date": "2023-08-15",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "what's available for flights from ORD to San Francisco on 2024-03-15 with 2 adults and a child?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "ORD",
+                "destination": "SFO",
+                "departure_date": "2024-03-15",
+                "adults": 2,
+                "children": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What activities are there at the beach? I'd like a flight from Vienna to NYC on August 15th.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "VIE",
+                "destination": "NYC",
+                "departure_date": "2024-08-15",
+                "adults": "1",
+                "max": "5"
+            }
+        }
+    },
+    {
+        "input": "flight from Ufa UFA to Rome FCO on 2024-03-16 with 2 adults, non-stop only",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "UFA",
+                "destination": "FCO",
+                "departure_date": "2024-03-16",
+                "adults": "2",
+                "max": "5"
+            }
+        }
+    },
+    {
+        "input": "What activities and flight deals are available from Manila to JFK on 2024-03-25? One adult.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "MNL",
+                "destination": "TJM",
+                "departure_date": "2024-03-25",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What activities can I do and what flight options are available from JFK to Cairo on 2024-03-16? I'm traveling with 2 adults, no children or infants.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "HOU",
+                "destination": "CAI",
+                "departure_date": "2024-03-16",
+                "adults": 2,
+                "return_date": "",
+                "children": 0,
+                "infants": 0,
+                "class": "",
+                "nonStop": false,
+                "maxPrice": 0,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "One-way from JFK to Adelaide on 2022-01-15 with 1 adult",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "max": "5",
+                "origin": "DHA",
+                "departure_date": "2022-01-15",
+                "destination": "ADL",
+                "adults": "1"
+            }
+        }
+    },
+    {
+        "input": "Find me activities and a flight from London (LON) to Montreal (YUL) on Saturday, June 17th.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "LON",
+                "destination": "YUL",
+                "departure_date": "2023-06-17",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Flight from London to Rome on Friday, January 14th, for 2 adults.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "LON",
+                "destination": "FCO",
+                "departure_date": "2024-01-14",
+                "adults": 2,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What activities do you recommend near my hotel on a weekend in Adelaide? I'd like flights from Hanoi (JFK) to ADL on May 1st, one-way only.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "HAN",
+                "destination": "ADL",
+                "departure_date": "2023-05-01",
+                "adults": 1,
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Flights from Toronto (JFK) to Tokyo (HND) on 2024-04-15, for 2 adults",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "YTO",
+                "destination": "HND",
+                "departure_date": "2024-04-15",
+                "adults": 2,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What activities are available in Rostov-on-Don? Can you also book a flight from ROV to ORY on June 15th for me? Thanks!",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "ROV",
+                "destination": "ORY",
+                "departure_date": "2024-06-15",
+                "adults": 1,
+                "return_date": "",
+                "children": 0,
+                "infants": 0,
+                "class": "",
+                "nonStop": false,
+                "maxPrice": 0,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Information about activities and flights from Lisbon to Lyon on 2024-02-27, return date of 2024-03-01, for 2 adults, a child, and an infant. Include only non-stop flights and check prices up to $1000.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "LIS",
+                "destination": "LYS",
+                "departure_date": "2024-02-27",
+                "return_date": "2024-03-01",
+                "adults": 2,
+                "children": 1,
+                "infants": 1,
+                "nonStop": true,
+                "maxPrice": 1000,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What activities are available for a family of four in Madrid on May 20th? I am looking to fly from Nizhny Novgorod to MAD on May 21st returning on June 1st with one infant.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "GOJ",
+                "destination": "MAD",
+                "departure_date": "2024-05-21",
+                "return_date": "2024-06-01",
+                "adults": 2,
+                "children": 1,
+                "infants": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "flight from Vladikavkaz to AKL on 2022-07-25",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "OGZ",
+                "destination": "AKL",
+                "departure_date": "2022-07-25",
+                "adults": "1",
+                "max": "5"
+            }
+        }
+    },
+    {
+        "input": "I'm looking for a flight from Rome to NYC on May 15th, return date is May 18th, with 2 adults and 1 child.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "ROM",
+                "destination": "NYC",
+                "departure_date": "2024-05-15",
+                "return_date": "2024-05-18",
+                "adults": 2,
+                "children": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What activities and flights are available from Kuala Lumpur to Rome on Saturday? I'd like two adults traveling.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "KUL",
+                "destination": "ROM",
+                "departure_date": "2023-06-17",
+                "adults": "2"
+            }
+        }
+    },
+    {
+        "input": "flight from Kuala Lumpur to miami for two adults on march 15th, return on march 20th, non-stop flights only",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "KUL",
+                "destination": "MIA",
+                "departure_date": "2023-03-15",
+                "return_date": "2023-03-20",
+                "adults": 2,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm looking for information about a flight from Tokyo (Tokyo) to Buenos Aires City (JFK) on January 15, 2024, with two adults.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "HND",
+                "destination": "BUE",
+                "departure_date": "2024-01-15",
+                "adults": "2",
+                "max": "5"
+            }
+        }
+    },
+    {
+        "input": "I want to fly from Glasgow (JFK) to Brussels (Brussels) on September 1st with two adults, one child, and a return flight on September 15th. I also want business class flights only.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "GLA",
+                "destination": "BRU",
+                "departure_date": "2023-09-01",
+                "return_date": "2023-09-15",
+                "adults": 2,
+                "children": 1,
+                "class": "BUSINESS",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Flight from Venice to Budapest for me on 2024-07-15 and activities around Budapest airport, also what's open on that day.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "VEN",
+                "destination": "BUD",
+                "departure_date": "2024-07-15",
+                "adults": 1,
+                "return_date": "",
+                "children": "",
+                "infants": "",
+                "class": "ECONOMY",
+                "nonStop": false,
+                "maxPrice": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Flight from Berlin Jfk to Yekaterinburg Lax on a specific day, return date also requested, Economy class for 2 adults and 1 infant.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "BER",
+                "destination": "SVX",
+                "departure_date": "2024-03-15",
+                "return_date": "2024-03-22",
+                "adults": 2,
+                "infants": 1,
+                "class": "ECONOMY",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I am looking for flights from SFO to Irkutsk on June 15th, only non-stop options, return flight also on June 15th.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "SFO",
+                "destination": "IKT",
+                "departure_date": "2024-06-15",
+                "return_date": "2024-06-15",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Please show me flights from Hanoi to Houston for Saturday, August 14th, with a return on Sunday, August 15th, including children and infants",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "HAN",
+                "destination": "HOU",
+                "departure_date": "2024-08-14",
+                "return_date": "2024-08-15",
+                "adults": 1,
+                "children": 0,
+                "infants": 2,
+                "class": "",
+                "nonStop": false,
+                "maxPrice": null,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "One way flight from MIA to Khabarovsk on May 15th with two adults.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "MIA",
+                "destination": "KHV",
+                "departure_date": "2023-05-15",
+                "adults": 2,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "flight from NYC to HTA on May 15th for one person and two kids, return flight on June 1st please.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "NYC",
+                "destination": "HTA",
+                "departure_date": "2023-05-15",
+                "return_date": "2023-06-01",
+                "adults": 1,
+                "children": 2,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I would like to book a flight from Atlanta to JFK on 2024-03-16 for 2 adults, with activities information requested.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "ATL",
+                "destination": "IKT",
+                "departure_date": "2024-03-16",
+                "return_date": "",
+                "adults": 2,
+                "children": 0,
+                "infants": 0,
+                "class": "",
+                "nonStop": false,
+                "maxPrice": 0,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Show me flights from Seattle (SEA) to Rome (FCO) on January 15th, 2024 with class ECONOMY.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "SEA",
+                "destination": "FCO",
+                "departure_date": "2024-01-15",
+                "adults": "1",
+                "class": "ECONOMY",
+                "max": "5"
+            }
+        }
+    },
+    {
+        "input": "Can you give me a flight from JFK to Adelaide on 2024-03-15, with 2 adults, return on 2024-03-22, no children or infants, and I want the activities available in Paris.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "PIS",
+                "destination": "ADL",
+                "departure_date": "2024-03-15",
+                "return_date": "2024-03-22",
+                "adults": 2,
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": "",
+                "maxPrice": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Flight from Pisa to JFK on 2024-03-16",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "PIS",
+                "destination": "PHL",
+                "departure_date": "2024-03-16",
+                "adults": "1",
+                "max": "5"
+            }
+        }
+    },
+    {
+        "input": "What's the best flight from JFK to BER on 2024-03-16? Can I also get some activities in BER for a family of 4 with kids?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "TPE",
+                "destination": "BER",
+                "departure_date": "2024-03-16",
+                "adults": 2,
+                "children": 2,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Flights from Edinburgh to Izhevsk on 2024-03-15 with 2 adults",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "EDI",
+                "destination": "IJK",
+                "departure_date": "2024-03-15",
+                "adults": 2,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Flight from Guadalajara to Berlin on January 1st, 2024 with two children and one infant.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "GDL",
+                "destination": "BER",
+                "departure_date": "2024-01-01",
+                "children": "2",
+                "infants": "1"
+            }
+        }
+    },
+    {
+        "input": "flight from New York to Paris on January 10th next year, non-stop",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "NYC",
+                "destination": "PAR",
+                "departure_date": "2024-01-10",
+                "adults": 1,
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I am looking for flights from Istanbul Sabiha G\u00f6k\u00e7en to JFK on 2022-07-25.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "SAW",
+                "destination": "AAQ",
+                "departure_date": "2022-07-25",
+                "adults": "1",
+                "max": "5"
+            }
+        }
+    },
+    {
+        "input": "flight from Frankfurt to Oslo on May 15th with 2 adults, 1 child, non-stop",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "FRA",
+                "destination": "OSL",
+                "departure_date": "2023-05-15",
+                "adults": 2,
+                "children": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What is the best way to get from Rio de Janeiro to NYC on August 1st, including activities?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "RIO",
+                "destination": "NYC",
+                "departure_date": "2023-08-01",
+                "adults": 2,
+                "class": "",
+                "nonStop": false,
+                "maxPrice": 0,
+                "return_date": "",
+                "children": 0,
+                "infants": 0,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "flight from San Francisco (SFO) to Santiago (SCL), departing on March 15th, 2024 with two adults.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "SFO",
+                "destination": "SCL",
+                "departure_date": "2024-03-15",
+                "adults": 2,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What activities can I do at the airport in Dallas on June 15th?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "",
+                "destination": "DAL",
+                "departure_date": "2023-06-15",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Flights from London to Perth on June 15, 2024, for 2 adults.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "LON",
+                "destination": "PER",
+                "departure_date": "2024-06-15",
+                "adults": "2"
+            }
+        }
+    },
+    {
+        "input": "How much will it cost for a flight from NYC to LHR on 2024-03-16 with my family? We need 2 adults, 1 child, and 1 infant.\nAlso, provide activities around Havana.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "LHR",
+                "destination": "HAV",
+                "departure_date": "2024-03-16",
+                "adults": 2,
+                "children": 1,
+                "infants": 1
+            }
+        }
+    },
+    {
+        "input": "What's available for Manila to Nice, June 15th, non-stop flights only, first class?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "MNL",
+                "destination": "NCE",
+                "departure_date": "2024-06-15",
+                "class": "",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What activities can I do in Madrid and a flight from Madrid to Rome on June 15th with a friend?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "MAD",
+                "destination": "FCO",
+                "departure_date": "2023-06-15",
+                "adults": 2,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "what activities and flights are available from JFK on January 1st?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "GLA",
+                "destination": "KRR",
+                "departure_date": "2024-01-01",
+                "adults": 2,
+                "class": "",
+                "nonStop": false,
+                "maxPrice": 0,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What activities and flights are available from Kathmandu to JFK on 2024-03-21 with 2 adults and a child?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "KTM",
+                "destination": "CAG",
+                "departure_date": "2024-03-21",
+                "adults": 2,
+                "children": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Flights from Frankfurt to Rome on July 15th with 2 adults",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "FRA",
+                "destination": "FCO",
+                "departure_date": "2023-07-15",
+                "adults": 2,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "what activities can I do in Tokyo on June 15th? also, what's the flight from Islamabad to Tokyo on that day?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "ISB",
+                "destination": "HND",
+                "departure_date": "2024-06-15",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm looking for activities and a flight from Denver to JFK on July 1st, only non-stop flights, adults only.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "DEN",
+                "destination": "AMS",
+                "departure_date": "2023-07-01",
+                "return_date": "",
+                "adults": 1,
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": true,
+                "maxPrice": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What activities can I do in Paris? And I'd like a flight from London to Paris on July 15th.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "destination": "PAR",
+                "origin": "LON",
+                "departure_date": "2022-07-15",
+                "max": "5",
+                "adults": "1"
+            }
+        }
+    },
+    {
+        "input": "I am looking for flights from Adelaide to FLR, departing on 2024-03-15 and would like information about activities as well.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "ADL",
+                "destination": "FLR",
+                "departure_date": "2024-03-15",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What is the cheapest non-stop flight from JFK to Odesa on 2024-03-17?",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "UFA",
+                "destination": "ODS",
+                "departure_date": "2024-03-17",
+                "max": 5,
+                "nonStop": true
+            }
+        }
+    },
+    {
+        "input": "Show me all activities and flights from Barcelona to Rome on 2024-03-16 with 2 adults, 1 child, non-stop flights only",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "BCN",
+                "destination": "ROM",
+                "departure_date": "2024-03-16",
+                "adults": "2",
+                "children": "1",
+                "nonStop": "true",
+                "max": "5"
+            }
+        }
+    },
+    {
+        "input": "Flights from London to Phoenix on July 15th, non-stop only",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "LON",
+                "destination": "PHX",
+                "departure_date": "2024-07-15",
+                "adults": 1,
+                "nonStop": true
+            }
+        }
+    },
+    {
+        "input": "What are activities like for a family of 4 on July 25th in Tokyo? Also, what is the price for round-trip flights from Tokyo to Canberra with a maximum price of $2000 and only non-stop flights.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "TYO",
+                "destination": "CBR",
+                "departure_date": "2023-07-25",
+                "return_date": "2023-08-01",
+                "adults": 2,
+                "children": 0,
+                "infants": 2,
+                "class": "",
+                "nonStop": true,
+                "maxPrice": 2000,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "flight from Saint Petersburg JFK to Stockholm STO on 2022-07-15, please include activities",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "LED",
+                "destination": "STO",
+                "departure_date": "2022-07-15",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Istanbul to Rome on June 15th, non-stop only",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "IST",
+                "destination": "ROM",
+                "departure_date": "2023-06-15",
+                "adults": 1,
+                "max": 5,
+                "nonStop": true
+            }
+        }
+    },
+    {
+        "input": "what activities are available for a family of three from Miami to Madrid on April 15th? Also, can you find any flights from Miami to Paris on that same day?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "MIA",
+                "destination": "MAD",
+                "departure_date": "2023-04-15",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "flight from Barcelona (BCN) to Madrid (MAD) on August 12, non-stop flights only.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "BCN",
+                "destination": "MAD",
+                "departure_date": "2023-08-12",
+                "adults": 1,
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "flight from Austin to Tokyo, June 15th, economy class with max price of $1000",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "AUS",
+                "destination": "NRT",
+                "departure_date": "2023-06-15",
+                "adults": "1",
+                "class": "ECONOMY",
+                "maxPrice": "1000"
+            }
+        }
+    },
+    {
+        "input": "flight and activities for Charleston",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "error": "Invalid city name"
+        }
+    },
+    {
+        "input": "What flights are available from Kaliningrad to NYC on 2024-03-16, with 2 adults and a max price of $1200? I'd also like to see activities for 3 people in the area.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "KGD",
+                "destination": "NYC",
+                "departure_date": "2024-03-16",
+                "adults": 2,
+                "maxPrice": 1200,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "what are activities and flights from San Francisco to Odesa on June 15th?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "SFO",
+                "destination": "ODS",
+                "departure_date": "2023-06-15",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What activities are available at Houston? I need a flight from New York to Houston on October 15th.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "NYC",
+                "destination": "IAH",
+                "departure_date": "2023-10-15",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "flight from Rome J.F.K to Adelaide on June 15th, return June 22nd, economy class, only non-stop flights.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "ROM",
+                "destination": "ADL",
+                "departure_date": "2024-06-15",
+                "return_date": "2024-06-22",
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Flights from BKK to SIN on 2024-03-16, with 2 adults and 1 child, return date is not specified, no specific class requested.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "BKK",
+                "destination": "SIN",
+                "departure_date": "2024-03-16",
+                "adults": 2,
+                "children": 1,
+                "return_date": "",
+                "class": "",
+                "nonStop": false,
+                "maxPrice": null,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "How much does it cost for a family of four with two adults and two children, travelling from London to Paris on June 15th, returning on June 20th, in Economy class?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "LON",
+                "destination": "PAR",
+                "departure_date": "2024-06-15",
+                "return_date": "2024-06-20",
+                "adults": 2,
+                "children": 2,
+                "class": "ECONOMY",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "what are activities for rome, italy to venice, italy on 2024-02-10? flight from Venice Marco Polo Airport (VCE) to Rome Ciampino Airport (CIA)",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "VCE",
+                "destination": "CIA",
+                "departure_date": "2024-02-10",
+                "adults": 1,
+                "max": 5,
+                "class": "",
+                "nonStop": false,
+                "maxPrice": 0,
+                "return_date": "",
+                "children": 0,
+                "infants": 0
+            }
+        }
+    },
+    {
+        "input": "flights from Lyon to Rome on July 22nd, 2024 with 2 adults and a max price of $800",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "LYS",
+                "destination": "ROM",
+                "departure_date": "2024-07-22",
+                "adults": 2,
+                "maxPrice": 800,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "flights from Vienna VIE to Lamezia Terme JFK on Monday, June 13th for 2 adults",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "VIE",
+                "destination": "SUF",
+                "departure_date": "2024-06-13",
+                "return_date": "",
+                "adults": 2,
+                "children": "",
+                "infants": "",
+                "class": "",
+                "nonStop": false,
+                "maxPrice": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Flight from London to Treviso, departing on Friday, March 19, 2024",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "LON",
+                "destination": "TSF",
+                "departure_date": "2024-03-19",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Zurich to Warsaw on 2022-07-25, return on 2022-08-01 with 2 adults",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "ZRH",
+                "destination": "WAR",
+                "departure_date": "2022-07-25",
+                "return_date": "2022-08-01",
+                "adults": 2,
+                "class": "",
+                "nonStop": false,
+                "maxPrice": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "how much does it cost to fly from London to Paris on January 15th?",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "LON",
+                "destination": "PAR",
+                "departure_date": "2023-01-15",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "flights from London to Edinburgh on May 15th with 2 adults, non-stop flights",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "LON",
+                "destination": "EDI",
+                "departure_date": "2023-05-15",
+                "adults": 2,
+                "nonStop": true
+            }
+        }
+    },
+    {
+        "input": "How many activities are there around the Eiffel Tower? What is a flight from Simferopol (SIP) to Tokyo (NRT) on 2024-07-15 like?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "SIP",
+                "destination": "NRT",
+                "departure_date": "2024-07-15",
+                "adults": "1",
+                "max": "5"
+            },
+            "options": {}
+        }
+    },
+    {
+        "input": "Flight from Mineralnye Vody (JFK) to Catania (CTA) on May 15, 2024 with 2 adults and 1 child.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "MRV",
+                "destination": "CTA",
+                "departure_date": "2024-05-15",
+                "adults": 2,
+                "children": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "How much does a flight from Lisbon to LA cost on July 1st for 2 people and do you have any activities available?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "LIS",
+                "destination": "CHN",
+                "departure_date": "2023-07-01",
+                "adults": 2,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "flights from Johannesburg (JFK) to Tbilisi (TBS) on January 15th, 2024 with two children non-stop.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "JNB",
+                "destination": "TBS",
+                "departure_date": "2024-01-15",
+                "adults": "1",
+                "children": "2",
+                "nonStop": "true",
+                "max": "5"
+            }
+        }
+    },
+    {
+        "input": "flight from Irkutsk to Rome on June 15th, non-stop only",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "IKT",
+                "destination": "FCO",
+                "departure_date": "2024-06-15",
+                "adults": 1,
+                "max": 5,
+                "nonStop": true
+            }
+        }
+    },
+    {
+        "input": "flight from Krasnodar to Rome on June 15th, non-stop",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "KRR",
+                "destination": "ROM",
+                "departure_date": "2023-06-15",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Flight from JFK to Edmonton on 2022-06-15, return June 20th with 1 adult",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "ATH",
+                "destination": "YEG",
+                "departure_date": "2022-06-15",
+                "return_date": "2022-06-20",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Flights from Lima to London on 2022-12-25 with 1 adult.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "LIM",
+                "destination": "LON",
+                "departure_date": "2022-12-25",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What's available for a flight from LAX to JFK on 2024-03-16?"
+    },
+    {
+        "input": "flight from Athens to JAK on the 20th of August, return flight on the 25th of August",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "ATH",
+                "destination": "JAK",
+                "departure_date": "2024-08-20",
+                "return_date": "2024-08-25",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "How much will a flight from JFK to Paris cost on July 15th? Can we have two adults and one child?",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "AKL",
+                "destination": "PAR",
+                "departure_date": "2022-07-15",
+                "adults": 2,
+                "children": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What is the price for a return flight from London to Vladivostok on July 1st with two adults, 2 children and an infant? Do not include any non-stop flights if possible.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "LHR",
+                "destination": "VVO",
+                "departure_date": "2023-07-01",
+                "return_date": "2023-07-15",
+                "adults": 2,
+                "children": 2,
+                "infants": 1,
+                "maxPrice": "",
+                "class": "",
+                "nonStop": false,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What activities can I do in Singapore on a Saturday? I'd like to book a flight from SIN to YYZ for the day after tomorrow, return the following Sunday, with 3 adults, 2 children, and 1 infant. Can you show me only non-stop flights up to 1000 euros.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "SIN",
+                "destination": "YYZ",
+                "departure_date": "2024-03-15",
+                "return_date": "2024-03-24",
+                "adults": 3,
+                "children": 2,
+                "infants": 1,
+                "class": "",
+                "nonStop": true,
+                "maxPrice": 1000,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "flights from Almaty to Madrid on May 15th 2024",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "ALA",
+                "destination": "MAD",
+                "departure_date": "2024-05-15",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I want to travel from Bangkok to Rome on June 15th with a return on June 22nd, two adults, two children, business class, non-stop flights only.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "BKK",
+                "destination": "FCO",
+                "departure_date": "2023-06-15",
+                "return_date": "2023-06-22",
+                "adults": 2,
+                "children": 2,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "what activities are there from LHR to BKK on August 25th? I'd like a flight with an economy class for two people including children.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "LHR",
+                "destination": "BKK",
+                "departure_date": "2024-08-25",
+                "adults": 1,
+                "children": 2,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Flight from NYC to Taipei on 2024-07-15 with 2 adults and a return date of 2024-07-20, non-stop flights only.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "NYC",
+                "destination": "TPE",
+                "departure_date": "2024-07-15",
+                "return_date": "2024-07-20",
+                "adults": 2,
+                "max": 5,
+                "nonStop": true
+            }
+        }
+    },
+    {
+        "input": "Tokyo to Rome on 2024-07-15, with 2 adults and 1 child in economy class",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "HND",
+                "destination": "FCO",
+                "departure_date": "2024-07-15",
+                "adults": 2,
+                "children": 1,
+                "class": "ECONOMY",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "flight from Paris JFK to Cagliari Cagliari on May 15th, non-stop only for 4 adults",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "PAR",
+                "destination": "CAG",
+                "departure_date": "2023-05-15",
+                "adults": "4",
+                "max": "5",
+                "nonStop": "true"
+            }
+        }
+    },
+    {
+        "input": "I'm looking for a flight from Santiago to MIA on 2024-07-20, with activities in Miami.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "SCL",
+                "destination": "MIA",
+                "departure_date": "2024-07-20",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Please tell me about flights from Edinburgh to Portland on July 15, 2024, with return flight on August 1, 2024.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "EDI",
+                "destination": "PDX",
+                "departure_date": "2024-07-15",
+                "return_date": "2024-08-01",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "flights from London LHR to Dublin JFK on 2024-03-16",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "LHR",
+                "destination": "DUB",
+                "departure_date": "2024-03-16",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What is the cheapest flight from JAX to Yekaterinburg on 2024-02-27?",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "JAX",
+                "destination": "SVX",
+                "departure_date": "2024-02-27",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Flights from Florence to Rome on May 15th, return on June 1st for one adult.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "FLR",
+                "destination": "ROM",
+                "departure_date": "2023-05-15",
+                "return_date": "2023-06-01",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What are the flight options from Madrid to JNB on 2024-03-20? Can you also tell me what activities are available for families with children?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "MAD",
+                "destination": "JNB",
+                "departure_date": "2024-03-20",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": 0,
+                "class": "",
+                "nonStop": false,
+                "maxPrice": 1000,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Flights from Phoenix to NYC on June 12, non-stop only please.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "PHX",
+                "destination": "NYC",
+                "departure_date": "2024-06-12",
+                "max": 5,
+                "nonStop": true
+            }
+        }
+    },
+    {
+        "input": "What flights and activities are available from Guadalajara to JFK on 2024-03-16?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "GDL",
+                "destination": "STO",
+                "departure_date": "2024-03-16",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "flight from Krasnodar (KRR) to Barcelona (BCN) on June 15th, one adult.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "KRR",
+                "destination": "BCN",
+                "departure_date": "2023-06-15",
+                "adults": "1",
+                "return_date": "",
+                "children": "0",
+                "infants": "0",
+                "class": "",
+                "nonStop": false,
+                "maxPrice": 50000,
+                "max": "5"
+            }
+        }
+    },
+    {
+        "input": "Information about activities at Las Vegas on a Tuesday, then flights from LAX to JFK on March 12th for 2 adults and 1 child.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "LAS",
+                "destination": "DUB",
+                "departure_date": "2023-03-12",
+                "adults": 2,
+                "children": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "flights from Ulyanovsk JFK to Miami MIA on July 25th with non-stop flights only for me",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "ULY",
+                "destination": "MIA",
+                "departure_date": "2023-07-25",
+                "adults": 1,
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What activities are available for Cape Town to Rome on January 15th, 2024?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "CPT",
+                "destination": "ROM",
+                "departure_date": "2024-01-15",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "flight from Kazan (JFK) to Mexico City (Mexico City) on 2022-07-25",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "KZN",
+                "destination": "MEX",
+                "departure_date": "2022-07-25",
+                "adults": "1",
+                "max": "5"
+            }
+        }
+    },
+    {
+        "input": "I'm looking for activities and a flight from Brussels (JFK) to Calgary (YYC) on June 15th, with 2 adults.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "BRU",
+                "destination": "YYC",
+                "departure_date": "2023-06-15",
+                "adults": 2,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "flight from Buenos Aires to OVB on June 20th, non-stop please",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "BUE",
+                "destination": "OVB",
+                "departure_date": "2024-06-20",
+                "max": 5,
+                "nonStop": "yes"
+            }
+        }
+    },
+    {
+        "input": "What activities can I do on a day trip from Brisbane to SFO?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "BNE",
+                "destination": "SFO",
+                "departure_date": "2024-03-25",
+                "adults": 2,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What activities do you have at Cancun, on May 15th? I'd also like a flight from Cancun to Puerto Vallarta with one adult, two children and one infant for May 15th.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "CAN",
+                "destination": "PVR",
+                "departure_date": "2024-05-15",
+                "return_date": "",
+                "adults": 1,
+                "children": 2,
+                "infants": 1,
+                "class": "",
+                "nonStop": "",
+                "maxPrice": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Flight from Vladikavkaz to JFK on 2022-07-22",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "OGZ",
+                "destination": "DEL",
+                "departure_date": "2022-07-22",
+                "adults": "1",
+                "max": "5"
+            }
+        }
+    },
+    {
+        "input": "flight from Madrid to Rome on May 15th with 2 adults in Premium Economy class, return on June 1st with 1 infant",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "MAD",
+                "destination": "ROM",
+                "departure_date": "2023-05-15",
+                "adults": 2,
+                "class": "PREMIUM_ECONOMY",
+                "return_date": "2023-06-01",
+                "infants": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "flights from Krasnodar JFK to Kyiv KIE on October 1st, with 2 adults, return on November 15th, only non-stop flights",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "KRR",
+                "destination": "KIE",
+                "departure_date": "2023-10-01",
+                "return_date": "2023-11-15",
+                "adults": 2,
+                "children": null,
+                "infants": null,
+                "class": null,
+                "nonStop": true,
+                "maxPrice": null,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "what are activities near Paris Eiffel Tower, depart from Amsterdam Schiphol Airport to Paris CDG on July 15th?"
+    },
+    {
+        "input": "I'm looking for flights from Kaliningrad to SFO on 2022-07-15 with one child, please only show non-stop flights.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "KGD",
+                "destination": "SFO",
+                "departure_date": "2022-07-15",
+                "adults": 1,
+                "children": 1,
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Flights from Madrid to Lisbon on January 1, 2024 for two adults",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "MAD",
+                "destination": "LIS",
+                "departure_date": "2024-01-01",
+                "adults": 2,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "flight from Detroit JFK to Tyumen Tyumen on March 15th, 2024 return date April 12th, 2 adults, 1 child",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "DTW",
+                "destination": "TJM",
+                "departure_date": "2024-03-15",
+                "return_date": "2024-04-12",
+                "adults": 2,
+                "children": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "One-way flight from Houston (JFK) to Wellington (Wellington) on August 15, 2024.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "IAH",
+                "destination": "WLG",
+                "departure_date": "2024-08-15",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "flight from Helsinki to Rome on July 15th with two adults.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "HEL",
+                "destination": "FCO",
+                "departure_date": "2022-07-15",
+                "adults": 2,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "flight from Rome Rome to Verona JFK on August 12th, non-stop only",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "ROM",
+                "destination": "VRN",
+                "departure_date": "2022-08-12",
+                "max": 5,
+                "nonStop": true
+            }
+        }
+    },
+    {
+        "input": "Flight from Istanbul JFK to SVX SVX on 2024-07-15, return date on 2024-07-22 for 2 adults and 1 child, economy class only non-stop flights",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "IST",
+                "destination": "SVX",
+                "departure_date": "2024-07-15",
+                "return_date": "2024-07-22",
+                "adults": 2,
+                "children": 1,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Please give me activities and a flight from Paris to JFK on 2024-03-16, returning on 2024-03-20 with 2 adults and 1 child.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "PAR",
+                "destination": "KTM",
+                "departure_date": "2024-03-16",
+                "return_date": "2024-03-20",
+                "adults": 2,
+                "children": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Flight from Chicago ORD to RIO RIO on 2024-06-15, with economy class for two adults.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "ORD",
+                "destination": "RIO",
+                "departure_date": "2024-06-15",
+                "adults": 2,
+                "class": "ECONOMY",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What is available for travel from Phoenix to JFK on August 27th, 2024? I'd like business class with a non-stop only option.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "PHX",
+                "destination": "KRR",
+                "departure_date": "2024-08-27",
+                "adults": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you book a trip for me from LAX to JFK?",
+        "output": {
+            "action": "book_flight",
+            "parameters": {},
+            "utterance": "Can you book a trip for me from LAX to JFK?"
+        }
+    },
+    {
+        "input": "I am looking for flights from Bogot\u00e1 to JFK on August 12th with one adult, only non-stop flights and a maximum price of $500.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "BOG",
+                "destination": "CHN",
+                "departure_date": "2023-08-12",
+                "adults": 1,
+                "max": 5,
+                "nonStop": true,
+                "maxPrice": 500
+            }
+        }
+    },
+    {
+        "input": "flights from Auckland AKL to Barcelona BCN on July 15th for 2 people, economy class.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "AKL",
+                "destination": "BCN",
+                "departure_date": "2023-07-15",
+                "adults": "2",
+                "class": "ECONOMY",
+                "max": "5"
+            }
+        }
+    },
+    {
+        "input": "What are my options for activities and flights from JFK to ODS on 2024-07-15? Can you also include return flights?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "PDX",
+                "destination": "ODS",
+                "departure_date": "2024-07-15",
+                "return_date": "2024-07-20",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I am flying from Jfk to Lhr on 2024-07-16 with my family, two adults and two children, looking for non-stop flights.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "OVB",
+                "destination": "HND",
+                "departure_date": "2024-07-16",
+                "adults": 2,
+                "children": 2,
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Flights from Bogot\u00e1 to JFK on June 15th for a family of 4.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "BOG",
+                "destination": "ROM",
+                "departure_date": "2023-06-15",
+                "adults": 2,
+                "children": 2,
+                "infants": 0,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Information about flight from Dallas DAL to Brisbane JFK on June 15th with one stop allowed, maximum price of $2000 for two adults and a child.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "DAL",
+                "destination": "BNE",
+                "departure_date": "2023-06-15",
+                "return_date": "",
+                "adults": 2,
+                "children": 1,
+                "infants": 0,
+                "class": "",
+                "nonStop": false,
+                "maxPrice": 2000,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Flight from London to Paris on 2022-09-01 with a return on 2022-09-15, 2 adults.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "LON",
+                "destination": "PAR",
+                "departure_date": "2022-09-01",
+                "return_date": "2022-09-15",
+                "adults": 2,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Flight from Seattle to London on August 10th, non-stop flights only",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "SEA",
+                "destination": "LON",
+                "departure_date": "2024-08-10",
+                "adults": "1",
+                "nonStop": true,
+                "max": "5"
+            }
+        }
+    },
+    {
+        "input": "flight from Khabarovsk to Rome on August 15, 2024 for two adults",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "KHV",
+                "destination": "FCO",
+                "departure_date": "2024-08-15",
+                "adults": 2,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Flight from Jakarta to Venice on May 15th, non-stop only for me",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "JAK",
+                "destination": "VEN",
+                "departure_date": "2023-05-15",
+                "adults": "1",
+                "max": "5"
+            }
+        }
+    },
+    {
+        "input": "Can you show me flights from New York to Paris on March 15th? I have a family of four, two adults, two children.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "NYC",
+                "destination": "PAR",
+                "departure_date": "2023-03-15",
+                "adults": 2,
+                "children": 2,
+                "return_date": "",
+                "infants": 0,
+                "class": "",
+                "nonStop": false,
+                "maxPrice": -1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "flights from Edinburgh to Edinburgh on 2022-07-25",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "EDI",
+                "destination": "EDI",
+                "departure_date": "2022-07-25",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Flights from London to Paris on August 15th, return on August 22nd with 2 adults and 1 infant.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "LON",
+                "destination": "PAR",
+                "departure_date": "2024-08-15",
+                "return_date": "2024-08-22",
+                "adults": 2,
+                "infants": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What activities are available for a day in Phoenix, and what flights are from Phoenix to Rome on March 12, 2024?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "PHX",
+                "destination": "FCO",
+                "departure_date": "2024-03-12",
+                "adults": "1",
+                "max": "5"
+            }
+        }
+    },
+    {
+        "input": "What are the best activities in Calgary, France from July 1st? I also need a flight from Odesa JFK airport to Calgary YYC airport for tomorrow.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "ODS",
+                "destination": "YYC",
+                "departure_date": "2023-07-01",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What are some activities around Paris, and how much does a flight from Paris PAR (the airport) to London LHR cost on 2024-07-15? I'm traveling with my wife and two kids.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "LHR",
+                "destination": "PAR",
+                "departure_date": "2024-07-15",
+                "adults": 2,
+                "children": 2,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm looking for a flight from Odesa (JFK) to Catania (Catania) on February 22nd, 2024. I'd like non-stop flights only.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "ODS",
+                "destination": "CTA",
+                "departure_date": "2024-02-22",
+                "adults": 1,
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What activities are available in Rostov-on-Don, France? I am interested in a flight from Rostov-on-Don (ROV) to Cagliari (JFK) on 2024-06-15.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "ROV",
+                "destination": "CAG",
+                "departure_date": "2024-06-15",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What flights are available from Sochi to JFK on 2022-07-25? Also, tell me what activities are there at the Eiffel Tower?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "AER",
+                "destination": "YYZ",
+                "departure_date": "2022-07-25",
+                "return_date": "",
+                "adults": 1,
+                "children": null,
+                "infants": null,
+                "class": "",
+                "nonStop": false,
+                "maxPrice": null,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I am looking for information on flights from Darwin to JFK on 2024-03-15, also I would like to know about activities at my destination.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "DAR",
+                "destination": "HCM",
+                "departure_date": "2024-03-15",
+                "adults": 1
+            }
+        }
+    },
+    {
+        "input": "Flight from JFK to Florence on 2022-07-15, please include activities in the itinerary.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "NAP",
+                "destination": "FLR",
+                "departure_date": "2022-07-15",
+                "adults": 1,
+                "return_date": "",
+                "children": 0,
+                "infants": 0,
+                "class": "",
+                "nonStop": false,
+                "maxPrice": 0,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from Chita to SFO on 2022-07-25, with 1 adult, return date on 2022-08-01, class economy.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "HTA",
+                "destination": "SFO",
+                "departure_date": "2022-07-25",
+                "return_date": "2022-08-01",
+                "adults": 1,
+                "class": "ECONOMY",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "flight from Lisbon to Rome on 2022-07-15 with 2 adults and 1 child",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "LIS",
+                "destination": "ROM",
+                "departure_date": "2022-07-15",
+                "adults": "2",
+                "children": "1"
+            }
+        }
+    },
+    {
+        "input": "Please show me flights from New York to Paris on July 1st with a return flight, two adults and one child.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "NYC",
+                "destination": "PAR",
+                "departure_date": "2023-07-01",
+                "return_date": "2023-07-08",
+                "adults": 2,
+                "children": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Flight from Odesa to LA on Saturday, return.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "ODS",
+                "destination": "HOU",
+                "departure_date": "2023-05-13",
+                "return_date": "2023-05-20",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "flight from LHR to JFK on July 25th, only non-stop flights for two adults",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "LHR",
+                "destination": "WLG",
+                "departure_date": "2023-07-25",
+                "adults": 2,
+                "max": 5,
+                "nonStop": true
+            }
+        }
+    },
+    {
+        "input": "I am traveling from Shanghai (Shanghai) to New York City City (JFK) on October 15th, 2022 with two adults.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "SHA",
+                "destination": "NYC",
+                "departure_date": "2022-10-15",
+                "adults": "2"
+            }
+        }
+    },
+    {
+        "input": "What activities and flight deals from Kuala Lumpur to JFK on Friday, 4 adults, non-stop only",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "KUL",
+                "destination": "BUE",
+                "departure_date": "2023-03-17",
+                "adults": 4,
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Flights from Phoenix to SYD on 2024-02-27 for 2 adults, non-stop only",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "PHX",
+                "destination": "SYD",
+                "departure_date": "2024-02-27",
+                "adults": 2,
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "flights from Helsinki to NYC on 2024-03-16",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "HEL",
+                "destination": "NYC",
+                "departure_date": "2024-03-16",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I want information about flights from JFK to Tyumen on March 15th, 2024.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "GDL",
+                "destination": "TJM",
+                "departure_date": "2024-03-15",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What's available from Havana on 2024-05-15 with 1 adult returning on 2024-05-22, non-stop flights only?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "HAV",
+                "destination": "CTA",
+                "departure_date": "2024-05-15",
+                "return_date": "2024-05-22",
+                "adults": 1,
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Find activities in Budapest, France (BUD) on April 15th, 2024 for 2 adults and provide flights from BUD to ATH Heathrow (ATH) with a return date of May 1st, 2024.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "BUD",
+                "destination": "ATH",
+                "departure_date": "2024-04-15",
+                "return_date": "2024-05-01",
+                "adults": 2,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "flight from Cape Town (CPT) to CHN (CHN), departing on 2024-03-01, for two adults, with a non-stop flight if possible.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "CPT",
+                "destination": "CHN",
+                "departure_date": "2024-03-01",
+                "adults": 2,
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Flights from JFK to Lima on 2024-07-15, two adults, non-stop",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "GOJ",
+                "destination": "LIM",
+                "departure_date": "2024-07-15",
+                "adults": 2,
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "flight from Stockholm to Miami on June 15th with 2 adults and 1 child.",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "STO",
+                "destination": "MIA",
+                "departure_date": "2023-06-15",
+                "adults": 2,
+                "children": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What activities and flight information is available from NYC to LAX on June 1st?"
+    },
+    {
+        "input": "What activities are available in Oslo? I need a flight from JFK to OSL on 2024-07-15.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "ORD",
+                "destination": "OSL",
+                "departure_date": "2024-07-15",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "flight from Simferopol to Miami on September 1st with 2 adults and a child",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "SIP",
+                "destination": "MIA",
+                "departure_date": "2023-09-01",
+                "adults": 2,
+                "children": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Flights from Detroit DTW to Brindisi JFK on January 15th, 2024 for 2 adults only non-stop flights",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "DTW",
+                "destination": "BDS",
+                "departure_date": "2024-01-15",
+                "adults": 2,
+                "nonStop": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Zurich to PDX, departing July 15th, class is business, only non-stop flights.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "ZRH",
+                "destination": "PDX",
+                "departure_date": "2023-07-15",
+                "adults": 1,
+                "class": "BUSINESS",
+                "nonStop": "true",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Need a flight from Odesa to JFK on 2024-02-14 for two adults, business class only.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "ODS",
+                "destination": "MUC",
+                "departure_date": "2024-02-14",
+                "adults": 2,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Flights from Philadelphia to Rome, departing on July 15th, returning on August 1st for two adults",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "PHL",
+                "destination": "FCO",
+                "departure_date": "2023-07-15",
+                "return_date": "2023-08-01",
+                "adults": 2,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "How much does it cost for a flight from Jakarta to JFK on May 12th?",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "JAK",
+                "destination": "YVR",
+                "departure_date": "2023-05-12",
+                "adults": "1",
+                "max": "5"
+            }
+        }
+    },
+    {
+        "input": "flight from Warsaw to TJM on August 15, 2024",
+        "output": {
+            "action": [
+                "search_flights"
+            ],
+            "action_input": {
+                "origin": "WAR",
+                "destination": "TJM",
+                "departure_date": "2024-08-15",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Show me flights from JFK to Ufa for tomorrow with class BUSINESS.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "KUL",
+                "destination": "UFA",
+                "departure_date": "2023-02-20",
+                "adults": 1,
+                "class": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Flight from London to Paris on 2024-07-15 for two adults.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "LON",
+                "destination": "PAR",
+                "departure_date": "2024-07-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 0,
+                "infants": 0,
+                "class": "",
+                "nonStop": false,
+                "maxPrice": null,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What is the best time of year for a trip from Rostov-on-Don to Rome? Are there any activities recommended for families with kids?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "ROV",
+                "destination": "ROM",
+                "departure_date": "2024-03-16",
+                "adults": 1,
+                "return_date": "",
+                "children": 0,
+                "infants": 0,
+                "class": "",
+                "nonStop": false,
+                "maxPrice": 0,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What activities are available in Cagliari on July 1st? I'd like a return flight from JFK to Petropavlovsk-Kamchatsky on July 1st and July 15th.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "CAG",
+                "destination": "PKC",
+                "departure_date": "2023-07-01",
+                "return_date": "2023-07-15",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What activities are available in Anapa on 2024-03-25? I'd like a flight from AAQ to SAW on 2024-03-26, return on 2024-04-01.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "AAQ",
+                "destination": "SAW",
+                "departure_date": "2024-03-26",
+                "return_date": "2024-04-01",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I am planning a trip from Singapore to Mumbai on June 1st. Please tell me what activities I can do there.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "SIN",
+                "destination": "BOM",
+                "departure_date": "2023-06-01",
+                "adults": 1,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "What is the cheapest flight from Brindisi to JFK on 2024-03-15? Can you also include activities?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "BDS",
+                "destination": "NBO",
+                "departure_date": "2024-03-15",
+                "adults": "1",
+                "max": "5"
+            }
+        }
+    },
+    {
+        "input": "Flight from MIA to Athens on June 15, two adults, return June 22.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "MIA",
+                "destination": "ATH",
+                "departure_date": "2023-06-15",
+                "return_date": "2023-06-22",
+                "adults": 2,
+                "max": 5
+            }
+        }
+    }
+]

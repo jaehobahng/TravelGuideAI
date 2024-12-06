@@ -1,0 +1,2102 @@
+[
+    {
+        "input": "Can you find me a flight from LYS to IST on October 15th for 2 adults in Economy class and only non-stop flights? Also, suggest some activities to do in Istanbul.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "LYS",
+                "destination": "IST",
+                "departure_date": "2023-10-15",
+                "adults": 2,
+                "return_date": "",
+                "children": null,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need to book a flight from KZN to CAI on October 15th for two adults, one child, and it's fine if it's not non-stop. Also, what are some fun things to do in Cairo on that day?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "KZN",
+                "destination": "CAI",
+                "departure_date": "2023-10-15",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "",
+                "nonStop": false,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from LIM to STO on 2023-11-15 for 2 adults and 1 child, preferred in business class, and only non-stop. Also, suggest things to do in Stockholm.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "LIM",
+                "destination": "STO",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you find me a flight from HKG to GLA on April 15? I'm looking for economy class tickets for 2 adults and a child. What are some activities I can do in Glasgow that day?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "HKG",
+                "destination": "GLA",
+                "departure_date": "2023-04-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": false,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from Catania (CTA) to Las Vegas (LAS) on March 15th for 2 adults, one child, in business class, and it must be non-stop. Also, can you recommend some activities in LA?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "CTA",
+                "destination": "LAS",
+                "departure_date": "2023-03-15",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm looking for flights from YUL to TAS on 2023-12-15 for 2 adults and 1 child, economy class. Also, I want to see some activities at the destination for that day.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "YUL",
+                "destination": "TAS",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": false,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Hi, I want to fly from Toronto (YYZ) to Toronto (YTO) on March 15th, only non-stop and in business class, for two passengers. Can you also suggest activities at the destination?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "YYZ",
+                "destination": "YTO",
+                "departure_date": "2023-03-15",
+                "adults": 2,
+                "return_date": "",
+                "children": null,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you find me a flight from LON to JNB on 2023-12-15 for 2 adults and 1 child? I want it in economy class and only non-stop flights. Also, suggest some activities in Johannesburg, please.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "LON",
+                "destination": "JNB",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you help me find a flight from STO to YQB on 2023-10-15? Two adults, one child, business class, non-stop flights only. Also, recommend activities in Quebec City.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "STO",
+                "destination": "YQB",
+                "departure_date": "2023-10-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you help me find a flight from TAS to CHN on June 15th? I would like two passengers in business class, and only non-stop flights. Also, what are some things to do in Chennai?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "TAS",
+                "destination": "CHN",
+                "departure_date": "2023-06-15",
+                "adults": 2,
+                "return_date": "",
+                "children": null,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I want to fly from Venice to Manchester on May 15th for 2 adults and 1 kid, economy class. Can you also suggest some activities to do there?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "VEN",
+                "destination": "MAN",
+                "departure_date": "2023-05-15",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": false,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Hi, can you find me a flight from ROV to DEL for January 15th for two adults? I'd also like to know about any activities in Delhi.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "ROV",
+                "destination": "DEL",
+                "departure_date": "2024-01-15",
+                "adults": 2,
+                "return_date": "",
+                "children": null,
+                "infants": null,
+                "class": "",
+                "nonStop": false,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm looking for a flight from PHX to SIN on December 15th, for 2 adults and 1 child, in business class. Also, any activities to do in Singapore?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "PHX",
+                "destination": "SIN",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": false,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Hi, I need a flight from MCX to HEL on December 20th for 2 adults and 1 child, in Economy class. Also, recommend me fun things to do there.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "MCX",
+                "destination": "HEL",
+                "departure_date": "2023-12-20",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": false,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm looking for a flight from ASP to AMS on 2023-12-20, non-stop, for 2 adults in business class, and what activities I can do there.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "ASP",
+                "destination": "AMS",
+                "departure_date": "2023-12-20",
+                "adults": 2,
+                "return_date": "",
+                "children": null,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Hi! I need a flight from VVO to EDI on 2023-11-20 for 2 people, economy class, non-stop preferred. Also, suggest some activities in Edinburgh.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "VVO",
+                "destination": "EDI",
+                "departure_date": "2023-11-20",
+                "adults": 2,
+                "return_date": "",
+                "children": null,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from LED to YTO on 2023-12-15 for 2 people, and also some ideas for things to do there. Only non-stop flights, please.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "LED",
+                "destination": "YTO",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "return_date": "",
+                "children": null,
+                "infants": null,
+                "class": "",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you help me find a flight from AUS to SAN on December 15th for 2 adults and 1 child in economy class? Also, I\u2019d like to know about fun activities in San Diego.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "AUS",
+                "destination": "SAN",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": false,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you help me find a flight from TAS to CAI on 2023-11-15 for 2 adults and 1 child, non-stop, in business class? Also, what's there to do in LA?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "TAS",
+                "destination": "CAI",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can I get flights to NYC from VVO on December 25th for 2 adults and economy class? Also, what are some activities in New York City?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "VVO",
+                "destination": "NYC",
+                "departure_date": "2023-12-25",
+                "adults": 2,
+                "return_date": "",
+                "children": null,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": false,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm planning a trip from Zurich (ZRH) to Brindisi (BDS) on April 15th. There will be 2 adults, 1 child, and we prefer non-stop flights in business class. Can you suggest things to do in LA?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "ZRH",
+                "destination": "BDS",
+                "departure_date": "2023-04-15",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you help me find a flight from KRR to GOJ for next Friday for 2 adults and a child, business class? Also, recommend some activities in LA.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "KRR",
+                "destination": "GOJ",
+                "departure_date": "2023-10-27",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": false,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from DEL to SAN for two adults and one child on March 15, 2024. Please ensure it's non-stop and recommend things to do in San Diego.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "DEL",
+                "destination": "SAN",
+                "departure_date": "2024-03-15",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from CAI to KGD on December 15th for 2 adults and 1 child, business class. Please suggest some activities in LA too.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "CAI",
+                "destination": "KGD",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": false,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you find me a flight from ULY to FRA for November 15th? I need 2 economy class tickets, and only non-stop flights, please. Also, what are the top activities in LA?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "ULY",
+                "destination": "FRA",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "return_date": "",
+                "children": null,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from OGZ to ATL on 2023-11-15 for two adults in business class, and I'd like to know about activities in Atlanta during my stay.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "OGZ",
+                "destination": "ATL",
+                "departure_date": "2023-11-15",
+                "return_date": "",
+                "adults": 2,
+                "children": null,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": false,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you help me find a flight from EVN to SVX on 2023-12-15 for 2 adults and 1 child in business class? Also, what activities are available there on the same date?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "EVN",
+                "destination": "SVX",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": false,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from ADL to AAQ on 2023-12-15 for two adults in business class, and can you also suggest some activities in Anapa?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "ADL",
+                "destination": "AAQ",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "return_date": "",
+                "children": null,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": false,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from SEA to MUC on December 15th for 2 adults and 1 child, economy class, and only non-stop. Also looking for activities in Munich.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "SEA",
+                "destination": "MUC",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need to book a flight from Cairo (CAI) to Simferopol (SIP) for November 15th, for two adults and one child. Also, can you suggest activities in Simferopol?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "CAI",
+                "destination": "SIP",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "",
+                "nonStop": false,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you help me find a flight from IST to KRR next Friday for 2 adults, 1 child, business class, non-stop? Also, any sightseeing recommendations in Krasnodar City?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "IST",
+                "destination": "KRR",
+                "departure_date": "2023-10-20",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you find me a flight from PRG to BLQ on 2023-11-15? I\u2019d also like to know some activities in Bologna for that day. There will be 2 adults, 1 child, and I prefer business class. Only non-stop flights please.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "PRG",
+                "destination": "BLQ",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you find me a flight from Lisbon (LIS) to Treviso (TSF) for November 15th? I prefer business class for 2 adults and non-stop flights only. Also, what activities can I do in LA?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "LIS",
+                "destination": "TSF",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "return_date": "",
+                "children": null,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from PMO to UFA for two adults and a child on December 15th, non-stop, and could you suggest activities in Ufa?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "PMO",
+                "destination": "UFA",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "return_date": "",
+                "class": "",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Hi, I want to book a flight from SAW to MCX on December 15, 2023. Please suggest some activities there too. It's just me, and I'd prefer economy class with only non-stop flights.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "SAW",
+                "destination": "MCX",
+                "departure_date": "2023-12-15",
+                "adults": 1,
+                "return_date": "",
+                "children": 0,
+                "infants": 0,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from HAV to PIS on March 15, 2024. It\u2019s just for me and I\u2019d like business class, non-stop only. Also, can you give me activities to do there?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "HAV",
+                "destination": "PIS",
+                "departure_date": "2024-03-15",
+                "adults": 1,
+                "return_date": "",
+                "children": null,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you help me find flights from ATH to SFO on 2023-12-15 for 2 adults and 2 children? I'd like to travel in economy class and prefer non-stop flights. Can you also recommend activities in San Francisco?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "ATH",
+                "destination": "SFO",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 2,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from SAN to RGN on 2023-12-15. It's just me, and I prefer business class, non-stop. Also, what fun activities can I do there?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "SAN",
+                "destination": "RGN",
+                "departure_date": "2023-12-15",
+                "adults": 1,
+                "return_date": "",
+                "children": 0,
+                "infants": 0,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need to book a flight from YVR to HND on 2023-12-15 for 2 adults and 1 child, economy class, non-stop. Can you also suggest some activities there?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "YVR",
+                "destination": "HND",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you help me find a flight from NAP to LAS on April 15th? I'll need it for myself and a child, and we'd prefer non-stop flights. Also, what activities are available in Las Vegas?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "NAP",
+                "destination": "LAS",
+                "departure_date": "2023-04-15",
+                "adults": 1,
+                "children": 1,
+                "infants": null,
+                "class": "",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from BUD to KRR next Friday for 2 adults, one child, in business class and I prefer non-stop. Can you also suggest some activities in Krasnodar?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "BUD",
+                "destination": "KRR",
+                "departure_date": "2023-11-10",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I want to find flights from CBR to BOS for a trip on 2023-11-15. I\u2019ll be flying with my partner, so 2 adults in total, and I prefer economy class. Also, recommend some activities in LA.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "CBR",
+                "destination": "BOS",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "return_date": "",
+                "children": null,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": false,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Hi, I'd like to book a flight from DHA to YUL on 2023-11-20 for 2 adults and 1 child. Preferably non-stop, in economy class. Also, what activities can I do in Montreal?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "DHA",
+                "destination": "YUL",
+                "departure_date": "2023-11-20",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from AER to BKK on 2023-11-15 for 2 adults and 1 child, economy class, and only non-stop flights. Also, what are some activities to do in Bangkok?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "AER",
+                "destination": "BKK",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you find me a non-stop flight from YVR to VRN for 2 adults and 1 child on 2023-12-15, and let me know about activities in Verona?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "YVR",
+                "destination": "VRN",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you find me a flight from LIS to FRA on 2023-12-20, economy class, for 2 adults, and some cool things to do in Frankfurt?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "LIS",
+                "destination": "FRA",
+                "departure_date": "2023-12-20",
+                "adults": 2,
+                "return_date": "",
+                "children": null,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": false,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you help me find a flight from ASP to AAQ and activities in Anapa City for March 15th? I prefer business class and it's just me traveling.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "ASP",
+                "destination": "AAQ",
+                "departure_date": "2023-03-15",
+                "adults": 1,
+                "return_date": "",
+                "children": null,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": false,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'd like to book a flight from HAN to WAR and explore activities there on March 15th. It's just me, and I prefer business class. Non-stop flights only, please!",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "HAN",
+                "destination": "WAR",
+                "departure_date": "2023-03-15",
+                "adults": 1,
+                "return_date": "",
+                "children": null,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you find a flight from SFO to KHV for October 10th, economy class, and only non-stop? Also, suggest some activities to do in Khabarovsk.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "SFO",
+                "destination": "KHV",
+                "departure_date": "2023-10-10",
+                "adults": 1,
+                "return_date": "",
+                "children": null,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you help me find a flight from SIN to ATH for June 15th? I need it for 3 adults and 2 children, in business class, and it must be non-stop. Also, let me know about activities in Athens.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "SIN",
+                "destination": "ATH",
+                "departure_date": "2023-06-15",
+                "adults": 3,
+                "children": 2,
+                "infants": 0,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you help me find a flight from MUC to YYZ on 2023-12-20? We prefer economy class for 2 adults and 1 child, and only non-stop flights. Also, what should we check out while we're there?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "MUC",
+                "destination": "YYZ",
+                "departure_date": "2023-12-20",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from SIP to DEL on 2023-11-20, and I\u2019d love to know some fun activities to do when I\u2019m there. It\u2019ll be just me, flying in business class, and I prefer non-stop flights.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "SIP",
+                "destination": "DEL",
+                "departure_date": "2023-11-20",
+                "adults": 1,
+                "return_date": "",
+                "children": null,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Hi, I\u2019m looking for flights from AER to DXB next Friday for 2 adults and 1 child, economy class, and I\u2019d like to know about activities in Dubai. Non-stop flights only, please.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "AER",
+                "destination": "DXB",
+                "departure_date": "2023-10-13",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from OSL to YYC on October 15th for 2 adults and 1 child in economy class, and I want to know things to do in Calgary City.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "OSL",
+                "destination": "YYC",
+                "departure_date": "2023-10-15",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": false,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from ALA to SCL on 2023-12-20 for 2 adults and 1 child, economy class. Also, can you tell me things to do in Santiago?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "ALA",
+                "destination": "SCL",
+                "departure_date": "2023-12-20",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": false,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'm planning a trip from TBS to WAR on March 15th for 2 adults and 1 child. Could you suggest flights and things to do there? Non-stop flights only, please.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "TBS",
+                "destination": "WAR",
+                "departure_date": "2023-03-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": 0,
+                "class": "",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I want to fly from Lima (LIM) to Edmonton (YEG) on March 10th and explore some activities there. It's for 2 adults, in economy class, and only non-stop flights.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "LIM",
+                "destination": "YEG",
+                "departure_date": "2023-03-10",
+                "adults": 2,
+                "return_date": "",
+                "children": null,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Hi, I need a flight from KHI (KHI) to Madrid (MAD) on September 15, 2023. There will be 2 adults and 1 child. I\u2019d like to fly in economy class and only non-stop flights, please.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "KHI",
+                "destination": "MAD",
+                "departure_date": "2023-09-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from VEN to AAQ on December 15th for three adults, two children, and one infant in economy class, and I need it non-stop. Also, what are some fun activities in Anapa that day?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "VEN",
+                "destination": "AAQ",
+                "departure_date": "2023-12-15",
+                "adults": 3,
+                "children": 2,
+                "infants": 1,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from BOS to CBR on March 23rd for 2 adults, one child, and one infant. I want business class tickets and only non-stop flights. Can you also suggest things to do in Canberra?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "BOS",
+                "destination": "CBR",
+                "departure_date": "2023-03-23",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": 1,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from Florence (FLR) to Edmonton (YEG) on April 15, 2023, for 2 adults in business class. Also, suggest things to do there.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "FLR",
+                "destination": "YEG",
+                "departure_date": "2023-04-15",
+                "adults": 2,
+                "return_date": "",
+                "children": null,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": false,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from HKG to NYC on March 15th for two adults and one child. Can you also suggest activities in New York? Please make it non-stop and in economy class.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "HKG",
+                "destination": "NYC",
+                "departure_date": "2023-03-15",
+                "adults": 2,
+                "children": 1,
+                "infants": 0,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I want to fly from YYZ to YYZ on October 15th, and I'll need ideas for activities there. It will just be me, and I prefer to fly business class, non-stop.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "YYZ",
+                "destination": "YYZ",
+                "departure_date": "2023-10-15",
+                "adults": 1,
+                "return_date": "",
+                "children": null,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from OVB to PAR on March 15th for 2 adults and 1 child in economy class. Also, suggest some activities in Paris for that day.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "OVB",
+                "destination": "PAR",
+                "departure_date": "2024-03-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": false,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from BNE to EVN on 2023-12-15, non-stop, for 2 adults and 1 child in business class. Also, suggest some things to do in Yerevan.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "BNE",
+                "destination": "EVN",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Hi, I need a flight from CBR to KTM for a business trip on 2023-11-15. It should be non-stop and I\u2019ll be flying business class. Also, can you suggest some things to do in Kathmandu?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "CBR",
+                "destination": "KTM",
+                "departure_date": "2023-11-15",
+                "adults": 1,
+                "return_date": "",
+                "children": null,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you help me find a flight from Kyiv (KIE) to Yangon (RGN) for March 15th? It will be for 2 adults, one child, in business class. Also, suggest some activities to do there.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "KIE",
+                "destination": "RGN",
+                "departure_date": "2023-03-15",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": false,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you find me a flight from Geneva (GVA) to Austin City (AUS) on March 15th? I\u2019ll be traveling alone, economy class, and I\u2019d prefer nonstop flights. Also, can you suggest some activities in Austin City for that day?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "GVA",
+                "destination": "AUS",
+                "departure_date": "2023-03-15",
+                "adults": 1,
+                "return_date": "",
+                "children": null,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from TAS to PHX on March 15th and I'm flying business class with my partner. What activities are available there?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "TAS",
+                "destination": "PHX",
+                "departure_date": "2023-03-15",
+                "adults": 2,
+                "return_date": "",
+                "children": null,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": false,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you find me a flight from ADL to UFA for April 15th for two adults? Also, what are some activities I can do in Ufa?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "ADL",
+                "destination": "UFA",
+                "departure_date": "2023-04-15",
+                "adults": 2,
+                "return_date": "",
+                "children": null,
+                "infants": null,
+                "class": "",
+                "nonStop": false,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you help me find flights from JNB to VIE for March 15th? I\u2019d like business class, and it\u2019s just for me. Also, what activities can I do in Vienna?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "JNB",
+                "destination": "VIE",
+                "departure_date": "2024-03-15",
+                "adults": 1,
+                "return_date": "",
+                "children": null,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": false,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I want to book a flight from SIN to LAS for next Friday, two passengers in economy class, and I\u2019ll need some activity suggestions for Las Vegas.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "SIN",
+                "destination": "LAS",
+                "departure_date": "2023-10-20",
+                "adults": 2,
+                "return_date": "",
+                "children": null,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": false,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from MRV to CAG on 2023-12-15 for two adults in economy class, and can you suggest a few activities to do there?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "MRV",
+                "destination": "CAG",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": null,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": false,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from GVA to SFO on October 20th for 2 adults and 1 child, preferably non-stop, and can you suggest some activities in San Francisco?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "GVA",
+                "destination": "SFO",
+                "departure_date": "2023-10-20",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you find me a flight from GRU to BUD on March 15th for two adults and one child in business class? Also, suggest some activities in Budapest.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "GRU",
+                "destination": "BUD",
+                "departure_date": "2023-03-15",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": false,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from PHL to DEL on 2023-11-15 for 2 adults and 1 child, economy class. Also, recommend some activities there.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "PHL",
+                "destination": "DEL",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": false,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from PKC to AER next Wednesday, economy class, and something to do once I get there. It\u2019s just me and I prefer non-stop flights.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "PKC",
+                "destination": "AER",
+                "departure_date": "2023-10-18",
+                "adults": 1,
+                "return_date": "",
+                "children": null,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from KHI to AAQ on March 15th, non-stop in business class for 2 adults and 1 child. Could you also suggest some activities there on that day?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "KHI",
+                "destination": "AAQ",
+                "departure_date": "2023-03-15",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "return_date": "",
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need to book a flight from CTA to TPE on March 15th for 2 adults and 1 child, economy class. Also, could you suggest some activities to do there?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "CTA",
+                "destination": "TPE",
+                "departure_date": "2023-03-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": false,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I'd like to book a flight from MOW to SIP on September 15th for 2 adults and 1 child. Are there any fun activities in LA? Prefer non-stop flights in business class.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "MOW",
+                "destination": "SIP",
+                "departure_date": "2023-09-15",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a non-stop flight from KIE to PRG on April 15th for 2 adults and 1 child in business class. Also, can you suggest activities in Prague?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "KIE",
+                "destination": "PRG",
+                "departure_date": "2023-04-15",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you find non-stop flights from SAW to EVN for November 15th, economy class, for 2 adults and 1 child? Also, what activities can I do in Yerevan?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "SAW",
+                "destination": "EVN",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from BCN to ROM on 2023-11-20. It's just myself, economy class, and I prefer non-stop. Also, what activities can I do at my destination?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "BCN",
+                "destination": "ROM",
+                "departure_date": "2023-11-20",
+                "adults": 1,
+                "return_date": "",
+                "children": null,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you help me find a flight from BNE to BOS for next Friday? I also want to know what activities I can do in Boston. It's just me, and I'd prefer non-stop flights in Economy.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "BNE",
+                "destination": "BOS",
+                "departure_date": "2023-11-10",
+                "adults": 1,
+                "return_date": "",
+                "children": null,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a one-way flight from SIP to MSP on December 15th, economy class, for 2 adults and 1 child. Can you also find some activities we can do in Minneapolis?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "SIP",
+                "destination": "MSP",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "infants": 0,
+                "class": "ECONOMY",
+                "nonStop": false,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you find me a flight from DAR to MNL on December 15th? Also, suggest some activities I can do there. It's for 2 adults, one child, and I'd like Business class with only non-stop flights.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "DAR",
+                "destination": "MNL",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Hi, can you help me find flights from YUL to KTM next Saturday for 2 adults and 1 kid, economy class, and non-stop only? Also, I\u2019d like to know about activities in Kathmandu.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "YUL",
+                "destination": "KTM",
+                "departure_date": "2023-11-11",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you help me find a flight from Moscow City to Barcelona for next Friday? I need two adults and one child, economy class, and only non-stop flights. Also, can you suggest some activities in L.A.?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "MOW",
+                "destination": "BCN",
+                "departure_date": "2023-10-20",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you help me find flights from DHA to ATL on 2023-12-15 for 2 adults and 1 child? I'd like business class, and only non-stop flights, please. Also, what activities are there in Atlanta?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "DHA",
+                "destination": "ATL",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you help me find a flight from BOM to VRN for February 15th? I need it for 2 adults and 1 child, economy class, non-stop. Also, what activities can I do in Verona on that day?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "BOM",
+                "destination": "VRN",
+                "departure_date": "2023-02-15",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from BKK to HCM on March 15, 2024, for 2 adults and 1 child, in economy class. Please include non-stop flights only. Also, what are some good activities in Ho Chi Minh City?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "BKK",
+                "destination": "HCM",
+                "departure_date": "2024-03-15",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I want to book a flight from Barcelona (BCN) to Paris (PAR) on December 15th for 2 adults and 1 child, preferably business class, and only non-stop flights. Can you also suggest some things to do in Paris?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "BCN",
+                "destination": "PAR",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you find me a nonstop flight from RIO to BCN on the 15th of November for 2 adults and 1 child in business class? Also, what are some fun activities we can do in BCN?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "RIO",
+                "destination": "BCN",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I want to fly from ALA to PER on March 15th, non-stop, for 2 adults and 1 child. Also, what are some cool things to do in Perth?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "ALA",
+                "destination": "PER",
+                "departure_date": "2023-03-15",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I want to book a flight from DUB to HEL on December 15th for 2 adults and 1 child in business class, non-stop, and also need suggestions on things to do in Helsinki.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "DUB",
+                "destination": "HEL",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "return_date": "",
+                "class": "BUSINESS",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you find me a flight from DHA to FLR on 2023-12-15 for two adults in business class and suggest some activities in LA?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "DHA",
+                "destination": "FLR",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "return_date": "",
+                "children": null,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": false,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you find flights from AER to YUL on March 15th? I need two tickets in business class. Also, suggest some activities I can do there.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "AER",
+                "destination": "YUL",
+                "departure_date": "2023-03-15",
+                "adults": 2,
+                "return_date": "",
+                "children": null,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": false,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "Can you find me a flight from AKL to VEN on 2023-12-15 for 2 adults and 1 child? I'd like business class and non-stop flights only. Also, what activities can I do in Venice?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "AKL",
+                "destination": "VEN",
+                "departure_date": "2023-12-15",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I want to fly from KHI to MAN on March 15th with 2 adults and 1 child, economy class, and only nonstop flights. Can you also suggest activities in Manchester?",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "KHI",
+                "destination": "MAN",
+                "departure_date": "2023-03-15",
+                "adults": 2,
+                "return_date": "",
+                "children": 1,
+                "infants": null,
+                "class": "ECONOMY",
+                "nonStop": true,
+                "max": 5
+            }
+        }
+    },
+    {
+        "input": "I need a flight from PDX to CHN on 2023-11-15 and things to do around Chennai for that weekend. There are 2 adults and 1 child, and we want to fly business class. Non-stop only preferred.",
+        "output": {
+            "action": [
+                "search_flights",
+                "activities"
+            ],
+            "action_input": {
+                "origin": "PDX",
+                "destination": "CHN",
+                "departure_date": "2023-11-15",
+                "adults": 2,
+                "children": 1,
+                "infants": null,
+                "class": "BUSINESS",
+                "nonStop": true,
+                "return_date": "",
+                "max": 5
+            }
+        }
+    }
+]
