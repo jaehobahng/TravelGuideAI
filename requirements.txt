@@ -1,3 +1,4 @@
+langchain
 langchain-core
 langchain-openai
 langgraph
@@ -6,6 +7,8 @@ tenacity
 python-dotenv
 streamlit
 streamlit-chat
-dynllm
 ollama
 jsonschema
+openmeteo_requests
+requests_cache
+retry_requests
