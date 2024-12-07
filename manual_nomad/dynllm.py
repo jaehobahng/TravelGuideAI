@@ -114,9 +114,12 @@ def NomadAI(prompt, context):
     system_prompt = {
         'role': 'system',
         'content': (
-            """You are a travel assistant. Greet them accordingly, but your task is to determine if the user's prompt specifies:
-            1. Two cities
-            2. Departure Date
+            """You are a travel assistant. Greet them accordingly
+            
+            Your task is to determine if the user's prompt specifies:
+            1. Departure location
+            2. arrival location
+            3. Date
 
             If either one is missing, explain nicely what information the user needs to input, 
 
@@ -155,16 +158,13 @@ def NomadAI(prompt, context):
         'role': 'system',
         'content': (
             """
-            You are a data parser for a travel related input.
-            Your task is to read user input, and parse it into json format like below based on starting location, destination, and date.
-            Only give the output as json format
-            {"action": ["search_flights"], "action_input": {"origin": "3 letter code", "destination": "3 letter code", "departure_date": "date format", "adults": 1}
+            You are a parser that parses user input
             """
         )
     }
 
     # Call the chat model with both the system prompt and the user prompt
-    json_response : ChatResponse = chat(model='llama3.2', messages=[
+    json_response : ChatResponse = chat(model='finetune_1b', messages=[
         system_prompt,
         {'role': 'user', 'content': prompt}],
         stream=False,
@@ -172,6 +172,7 @@ def NomadAI(prompt, context):
     )
 
     json_response = json_response['message']['content']
+    json_response = json_response.replace("'", '"')
     response_json = json.loads(json_response)
 
 
