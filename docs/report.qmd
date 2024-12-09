@@ -1,7 +1,7 @@
 ---
 title: "Nomad AI"
 subtitle: "Your Customized Travel Guide"
-author: ["JaeHo Bahng", "Billy McGloiin", "Kangheng Liu", "Jorge Bris-Moreno"]
+author: ["JaeHo Bahng", "Billy McGloin", "Kangheng Liu", "Jorge Bris-Moreno"]
 date: last-modified
 date-format: long
 format:
