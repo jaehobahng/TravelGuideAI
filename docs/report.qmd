@@ -206,7 +206,7 @@ The LangChain model, on the other hand, offered a streamlined approach by consol
 
 ## Temporary Hosting of the LangChain Model
 
-To enable hands-on testing and gather feedback, we have temporarily deployed the LangChain model. You can explore and interact with the hosted version of the model [here](https://www.youtube.com/watch?v=dQw4w9WgXcQ). This deployment serves as a proof of concept, allowing users to evaluate its functionality, test its responses, and provide valuable insights for future iterations.
+To enable hands-on testing and gather feedback, we have temporarily deployed the LangChain model. You can explore and interact with the hosted version of the model [here](https://nlp.kang-liu.space). This deployment serves as a proof of concept, allowing users to evaluate its functionality, test its responses, and provide valuable insights for future iterations.
 
 ## Future Directions
 
