@@ -5,12 +5,26 @@ from dynllm import NomadAI, query_refiner
 
 st.title("Nomad AI")
 
+
+# Function to reset the conversation
+def reset_conversation():
+    st.session_state.messages = []
+    st.chat_message('assistant').markdown('How can I help you?')
+    st.session_state.conversation_log = []
+
+# Add a reset button at the top
+if st.button("Reset Conversation"):
+    reset_conversation()
+
 # Initialize session state
 if 'messages' not in st.session_state:
     st.session_state.messages = []
+    st.chat_message('assistant').markdown('How can I help you?')
 
 if 'conversation_log' not in st.session_state:
     st.session_state.conversation_log = []  # Keeps the last 3 exchanges
+
+
 
 # Display chat messages from history
 for message in st.session_state.messages:
