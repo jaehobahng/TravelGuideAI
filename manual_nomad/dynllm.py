@@ -91,8 +91,7 @@ def query_refiner(log, prompt):
         'role': 'system',
         'content': (
             """
-            Given the following user query and conversation log, extract the last destination location, the last departure location, 
-            and the last time mentioned. Use these details to formulate a question that is focused and contextually relevant, 
+            Given the following user query and conversation log, use these details to formulate a question that is focused and contextually relevant, 
             while incorporating the rest of the conversation for clarity. Just output the new question.
             """
         )
@@ -105,6 +104,8 @@ def query_refiner(log, prompt):
         stream=False,
         options={"temperature":0.1}
     )
+
+    print(response['message']['content'])
 
     return response['message']['content']
 
@@ -315,10 +316,11 @@ def NomadAI(prompt, context):
         'content': (
             """
             You are a travel assistant.
-            The input will be a json format input with flight information
-            Given the context which is conversation that has happened before, summarize the data choices the user has regarding the information.
+            The input will be a json format input
+            Select only some options and summarize each option separately regarding the information.
             Speak as if you are explaining the details.
             Only summarize thoroughly.
+            Don't greet them if the context is empty and only reply form the data given.
             Don't ask to assist further than summarization.
             """
         )
@@ -331,7 +333,7 @@ def NomadAI(prompt, context):
     # Call the chat model with both the system prompt and the user prompt
     response : ChatResponse = chat(model='llama3.2', messages=[
         system_prompt,
-        {'role': 'user', 'content': f"Context':{context} / 'data':{json_data}"}],
+        {'role': 'user', 'content': f"Context':{len(context)} / 'data':{json_data}"}],
         stream=True,
         options={"temperature":0.1}
     )
