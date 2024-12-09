@@ -1,0 +1,241 @@
+---
+title: "Nomad AI"
+subtitle: "Your Customized Travel Guide"
+author: ["JaeHo Bahng", "Billy McGloiin", "Kangheng Liu", "Jorge Bris-Moreno"]
+date: last-modified
+date-format: long
+format:
+  html:
+    self-contained: true
+    toc: true
+institute: ["DSAN 5800: Advanced NLP", "Georgetown University"]
+---
+
+# Overview
+
+Nomad AI aims to revolutionize travel planning by creating a highly customizable and intelligent travel guide. Our project explores two complementary approaches to achieve this goal: a **manual pipeline** and an **integrated LangChain-based solution.**
+
+The manual pipeline allows precise control by carefully designing and connecting individual components to handle user input, API calls, and responses. This approach leverages the flexibility of fine-tuned language models, enabling us to tailor each step to our specific requirements.
+
+On the other hand, the LangChain-based solution simplifies implementation by centralizing the functionality into a single framework. While LangChain offers powerful out-of-the-box capabilities, its limited flexibility for customization presented challenges in adapting to our unique workflow.
+
+In this report, we delve into both approaches' design, implementation, and evaluation. The paper is structured as follows:
+
+1. **Manual Model** – A detailed breakdown of its core components, their roles, and how they work together to deliver personalized travel planning.
+2. **LangChain Model** – An exploration of the LangChain-based solution, highlighting its strengths, limitations, and how it integrates with large language models.
+3. **Fine-Tuning and Data Preparatio**n – A discussion of the methodologies used for data generation, model fine-tuning, and parameter optimization.
+4. **Comparison and Future Improvements** – A comprehensive analysis of the two approaches, their trade-offs, and potential avenues for enhancing both systems.
+
+Through this exploration, we aim to demonstrate how large language models can be harnessed to create a travel guide that is both intelligent and highly adaptable, providing users with seamless and personalized travel experiences.
+
+# Manual Model
+
+The manual model provides a highly customizable framework for building a travel guide system by integrating multiple specialized components. It is composed of four core modules: **Recipient, Parser, Tool-Caller,** and **Responder.** These modules work together to process user inputs, call external APIs, and deliver tailored outputs. This modular design ensures flexibility and precision, allowing us to fine-tune each step for optimal performance.
+
+## Structure
+
+![Figure 1: Manual Model Structure](../images/manual_modedl_structure.png)
+
+1.	**Recipient: Initial Interaction and Input Gathering**
+
+The Recipient is the user’s first point of contact, responsible for welcoming them and ensuring their input contains the necessary details for API requests. Using prompt engineering, the Recipient validates the input and, if needed, engages the user with follow-up questions to gather missing information, such as departure locations, destinations, or travel dates. This iterative interaction guarantees that all essential parameters are collected before proceeding to the next stage.
+
+2.	**Parser: Natural Language to Structured Data**
+
+The Parser is a fine-tuned language model (Llama 3.2 1B) designed to convert natural language inputs into structured JSON format. This transformation enables seamless API integration. The Parser identifies the appropriate API to call based on the query and extracts required parameters. For instance, when a user requests, *“Find me a four-star hotel in Paris with a swimming pool and Wi-Fi,”* the Parser identifies *“Paris”* as the location and specifies the amenities under the corresponding JSON fields. This ensures accurate and actionable inputs for the subsequent Tool-Caller module.
+
+3.	**Tool-Caller: API Integration**
+
+The Tool-Caller takes the structured JSON output from the Parser and executes the appropriate API requests. It retrieves relevant results, cleans and aggregates the responses, and passes the processed data to the Responder. Currently, the system supports APIs for flight searches, hotel searches, and activity recommendations.
+
+4. **Responder: Summarizing Results**
+
+The Responder delivers a concise, user-friendly summary of the API results, ensuring the output aligns with the user’s original query. It synthesizes the retrieved information into a clear, actionable format, presenting options that directly address the user’s needs.
+
+## Enabling Memory
+
+To enhance the manual model’s conversational capabilities, we introduced two additional components: **Query Refiner** and **Chat History.** These components enable the model to maintain context across interactions, transforming it into a more dynamic and intuitive chatbot:
+
+* **Query Refiner:** This component integrates prior user inputs and chat history into new queries, ensuring continuity. For example, if the user initially says, “I want a flight from Paris to London on 2025-01-01,” and later adds, *“What about 2025-02-01?”* the Query Refiner combines the inputs into a complete prompt: *“I want a flight from Paris to London on 2025-02-01.”*
+* **Chat History:** The chat history stores previous interactions, enabling the Responder to provide coherent replies that reflect the conversation’s ongoing context. This avoids repetitive greetings or disjointed responses.
+
+Additionally, a reset option allows users to clear the chat history and start fresh if the model encounters unexpected errors or hallucinations.
+
+## Data Gathering
+
+To develop a fine-tuned travel guide model, we needed a dataset tailored to our specific requirements. Since no publicly available dataset met our needs, we generated our own dataset using prompt engineering with large language models. After testing several models, including OpenAI’s GPT models and Llama models, we found that Llama models performed the best for generating diverse and high-quality data.
+
+### Data Generation Process
+
+We created prompts that instructed the language model to generate structured input-output pairs suitable for travel-related tasks. These outputs adhered to the requirements of our system, including APIs for flights, hotels, and activities. Below is an example prompt and its corresponding output:
+
+#### Example Prompt
+
+```plaintext
+Generate a JSON object where:
+1. "input" is a single string where a user requests information **on different locations** for a **flight, hotel, and activities**. 
+   The request involves travel from one location to another, specifying a departure date, and optionally includes details 
+   such as the number of passengers, flight class, non-stop preference, hotel ratings, amenities, or other preferences. 
+   The input is provided in plain text, not JSON.
+
+2. "output" contains the corresponding Amadeus API call in JSON format:
+   - The "action" field is always ["search_flights", "search_hotels", "activities"].
+   - The "action_input" field includes:
+     - "origin": A 3-letter city code for the departure location or airport 3-letter code if specified.
+     - "destination": A 3-letter city code for the arrival location or airport 3-letter code if specified.
+     - "departure_date": A date in "YYYY-MM-DD" format.
+     - "adults": An integer representing the number of adults (default is 1).
+     - Optional fields are included only if explicitly mentioned in the input and should be excluded otherwise:
+       - "return_date": A date in "YYYY-MM-DD" format for the return flight.
+       - "children": An integer representing the number of children.
+       - "infants": An integer representing the number of infants.
+       - "class": One of "ECONOMY", "PREMIUM_ECONOMY", "BUSINESS", or "FIRST".
+       - "nonStop": A boolean indicating whether only non-stop flights are desired.
+       - "maxPrice": An integer specifying the maximum price.
+       - "ratings": An integer for hotel ratings (out of 5).
+       - "amenities": A list of amenities required by the user. Supported values: SWIMMING_POOL, SPA, FITNESS_CENTER, 
+         AIR_CONDITIONING, PETS_ALLOWED, WIFI.
+     - "max": Always set to 5.
+
+3. Ensure the input always requests all three elements (flights, hotels, and activities). Avoid generating inputs that omit any of these.
+Generate ONE EXAMPLE PER RESPONSE object. Use varied phrasing and combinations of optional fields to add diversity to the input while adhering to the guidelines.
+```
+
+#### Example Outut
+
+```plaintext
+{
+  "input": "I’d like to travel from New York (JFK) to Paris (CDG) on March 15, 2024. It’s for two adults and one child. I need business class tickets and prefer non-stop flights. For hotels, I’m looking for something luxurious with at least 5 stars, a swimming pool, and a spa. Can you also suggest some activities there?",
+  "output": {   
+    "action": ["search_flights", "search_hotels", "activities"],    
+    "action_input": {      
+      "origin": "JFK",      
+      "destination": "CDG",      
+      "departure_date": "2024-03-15",      
+      "adults": 2,      
+      "children": 1,      
+      "class": "BUSINESS",      
+      "nonStop": true,      
+      "ratings": 5,      
+      "amenities": ["SWIMMING_POOL", "SPA"],      
+      "max": 5    
+    }  
+  }
+}
+```
+
+### Challenges and Solutions
+
+One major challenge we encountered was the tendency of the language model to overuse specific cities, resulting in a lack of diversity in the dataset. To address this, we manually cleaned the data to diversify city names and ensure comprehensive representation of different scenarios. This process involved randomizing inputs and varying optional fields to create a robust dataset.
+
+## Fine-Tuning
+
+After generating the dataset, we evaluated two fine-tuning packages, **PEFT** and **Unsloth**, both of which use the LoRA (Low-Rank Adaptation) approach. Despite their shared methodology, these packages differed in implementation, providing us with unique advantages for optimizing model performance.
+
+### PEFT Package
+
+The PEFT package fine-tunes models using single-string inputs, enabling straightforward adjustments to predict specific outputs based on given contexts. To align with our requirements, we introduced a divider (” -> “) between user prompts and target outputs. This structure allowed the model to recognize when to generate JSON outputs.
+
+![Figure 2: Peft](../images/peft.png)
+
+However, PEFT presented notable inefficiencies:
+
+* **Slow Training:** Fine-tuning 400 data points required approximately four hours.
+* **Decoding Overhead:** Tokenizing and decoding significantly slowed the output generation process.
+
+These drawbacks prompted us to explore alternative fine-tuning methods.
+
+### Unsloth Package
+
+The Unsloth package provided a faster and more structured fine-tuning process. Its key advantage lay in its ability to explicitly define a system prompt, user prompt, and model output during training. This structured approach minimized discrepancies between the generated and target outputs.
+
+![Figure 3: Unsloth](../images/unsloth.png)
+
+Additional benefits of Unsloth included:
+
+* **Rapid Training:** Fine-tuning 1,000 data points took just two minutes.
+* **Local Hosting:** The fine-tuned model could be downloaded and hosted locally on Ollama, ensuring quick response times and seamless integration into our chatbot.
+
+Through experimentation, we adjusted as little as 0.01% and up to 10% of the model’s parameters. Interestingly, loss values and output quality remained consistent across different levels of parameter adjustments. This demonstrated the robustness of the fine-tuning process.
+
+# LangChain Model
+
+The LangChain model offers an alternative approach to building the Nomad AI system by streamlining the integration and execution of tools within a single framework. Unlike the manual model, which relies on distinct components to process user inputs, make API calls, and generate outputs, the LangChain model centralizes these tasks into a single large language model (LLM). This design simplifies implementation but comes with certain trade-offs in flexibility and customizability.
+
+![Figure 4: LangChain Model Structure](../images/langchain_model.png)
+
+## Structure
+
+1. **Centralized Orchestrator**
+
+The LangChain framework designates the LLM as the core orchestrator, handling all stages of user interaction, tool calling, and response generation. Tools are defined and registered within the framework using function docstrings that specify their parameters and functionality. Based on user input and tool descriptions, the LLM determines which tools to use and in what sequence.
+
+2.	**Dynamic Tool Integration**
+
+The LangChain model employs a dynamic process for selecting and calling tools. When the user submits a query, the LLM analyzes the input, matches it with the registered tools, and executes the relevant API calls. This process is iterative, meaning the model may prompt the user for additional details if necessary, ensuring it has all the required information to perform the task.
+
+3.	**Memory Functionality**
+
+To enhance conversational capabilities, LangChain incorporates a memory module that maintains context across interactions. This allows the model to handle multi-turn queries coherently. For example, if a user asks for flights in one query and follows up with *“What about hotels?”* the memory enables the model to link the two requests seamlessly. This creates a more engaging and intuitive user experience.
+
+4.	**Final Response Synthesis**
+
+After gathering all the required data through API calls, the model synthesizes the outputs into a concise and user-friendly response. This simplifies the travel planning process, presenting users with a clear summary of options for flights, hotels, and activities.
+
+## Strengths and Limitations
+
+### Strengths
+
+* **Simplified Implementation:** The centralized design reduces the complexity of managing separate components, enabling faster development.
+* **Dynamic Tool Selection:** LangChain’s ability to match user queries with appropriate tools enhances automation and efficiency. This means the system can intelligently select and call specific APIs based on the user’s request without requiring manual intervention.
+* **Built-in Memory:** Retaining context across queries ensures smoother and more coherent interactions.
+* **Iterative Query Handling:** The model can prompt users for additional information dynamically, improving the quality of responses.
+
+### Limitations
+
+* **Limited Flexibility:** LangChain lacks the customizability needed to integrate fine-tuned models like Llama seamlessly.
+* **Tool Compatibility Issues:** The framework handles tool calls differently across supported models (e.g., Ollama vs. OpenAI), leading to inconsistent behavior.
+
+# Conclusion and Future Directions
+
+In this project, we explored two distinct approaches to building an intelligent and customizable travel guide system: a **manual pipeline** and a **LangChain-based framework.** Both approaches demonstrated the potential of leveraging large language models (LLMs) to streamline and enhance the travel planning experience.
+
+The manual model provided fine-grained control over each stage of the pipeline, enabling the seamless integration of user inputs, API calls, and outputs. Its modular design allowed us to customize components such as the Query Refiner and Chat History to improve memory and conversational coherence. However, the manual model required significant development effort and lacked the simplicity of centralized frameworks.
+
+The LangChain model, on the other hand, offered a streamlined approach by consolidating functionalities into a single orchestrator. With built-in support for dynamic tool selection and memory, it provided a faster implementation path. Nevertheless, its lack of flexibility and compatibility challenges with fine-tuned models limited its ability to meet the nuanced requirements of our pipeline.
+
+## Temporary Hosting of the LangChain Model
+
+To enable hands-on testing and gather feedback, we have temporarily deployed the LangChain model. You can explore and interact with the hosted version of the model [here](https://www.youtube.com/watch?v=dQw4w9WgXcQ). This deployment serves as a proof of concept, allowing users to evaluate its functionality, test its responses, and provide valuable insights for future iterations.
+
+## Future Directions
+
+To further improve both approaches and enhance the capabilities of Nomad AI, we propose the following future directions:
+
+1. **Enhancing Fine-Tuning Techniques**
+
+* Experimenting with more advanced fine-tuning methods, such as reinforcement learning with human feedback (RLHF), could improve model performance in parsing complex user inputs.
+* Expanding the fine-tuning dataset to include more diverse scenarios, languages, and edge cases will make the system more robust and globally applicable.
+
+2. **Addressing LangChain Limitations**
+
+* Exploring ways to integrate fine-tuned models like Llama into the LangChain framework to enhance flexibility.
+* Developing custom tool-calling logic to reduce compatibility issues between different LLMs, ensuring seamless tool integration regardless of the backend.
+
+3. **Improving Memory and Context Handling**
+
+* Investigating advanced memory mechanisms to improve long-term context retention across multiple queries and sessions.
+*  Integrating embeddings or vector-based memory systems for scalable and efficient conversational history management.
+
+4. **Expanding Tool Support**
+
+* Adding support for additional APIs, such as currency exchange rates and visa requirements, to provide a more comprehensive travel planning experience.
+* Enabling dynamic tool registration, allowing the system to adapt to new tools or APIs without requiring extensive reconfiguration.
+
+5. **Real-World Deployment and User Testing**
+
+* Deploying the system as a web application or chatbot to gather real-world user feedback.
+* Conducting A/B testing to evaluate the effectiveness of the manual model versus the LangChain model in real user scenarios.
+
+
+By pursuing these directions, Nomad AI can evolve into a more powerful and adaptable travel assistant, meeting the needs of users across diverse contexts and scenarios. This project not only highlights the utility of LLMs in travel planning but also serves as a foundation for further innovations in AI-driven personal assistants.
