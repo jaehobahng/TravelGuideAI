@@ -1,7 +1,7 @@
 ---
 title: "Nomad AI"
 subtitle: "Your Customized Travel Guide"
-author: ["JaeHo Bahng", "Billy McGloin", "Kangheng Liu", "Jorge Bris-Moreno"]
+author: ["JaeHo Bahng", "Billy McGloin", "Kangheng Liu", "Jorge Bris Moreno"]
 date: last-modified
 date-format: long
 format:
@@ -63,7 +63,7 @@ Additionally, a reset option allows users to clear the chat history and start fr
 
 ## Data Gathering
 
-To develop a fine-tuned travel guide model, we needed a dataset tailored to our specific requirements. Since no publicly available dataset met our needs, we generated our own dataset using prompt engineering with large language models. After testing several models, including OpenAI’s GPT models and Llama models, we found that Llama models performed the best for generating diverse and high-quality data.
+To develop a fine-tuned travel guide model, we needed a dataset tailored to our specific requirements. Since no publicly available dataset met our needs, we generated our own dataset using prompt engineering with large language models. After testing several models, including OpenAI’s GPT models and Llama models, we found that Llama models performed the best for generating diverse and high-quality data. Thus, we generated our data with Llama 3.1 8B model.
 
 ### Data Generation Process
 
@@ -130,7 +130,7 @@ One major challenge we encountered was the tendency of the language model to ove
 
 ## Fine-Tuning
 
-After generating the dataset, we evaluated two fine-tuning packages, **PEFT** and **Unsloth**, both of which use the LoRA (Low-Rank Adaptation) approach. Despite their shared methodology, these packages differed in implementation, providing us with unique advantages for optimizing model performance.
+After generating the dataset consisting of 700 data points, 100 per possible scenario, we evaluated two fine-tuning packages, **PEFT** and **Unsloth**, both of which use the LoRA (Low-Rank Adaptation) approach. Despite their shared methodology, these packages differed in implementation, providing us with unique advantages for optimizing model performance.
 
 ### PEFT Package
 
@@ -153,7 +153,7 @@ The Unsloth package provided a faster and more structured fine-tuning process. I
 
 Additional benefits of Unsloth included:
 
-* **Rapid Training:** Fine-tuning 1,000 data points took just two minutes.
+* **Rapid Training:** Fine-tuning 700 data points took just two minutes.
 * **Local Hosting:** The fine-tuned model could be downloaded and hosted locally on Ollama, ensuring quick response times and seamless integration into our chatbot.
 
 Through experimentation, we adjusted as little as 0.01% and up to 10% of the model’s parameters. Interestingly, loss values and output quality remained consistent across different levels of parameter adjustments. This demonstrated the robustness of the fine-tuning process.
