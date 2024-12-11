@@ -1,6 +1,8 @@
 # Nomad AI
 Your personal travel guide
 
+Project report can be found [here](./docs/report.html)
+
 ## Manual Nomad
 A travel guide system was designed by seamlessly integrating four specialized Large Language Models and three distinct API calls. Here's how the system works:
 
