@@ -27,8 +27,19 @@ def reset_conversation():
 # Add a reset button at the top
 if st.button("Reset Conversation"):
     reset_conversation()
-    new_id = uuid.uuid4()
-    config = {"configurable": {"thread_id": new_id}}
+    thread_id = uuid.uuid4()
+    config = {"configurable": {"thread_id": thread_id}}
+
+# # Loop through all messages in the session state and render them as a chat on every st.refresh mech
+# for msg in st.session_state.messages:
+#     # https://docs.streamlit.io/develop/api-reference/chat/st.chat_message
+#     # we store them as AIMessage and HumanMessage as its easier to send to LangGraph
+#     if type(msg) == AIMessage:
+#         # st.image(ASSISTANT_ICON, width=40)  # Assistant icon
+#         st.chat_message("assistant").write(msg.content)
+        
+#     if type(msg) == HumanMessage:
+#         st.chat_message("user").write(msg.content)
 
 
 # Loop through all messages in the session state and render them with custom icons
