@@ -27,19 +27,8 @@ def reset_conversation():
 # Add a reset button at the top
 if st.button("Reset Conversation"):
     reset_conversation()
-    thread_id = uuid.uuid4()
-    config = {"configurable": {"thread_id": thread_id}}
-
-# # Loop through all messages in the session state and render them as a chat on every st.refresh mech
-# for msg in st.session_state.messages:
-#     # https://docs.streamlit.io/develop/api-reference/chat/st.chat_message
-#     # we store them as AIMessage and HumanMessage as its easier to send to LangGraph
-#     if type(msg) == AIMessage:
-#         # st.image(ASSISTANT_ICON, width=40)  # Assistant icon
-#         st.chat_message("assistant").write(msg.content)
-        
-#     if type(msg) == HumanMessage:
-#         st.chat_message("user").write(msg.content)
+    new_id = uuid.uuid4()
+    config = {"configurable": {"thread_id": new_id}}
 
 
 # Loop through all messages in the session state and render them with custom icons
@@ -116,37 +105,6 @@ if prompt := st.chat_input():
                 message_placeholder.markdown(current_response.strip(' '))  # Strip trailing spaces
                 time.sleep(0.01)  # Add a slight delay for the streaming effect
 
-
-
-
-    # assistant_message = st.chat_message('assistant')
-    # message_placeholder = assistant_message.markdown("Loading your travel plans...!")
-    # current_response = ""
-
-    # response = nomad.invoke({"input": st.session_state.messages, "chat_history": []}, config=config)
-
-    # # Ensure intermediate steps are processed correctly
-    # intermediate_steps = response['intermediate_steps'][-1].tool_input['summary']
-
-    # # Tokenize the summary content
-    # summary = response['intermediate_steps'][-1].tool_input['summary'] if intermediate_steps else "No summary provided."
-    # tokens = re.findall(r'\S+|\n', summary)  # Tokenize by non-whitespace or newline
-
-    # # Initialize a variable to hold the current response for display
-    # current_response = ""
-
-    # # Loop through the tokens and simulate streaming
-    # for token in tokens:
-    #     if token == "\n":
-    #         # Append a newline if the token is a newline character
-    #         current_response += "\n"
-    #     else:
-    #         # Append the token followed by a space
-    #         current_response += token + " "
-        
-    #     # Update the placeholder with the current response
-    #     message_placeholder.markdown(current_response.strip(' '))  # Strip trailing spaces
-    #     time.sleep(0.01)  # Add a slight delay for the streaming effect
 
     # Save the final response
     st.session_state.messages.append(AIMessage(content=current_response.strip(' ')))  # Save the response if needed
